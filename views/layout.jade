@@ -1,7 +1,18 @@
-doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+
   body
-    block content
+    // Navigation Menu
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+      a.navbar-brand(href='/') My Blog
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='/blog/list', class = 'text-white') List Blogs
+        li.nav-item
+          a.nav-link(href='/blog/add', class = 'text-white') Add Blog
+
+    // Main Content
+    .container
+      block content

@@ -11,12 +11,16 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'jade'); 
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+// Serve Bootstrap CSS
+app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
@@ -36,6 +40,12 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+// Specify the port to run on (in this case, port 80)
+const port = 80;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
 
 module.exports = app;

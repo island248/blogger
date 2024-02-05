@@ -1,6 +1,11 @@
-extends layout
-
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+// views/error.jade
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Error
+  body
+    h1= message
+    h2= error.status
+    pre= error.stack

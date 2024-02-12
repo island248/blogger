@@ -2,11 +2,22 @@ extends layout
 
 block content
   h1= title
-  ul
-    each blog in blogs
-      li
-        h2= blog.title
-        p= blog.text
-        p.createdOn= "Created on: #{blog.createdOn}"
-        a(href='/blog/edit/#{blog._id}') Edit  
-        a(href='/blog/delete/#{blog._id}')   Delete
+  each blog in blogs
+    div.card.border-primary(style='width: 50%')
+      div.card-header
+        div.row
+          div.col-sm
+            | Created On: #{blog.createdOn}
+      div.card-body
+        h5.card-title= blog.title
+        p.card-text= blog.text
+      div.card-footer
+        div.row
+          div.col-sm
+            ul.nav.justify-content-end.nav-pills.card-header-pills
+              li.nav-item
+                a.nav-link(href=`/blog/edit/${blog._id}`)
+                  i.fas.fa-edit
+              li.nav-item
+                a.nav-link(href=`/blog/delete/${blog._id}`)
+                  i.fas.fa-trash-alt

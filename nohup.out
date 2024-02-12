@@ -1330,3 +1330,36 @@ Mongoose connected to mongodb://localhost/lab3
 [0mGET / [32m200 [0m4.183 ms - 586[0m
 [0mGET /.env [33m404 [0m1.765 ms - 1062[0m
 [0mPOST / [33m404 [0m313.190 ms - 1062[0m
+
+> blog@0.0.0 start
+> node ./bin/www
+
+Server is running on port 80
+Mongoose connected to mongodb://localhost/lab3
+[0mGET /blog/list [36m304 [0m30.400 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.327 ms - -[0m
+[0mGET / [36m304 [0m2.970 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.565 ms - -[0m
+[0mGET /blog/list [36m304 [0m4.436 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.548 ms - -[0m
+[0mGET /blog/edit/undefined [36m304 [0m3.500 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.536 ms - -[0m
+[0mGET /blog/list [36m304 [0m2.913 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.619 ms - -[0m
+[0mGET /blog/delete/undefined [36m304 [0m3.025 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.433 ms - -[0m
+[0mGET /blog/delete/undefined [36m304 [0m2.693 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.452 ms - -[0m
+[0mGET / [36m304 [0m3.313 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.530 ms - -[0m
+[0mGET /blog/add [36m304 [0m2.364 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.482 ms - -[0m
+[0mGET / [36m304 [0m2.026 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.512 ms - -[0m
+[0mGET / [32m200 [0m6.153 ms - 586[0m
+Killed
+npm notice 
+npm notice New minor version of npm available! 10.2.3 -> 10.4.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.4.0>
+npm notice Run `npm install -g npm@10.4.0` to update!
+npm notice 

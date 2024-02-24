@@ -1,7 +1,7 @@
 // controllers/blog.js
 const express = require('express');
 const router = express.Router();
-const Blog = require('../models/blogs');  // Assuming the correct path to your blogs.js model
+//const Blog = require('../app_api/models/blogs');  // Assuming the correct path to your blogs.js model
 
 // Sample static data for demonstration purposes
 const sampleBlogs = [

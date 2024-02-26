@@ -1,3 +1,4 @@
+// blogList.jade
 extends layout
 
 block content
@@ -9,7 +10,9 @@ block content
           div.col-sm
             | Created On: #{blog.createdOn}
       div.card-body
-        h5.card-title= blog.title
+        h5.card-title Title: 
+        p.card-title= blog.title
+        h5.card-title Entry: 
         p.card-text= blog.text
       div.card-footer
         div.row
@@ -19,5 +22,5 @@ block content
                 a.nav-link(href= '/blog/edit/' + blog._id)
                   i.fas.fa-edit
               li.nav-item
-                a.nav-link(href= '/blog/delete/' +blog._id)
+                a.nav-link(href= '/blog/delete/' + blog._id)
                   i.fas.fa-trash-alt

@@ -3,12 +3,12 @@ extends layout
 block content
   h1= title
   .card(style="width: 50%")
-    form(action="", method="post", role="form")
+    form(action="/api/blogs", method="post", role="form")
       .form-group
-        label(for="blogTitle", class="text-dark") Title
-        input.form-control(id="blogTitle", name="blogTitle")
+        label(for="title", class="text-dark") Title
+        input.form-control(id="title", name="title")
         
-        label(for="blogEntry", class="text-dark") Entry
-        textarea.form-control(id="blogEntry", rows="3", name="blogEntry")
+        label(for="entry", class="text-dark") Entry
+        textarea.form-control(id="text", rows="3", name="text")
       
       input.btn.btn-primary.bg-dark.border-dark(type="submit", value="Add Blog")

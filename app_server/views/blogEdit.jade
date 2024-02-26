@@ -1,6 +1,12 @@
-// views/blogAdd.jade
+// blogEdit.jade
 extends layout
 
 block content
   h1= title
-  p Under construction...
+  form(action='/blog/edit/' + blog._id, method='POST')
+    input(type='hidden', name='_method', value='PUT') // Add this line for method override
+    label(for='title') Title:
+    input#title.form-control(type='text', name='title', value=blog.title, required)
+    label(for='text') Entry:
+    textarea#text.form-control(name='text', required)= blog.text
+    button.btn.btn-primary(type='submit') Update Blog

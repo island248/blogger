@@ -1,7 +1,7 @@
 // app_server-controllers/blog.js
 var request = require('request');
 var apiOptions = {
-    server : "http://localhost:3000"
+    server : "http://18.117.119.72"
   };
 
 /* GET 'home' page */
@@ -25,6 +25,13 @@ module.exports.bloglist = function (req, res) {
   request(
       requestOptions,
       function(err, response, body) {
+        if (err) {
+          console.error("Error in API request:", err);
+          // Handle the error in a way that makes sense for your application
+          // For example, you might want to render an error page or send a JSON response
+          res.status(500).render('error', { error: "Internal Server Error" });
+          return;
+        }
           renderBloglist(req, res, body);
       }
   );
@@ -40,8 +47,8 @@ module.exports.blogadd = function(req, res){
   var requestOptions, path, postData;
   path = "/api/blogs";
   postData = {
-      blogTitle: req.body.blogTitle,
-      blogEntry: req.body.blogEntry
+      title: req.body.title,
+      text: req.body.text
   };
   requestOptions = {
       url: apiOptions.server + path,
@@ -52,15 +59,16 @@ module.exports.blogadd = function(req, res){
       requestOptions,
       function(err, response, body) {
           if(response.statusCode == 201){
-              res.redirect('/blogList');
+              res.renderBloglist('/blog/list');
           }
       }
   )
 };
 
 
+
 var renderBlogEdit = function(req, res, responseBody){
-  res.render('blogEdit', { title: 'Blog Edit', blogTitle : responseBody.blogTitle, blogEntry : responseBody.blogEntry});
+  res.render('blogEdit', { title: 'Blog Edit', blog: responseBody });
 };
 
 module.exports.blogedit = function(req, res){
@@ -68,8 +76,8 @@ module.exports.blogedit = function(req, res){
   path = "/api/blogs/" + req.params.blogid;
   requestOptions = {
       url: apiOptions.server + path,
-      method : "GET",
-      json : {}
+      method: "GET",
+      json: {}
   };
   request(
       requestOptions,
@@ -79,6 +87,25 @@ module.exports.blogedit = function(req, res){
   );
 };
 
-module.exports.blogdeletion = function(req, res){
-  res.render('blogDeletion', { title: 'Blog Deletion' });
-};;
+module.exports.blogdeletion = function (req, res) {
+  // Assuming 'id' is the parameter for the blog to be deleted, update accordingly
+  var requestOptions, path;
+  path = "/api/blogs/" + req.params.id; 
+  requestOptions = {
+      url: apiOptions.server + path,
+      method: "DELETE",
+      json: {}
+  };
+  request(
+      requestOptions,
+      function (err, response, body) {
+          if (response.statusCode === 204) {
+              // Successful deletion, you might want to redirect or render a success page
+              res.redirect('/blog/list');
+          } else {
+              // Handle other status codes or errors
+              res.status(response.statusCode).send(body);
+          }
+      }
+  );
+    };

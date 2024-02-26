@@ -4,12 +4,12 @@ var ctrlBlog = require('../controllers/blog');
 
 router.get('/', ctrlBlog.homepage);
 
-router.get('/bloglist', ctrlBlog.bloglist);
+router.get('/blog/list', ctrlBlog.bloglist);
 
-router.get('/blogadd', ctrlBlog.blogadd);
+router.get('/blog/add', ctrlBlog.blogadd);
 
-router.get('/blogedit', ctrlBlog.blogedit);
+router.get('/blog/edit/:id', ctrlBlog.blogedit);
 
-router.get('/blogdeletion', ctrlBlog.blogdeletion);
+router.get('/blog/delete/:id', ctrlBlog.blogdeletion);
 
 module.exports = router;

@@ -7,7 +7,7 @@ require('./app_api/models/db');
 
 var routes = require('./app_server/routes/index');
 var routesApi = require('./app_api/routes/index');
-var usersRouter = require('./app_server/routes/users');
+//var usersRouter = require('./app_server/routes/users');
 
 var app = express();
 
@@ -22,12 +22,13 @@ app.use(cookieParser());
 
 // Serve Bootstrap CSS
 app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
+app.use('/bootstrap-icons', express.static(path.join(__dirname, 'node_modules/bootstrap-icons')));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/api', routesApi);
-app.use('/users', usersRouter);
+//app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

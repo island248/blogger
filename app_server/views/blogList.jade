@@ -16,8 +16,8 @@ block content
           div.col-sm
             ul.nav.justify-content-end.nav-pills.card-header-pills
               li.nav-item
-                a.nav-link(href=`/blog/edit/${blog._id}`)
+                a.nav-link(href= '/blog/edit/' + blog._id)
                   i.fas.fa-edit
               li.nav-item
-                a.nav-link(href=`/blog/delete/${blog._id}`)
+                a.nav-link(href= '/blog/delete/' +blog._id)
                   i.fas.fa-trash-alt

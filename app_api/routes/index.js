@@ -1,7 +1,7 @@
+//app_api-routes-index.js
 var express = require('express');
 var router = express.Router();
 const blogsController = require('../controllers/blogs');
-
 
 router.get('/blogs', blogsController.getAllBlogs);
 router.get('/blogs/:blogid', blogsController.blogReadOne);

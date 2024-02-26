@@ -1,6 +1,14 @@
-// views/blogAdd.jade
 extends layout
 
 block content
   h1= title
-  p Under construction...
+  .card(style="width: 50%")
+    form(action="", method="post", role="form")
+      .form-group
+        label(for="blogTitle", class="text-dark") Title
+        input.form-control(id="blogTitle", name="blogTitle")
+        
+        label(for="blogEntry", class="text-dark") Entry
+        textarea.form-control(id="blogEntry", rows="3", name="blogEntry")
+      
+      input.btn.btn-primary.bg-dark.border-dark(type="submit", value="Add Blog")

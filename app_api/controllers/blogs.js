@@ -1,6 +1,6 @@
+//app_api-controllers-blogs.js
 var mongoose = require('mongoose');
 var Blog = mongoose.model('Blog');
-
 
 var sendJSONresponse = function(res, status, content) {
     res.status(status);
@@ -14,16 +14,15 @@ var sendJSONresponse = function(res, status, content) {
             sendJSONresponse(res, 500, err); // Internal Server Error
             return;
         }
-       
+        
         // Send the list of blogs in the response
         sendJSONresponse(res, 200, blogs);
     });
 };
 
-
 module.exports.blogReadOne = function (req, res) {
     console.log('Finding blog details', req.params);
-   
+    
     if (req.params && req.params.blogid) {
         Blog.findById(req.params.blogid)
             .exec(function (err, blog) {
@@ -36,9 +35,8 @@ module.exports.blogReadOne = function (req, res) {
                     return;
                 }
 
-
                 console.log(blog);
-                sendJSONresponse(res, blog);
+                sendJSONresponse(res, 200, blog);
             });
     } else {
         console.log('No blogid specified');
@@ -48,15 +46,11 @@ module.exports.blogReadOne = function (req, res) {
 
 
 
-
-
-
 module.exports.addBlog = function (req, res) {
     console.log(req.body);
     Blog.create({
          title: req.body.title,
          text: req.body.text,
-         createdOn: req.body.createdOn || new Date(),
     }, function (err, blog) {
         if (err) {
             console.log(err);
@@ -68,13 +62,11 @@ module.exports.addBlog = function (req, res) {
     })
 };
 
-
 module.exports.updateBlog = function (req, res) {
     if (!req.params.blogid) {
         sendJSONresponse(res, 404, {"message": "Not found, blogid is required"});
         return;
     }
-
 
     Blog
         .findById(req.params.blogid)
@@ -87,12 +79,10 @@ module.exports.updateBlog = function (req, res) {
                 return;
             }
 
-
             // Update blog properties based on the request body
             blog.title = req.body.title || blog.title;
             blog.text = req.body.text || blog.text;
             blog.createdOn = req.body.createdOn || blog.createdOn || new Date();
-
 
             // Save the updated blog
             blog.save(function (err, blog) {
@@ -104,7 +94,6 @@ module.exports.updateBlog = function (req, res) {
             });
         });
 };
-
 
 module.exports.deleteBlog = function (req, res) {
     var blogid = req.params.blogid;
@@ -118,7 +107,7 @@ module.exports.deleteBlog = function (req, res) {
             sendJSONresponse(res, 404, err);
             return;
           }
-          console.log("Blog id " + blogid + " deleted");
+          console.log("Blog id " + req.params.blogid + " deleted");
           sendJSONresponse(res, 204, null);
         }
     );

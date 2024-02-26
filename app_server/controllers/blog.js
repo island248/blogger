@@ -1,29 +1,84 @@
-// controllers/blog.js
-const express = require('express');
-const router = express.Router();
-//const Blog = require('../app_api/models/blogs');  // Assuming the correct path to your blogs.js model
+// app_server-controllers/blog.js
+var request = require('request');
+var apiOptions = {
+    server : "http://localhost:3000"
+  };
 
-// Sample static data for demonstration purposes
-const sampleBlogs = [
-  { title: 'First Blog', text: 'This is the text for the first blog.' },
-  { title: 'Second Blog', text: 'This is the text for the second blog.' },
-  { title: 'Third Blog', text: 'This is the text for the third blog.' },
-];
+/* GET 'home' page */
+module.exports.homepage = function(req, res){
+  res.render('home', { title: "Ilynd Rapant's Blog Site"});
+};
 
-router.get('/list', (req, res) => {
-  // Render the blogList view with the sample blogs
-  res.render('blogList', { title: 'Blog List', blogs: sampleBlogs });
-});
+var renderBloglist = function(req, res, responseBody) {
+  res.render('blogList', { title: 'Blog List', blogs: responseBody });
+}
 
-router.get('/add', (req, res) => {
+// GET 'blogList' page
+module.exports.bloglist = function (req, res) {
+  var requestOptions, path;
+  path = "/api/blogs";
+  requestOptions = {
+      url : apiOptions.server + path,
+      method : "GET",
+      json : {}
+  };
+  request(
+      requestOptions,
+      function(err, response, body) {
+          renderBloglist(req, res, body);
+      }
+  );
+};
+
+/*router.get('/add', (req, res) => {
   res.render('blogAdd', { title: 'Blog Add' });
-});
+});*/
 
-router.get('/edit/:id', (req, res) => { // Update the route to include an ID parameter
-  res.render('blogEdit', { title: 'Blog Edit' });
-});
+// GET 'blogAdd' page
+module.exports.blogadd = function(req, res){
+  res.render('blogAdd', { title: 'Blog Add' });
+  var requestOptions, path, postData;
+  path = "/api/blogs";
+  postData = {
+      blogTitle: req.body.blogTitle,
+      blogEntry: req.body.blogEntry
+  };
+  requestOptions = {
+      url: apiOptions.server + path,
+      method: "POST",
+      json: postData
+  };
+  request(
+      requestOptions,
+      function(err, response, body) {
+          if(response.statusCode == 201){
+              res.redirect('/blogList');
+          }
+      }
+  )
+};
 
-router.get('/delete/:id', (req, res) => { // Update the route to include an ID parameter
-  res.render('blogDelete', { title: 'Blog Delete' });
-});
-module.exports = router;
+
+var renderBlogEdit = function(req, res, responseBody){
+  res.render('blogEdit', { title: 'Blog Edit', blogTitle : responseBody.blogTitle, blogEntry : responseBody.blogEntry});
+};
+
+module.exports.blogedit = function(req, res){
+  var requestOptions, path;
+  path = "/api/blogs/" + req.params.blogid;
+  requestOptions = {
+      url: apiOptions.server + path,
+      method : "GET",
+      json : {}
+  };
+  request(
+      requestOptions,
+      function(err, response, body) {
+          renderBlogEdit(req, res, body);
+      }
+  );
+};
+
+module.exports.blogdeletion = function(req, res){
+  res.render('blogDeletion', { title: 'Blog Deletion' });
+};;

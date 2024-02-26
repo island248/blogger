@@ -1,11 +1,15 @@
-// routes/index.js
-const express = require('express');
-const router = express.Router();
+var express = require('express');
+var router = express.Router();
+var ctrlBlog = require('../controllers/blog');
 
-const homeController = require('../controllers/home');
-const blogController = require('../controllers/blog');
+router.get('/', ctrlBlog.homepage);
 
-router.use('/', homeController);
-router.use('/blog', blogController);
+router.get('/bloglist', ctrlBlog.bloglist);
+
+router.get('/blogadd', ctrlBlog.blogadd);
+
+router.get('/blogedit', ctrlBlog.blogedit);
+
+router.get('/blogdeletion', ctrlBlog.blogdeletion);
 
 module.exports = router;

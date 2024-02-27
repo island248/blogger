@@ -87,8 +87,13 @@ module.exports.blogedit = function(req, res){
   );
 };
 
+var renderBlogDelete = function(req, res){
+  res.render('blogDelete', { title: 'Blog Deletion', blogid:req.params.id });
+};
+
 module.exports.blogdeletion = function (req, res) {
   // Assuming 'id' is the parameter for the blog to be deleted, update accordingly
+  renderBlogDelete(req, res);
   var requestOptions, path;
   path = "/api/blogs/" + req.params.id; 
   requestOptions = {
@@ -97,15 +102,6 @@ module.exports.blogdeletion = function (req, res) {
       json: {}
   };
   request(
-      requestOptions,
-      function (err, response, body) {
-          if (response.statusCode === 204) {
-              // Successful deletion, you might want to redirect or render a success page
-              res.redirect('/blog/list');
-          } else {
-              // Handle other status codes or errors
-              res.status(response.statusCode).send(body);
-          }
-      }
+      requestOptions
   );
     };

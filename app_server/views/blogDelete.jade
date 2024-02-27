@@ -1,4 +1,3 @@
-// views/blogAdd.jade
 extends layout
 
 block content
@@ -6,5 +5,5 @@ block content
   p Are you sure you want to delete this blog?
 
   // Add a form for deletion
-  form(action='/blog/delete/#{blog._id}', method='DELETE')
+  form(action='/blog/delete/' + blogid, method='POST')
     button(type='submit') Delete Blog

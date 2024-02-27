@@ -107,6 +107,3 @@ module.exports.deleteBlog = function (req, res) {
             sendJSONresponse(res, 500, err);
         });
 };
-
-
-

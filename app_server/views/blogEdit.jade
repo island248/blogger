@@ -1,12 +1,16 @@
-// blogEdit.jade
 extends layout
 
 block content
   h1= title
-  form(action='/blog/edit/' + blog._id, method='POST')
-    input(type='hidden', name='_method', value='PUT') // Add this line for method override
-    label(for='title') Title:
-    input#title.form-control(type='text', name='title', value=blog.title, required)
-    label(for='text') Entry:
-    textarea#text.form-control(name='text', required)= blog.text
-    button.btn.btn-primary(type='submit') Update Blog
+  div.container
+    p
+    div.card.border-primary(style='width: 50%')
+      form(action='/blogEdit/' + blog._id, method='post', style='padding: 20px; font-size: 18px')
+        div.form-group
+          label(for='summary', class='text-primary') Blog Title
+          input.form-control#title(name='title', value=blog.title)
+          p
+          label(for='text', class='text-primary') Blog Text
+          textarea.form-control#text(rows='3', name='text') #{blog.text}
+          p
+        input(type='submit', class='btn btn-primary', value='Update Blog')

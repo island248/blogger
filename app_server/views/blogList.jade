@@ -1,25 +1,30 @@
 extends layout
 
 block content
-  h1= title
-  each blog in blogs
-    div.card.border-primary(style='width: 50%')
-      div.card-header
-        div.row
-          div.col-sm
-            | Created On: #{blog.createdOn}
-      div.card-body
-        h5.card-title Title: 
-        p.card-title= blog.title
-        h5.card-title Entry: 
-        p.card-text= blog.text
-      div.card-footer
-        div.row
-          div.col-sm
-            ul.nav.justify-content-end.nav-pills.card-header-pills
-              li.nav-item
-                a.nav-link(href= '/blog/edit/' + blog._id)
-                  i.fas.fa-edit
-              li.nav-item
-                a.nav-link(href= '/blog/delete/' + blog._id)
-                  i.fas.fa-trash-alt
+  p
+    - if (Array.isArray(blogs) && blogs.length > 0)
+      each blog in blogs
+        div.card.border-primary(style='width: 50%')
+          div.card-header
+            div.row
+              div.col-sm
+                p(style='color: grey; font-size: 15px') Created on: #{blog.createdOn}
+          div.card-body
+            h5.card-title
+              b Title: #{blog.title}
+            p(style='color: grey; font-size: 15px') Blog Text:
+            p.card-text #{blog.text}
+          div.card-footer
+            div.row
+              div.col-sm
+                ul.nav.justify-content-end.nav-pills.card-header-pills
+                  li.nav-item
+                    a.nav-link(href='/blogEdit/' + blog._id)
+                      i.fas.fa-edit
+                  li.nav-item
+                    a.nav-link(href='/blogDelete/' + blog._id)
+                      i.fas.fa-trash-alt
+          p
+    - else
+      h4 No blogs to display. Click Add Blog.
+

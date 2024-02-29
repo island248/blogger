@@ -6,7 +6,7 @@ var sendJSONresponse = function(res, status, content) {
     res.status(status);
     res.json(content);
   };
-  var buildList = function(req, res, results) {
+  var createBlogList = function(req, res, results) {
     var blogs = [];
     results.forEach(function(obj) {
       blogs.push({
@@ -21,8 +21,8 @@ var sendJSONresponse = function(res, status, content) {
 
 
   module.exports.getAllBlogs = function(req, res) {
-    // Use the find method to retrieve all blogs
-    Blog.find()
+    Blog
+    .find()
     .exec()
     .then(results => {
         if (!results || results.length === 0) {
@@ -31,7 +31,7 @@ var sendJSONresponse = function(res, status, content) {
             });
         } else {
             console.log(results);
-            sendJSONresponse(res, 200, buildList(req, res, results));
+            sendJSONresponse(res, 200, createBlogList(req, res, results));
         }
     })
     .catch(err => {
@@ -41,69 +41,99 @@ var sendJSONresponse = function(res, status, content) {
 };
 
 module.exports.blogReadOne = function (req, res) {
-    Blog
-    .findById(req.params.blogid)
-    .exec()
-    .then(blog => {
-        sendJSONresponse(res, 200, blog);
-    })
-    .catch(err => {
-        console.error(err);
-        sendJSONresponse(res, 500, { "error": "Internal Server Error" });
-    });
+    console.log('Finding blog details', req.params);
+    if (req.params && req.params.blogid) {
+      Blog
+        .findById(req.params.blogid)
+        .exec()
+        .then(blog => {
+          if (!blog) {
+            sendJSONresponse(res, 404, {
+              "message": "blogid not found"
+            });
+            return;
+          }
+          console.log(blog);
+          sendJSONresponse(res, 200, blog);
+        })
+        .catch(err => {
+          console.log(err);
+          sendJSONresponse(res, 404, err);
+        });
+    } else {
+      console.log('No blogid specified');
+      sendJSONresponse(res, 404, {
+        "message": "No blogid in request"
+      });
+    }
 };
 
 
 
 module.exports.addBlog = async function (req, res) {
-    try {
-        const blog = await Blog.create({
-            title: req.body.title,
-            text: req.body.text,
-            createdOn: req.body.createdOn || Date.now()
-        });
-        console.log(blog);
-        sendJSONresponse(res, 201, blog);
-    } catch (err) {
-        console.log(err);
-        sendJSONresponse(res, 400, err);
-    }
-};
+    console.log(req.body);
+    Blog
+     .create({
+        title: req.body.title,
+        text: req.body.text,
+        createdOn: Date.now()
+       })
+       .then(blog => {
+         console.log(blog);
+         sendJSONresponse(res, 201, blog);
+       })
+       .catch(err => {
+         console.log(err);
+         sendJSONresponse(res, 400, err);
+       });
+  };
 
 module.exports.updateBlog = async function (req, res) {
-    try {
-        const updatedBlog = await Blog.findByIdAndUpdate(
-            req.params.blogid,
-            {
-                title: req.body.title,
-                text: req.body.text,
-            },
-            { new: true }
-        );
-
-        if (!updatedBlog) {
-            sendJSONresponse(res, 404, { error: "Blog not found" });
-        } else {
-            sendJSONresponse(res, 200, updatedBlog);
-        }
-    } catch (err) {
-        console.log(err);
-        sendJSONresponse(res, 400, err);
-    }
-};
+    if (!req.params.blogid) {
+        sendJSONresponse(res, 404, {"message": "Not found, blogid is required"});
+        return;
+      }
+    
+      Blog
+        .findById(req.params.blogid)
+        .exec()
+        .then(blog => {
+          if (!blog) {
+            sendJSONresponse(res, 404, {"message": "blogid not found"});
+            return;
+          }
+    
+          blog.title = req.body.title || blog.title;
+          blog.text = req.body.text || blog.text;
+    
+          return blog.save();
+        })
+        .then(updatedBlog => {
+          sendJSONresponse(res, 201, updatedBlog);
+        })
+        .catch(err => {
+          sendJSONresponse(res, 400, err);
+        });
+    };
 
 
 module.exports.deleteBlog = function (req, res) {
+    var blogid = req.params.blogid;
+  if (blogid) {
     Blog
-        .findByIdAndDelete(req.params.blogid)
-        .then(response => {
-            if (!response) {
-                sendJSONresponse(res, 404, { error: "Blog not found" });
-            } else {
-                sendJSONresponse(res, 204, null);
-            }
-        })
-        .catch(err => {
-            sendJSONresponse(res, 500, err);
-        });
+      .findByIdAndDelete(req.params.blogid)
+      .exec()
+      .then(blog => {
+        console.log("Blog id " + req.params.blogid + " deleted");
+        sendJSONresponse(res, 204, blog);
+      })
+      .catch(err => {
+        console.log(err);
+        sendJSONresponse(res, 404, err);
+      });
+  } else {
+    sendJSONresponse(res, 404, {
+      "message": "No blogid"
+    });
+  }
 };

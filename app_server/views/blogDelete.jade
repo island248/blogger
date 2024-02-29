@@ -4,6 +4,15 @@ block content
   h1= title
   p Are you sure you want to delete this blog?
 
-  // Add a form for deletion
-  form(action='/blog/delete/' + blogid, method='POST')
-    button(type='submit') Delete Blog
+  // Add a form for deletion with confirmation
+  form(action=`/blogDelete/${blog._id}`, method='POST', style='padding: 20px; font-size: 18px')
+    div.form-group
+      label(for='summary', class='text-primary') Blog Title
+      input.readonly.form-control#title(name='title', value=blog.title)
+      p
+      label(for='text', class='text-primary') Blog Text
+      textarea.readonly.form-control#text(rows='3', name='text') #{blog.text}
+      p
+
+    input(type='submit', class='btn btn-danger float-right', value='Delete Blog')
+    a.btn.btn-primary.float-right(href='/blog/list', style='margin-right: 25px', role='button') Cancel

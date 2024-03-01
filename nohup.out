@@ -1751,3 +1751,1774 @@ Mongoose connected to mongodb://adminweb:password@localhost:27017/blogs
 [0mGET /blog/list [36m304 [0m3.293 ms - -[0m
 [0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.361 ms - -[0m
 [0mGET / [32m200 [0m1.805 ms - 723[0m
+
+> blog@0.0.0 start
+> node ./bin/www
+
+Server is running on port 80
+Mongoose connected to mongodb://adminweb:password@localhost:27017/blogs
+[0mGET /blog/add [36m304 [0m28.485 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.416 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.551 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfd07d28eca3e171697e2c'),
+    title: 'w',
+    text: 'q',
+    createdOn: 2024-02-29T00:31:57.138Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfd228b53a5f494d104c99'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T00:39:04.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfd47a3a0487bc72c6941b'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T00:48:58.414Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfd56b010252f066d826fa'),
+    title: 'e',
+    text: 'w',
+    createdOn: 2024-02-29T00:52:59.611Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m25.448 ms - 680[0m
+[0mGET /blog/list [32m200 [0m48.388 ms - 6053[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.604 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m1.574 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.619 ms - -[0m
+Finding blog details { blogid: '65dfd07d28eca3e171697e2c' }
+{
+  _id: new ObjectId('65dfd07d28eca3e171697e2c'),
+  title: 'w',
+  text: 'q',
+  createdOn: 2024-02-29T00:31:57.138Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfd07d28eca3e171697e2c [32m200 [0m6.473 ms - 104[0m
+[0mGET /blogDelete/65dfd07d28eca3e171697e2c [32m200 [0m18.646 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.448 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.611 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.433 ms - -[0m
+Blog id 65dfd07d28eca3e171697e2c deleted
+[0mDELETE /api/blogs/65dfd07d28eca3e171697e2c [32m204 [0m10.613 ms - -[0m
+[0mPOST /blogDelete/65dfd07d28eca3e171697e2c [36m302 [0m16.244 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfd228b53a5f494d104c99'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T00:39:04.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfd47a3a0487bc72c6941b'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T00:48:58.414Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfd56b010252f066d826fa'),
+    title: 'e',
+    text: 'w',
+    createdOn: 2024-02-29T00:52:59.611Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m5.059 ms - 583[0m
+[0mGET /blog/list [32m200 [0m12.770 ms - 5282[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.589 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.577 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m1.273 ms - -[0m
+Finding blog details { blogid: '65dfd228b53a5f494d104c99' }
+{
+  _id: new ObjectId('65dfd228b53a5f494d104c99'),
+  title: 'd',
+  text: 'w',
+  createdOn: 2024-02-29T00:39:04.400Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfd228b53a5f494d104c99 [32m200 [0m3.969 ms - 104[0m
+[0mGET /blogDelete/65dfd228b53a5f494d104c99 [32m200 [0m9.776 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.457 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.412 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.560 ms - -[0m
+Blog id 65dfd228b53a5f494d104c99 deleted
+[0mDELETE /api/blogs/65dfd228b53a5f494d104c99 [32m204 [0m2.583 ms - -[0m
+[0mPOST /blogDelete/65dfd228b53a5f494d104c99 [36m302 [0m6.257 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfd47a3a0487bc72c6941b'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T00:48:58.414Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfd56b010252f066d826fa'),
+    title: 'e',
+    text: 'w',
+    createdOn: 2024-02-29T00:52:59.611Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.185 ms - 486[0m
+[0mGET /blog/list [32m200 [0m12.167 ms - 4511[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.649 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.611 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.427 ms - -[0m
+[0mGET / [36m304 [0m2.554 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.343 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.323 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.500 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfd47a3a0487bc72c6941b'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T00:48:58.414Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfd56b010252f066d826fa'),
+    title: 'e',
+    text: 'w',
+    createdOn: 2024-02-29T00:52:59.611Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m9.473 ms - 486[0m
+[0mGET /blog/list [36m304 [0m17.934 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.752 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.831 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.447 ms - -[0m
+Finding blog details { blogid: '65dfd47a3a0487bc72c6941b' }
+{
+  _id: new ObjectId('65dfd47a3a0487bc72c6941b'),
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T00:48:58.414Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfd47a3a0487bc72c6941b [32m200 [0m3.241 ms - 104[0m
+[0mGET /blogDelete/65dfd47a3a0487bc72c6941b [32m200 [0m11.028 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.399 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.858 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.415 ms - -[0m
+Blog id 65dfd47a3a0487bc72c6941b deleted
+[0mDELETE /api/blogs/65dfd47a3a0487bc72c6941b [32m204 [0m2.478 ms - -[0m
+[0mPOST /blogDelete/65dfd47a3a0487bc72c6941b [36m302 [0m5.980 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfd56b010252f066d826fa'),
+    title: 'e',
+    text: 'w',
+    createdOn: 2024-02-29T00:52:59.611Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.159 ms - 389[0m
+[0mGET /blog/list [32m200 [0m10.956 ms - 3740[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.408 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.402 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.500 ms - -[0m
+Finding blog details { blogid: '65dfd56b010252f066d826fa' }
+{
+  _id: new ObjectId('65dfd56b010252f066d826fa'),
+  title: 'e',
+  text: 'w',
+  createdOn: 2024-02-29T00:52:59.611Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfd56b010252f066d826fa [32m200 [0m3.197 ms - 104[0m
+[0mGET /blogEdit/65dfd56b010252f066d826fa [32m200 [0m10.604 ms - 1218[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.382 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.357 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.416 ms - -[0m
+[0mPUT /api/blogs/65dfd56b010252f066d826fa [32m201 [0m9.789 ms - 104[0m
+[0mPOST /blogEdit/65dfd56b010252f066d826fa [36m302 [0m13.463 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfd56b010252f066d826fa'),
+    title: 'e',
+    text: 'w',
+    createdOn: 2024-02-29T00:52:59.611Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.794 ms - 389[0m
+[0mGET /blog/list [36m304 [0m13.524 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.566 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.429 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.395 ms - -[0m
+Finding blog details { blogid: '65dfd56b010252f066d826fa' }
+{
+  _id: new ObjectId('65dfd56b010252f066d826fa'),
+  title: 'e',
+  text: 'w',
+  createdOn: 2024-02-29T00:52:59.611Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfd56b010252f066d826fa [32m200 [0m2.581 ms - 104[0m
+[0mGET /blogDelete/65dfd56b010252f066d826fa [32m200 [0m8.446 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.944 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.862 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.422 ms - -[0m
+Blog id 65dfd56b010252f066d826fa deleted
+[0mDELETE /api/blogs/65dfd56b010252f066d826fa [32m204 [0m2.197 ms - -[0m
+[0mPOST /blogDelete/65dfd56b010252f066d826fa [36m302 [0m4.743 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.915 ms - 292[0m
+[0mGET /blog/list [32m200 [0m10.663 ms - 2969[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.432 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.437 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.627 ms - -[0m
+Finding blog details { blogid: '65dfe5f610dcfbe80451e94d' }
+{
+  _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T02:03:34.340Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfe5f610dcfbe80451e94d [32m200 [0m2.866 ms - 104[0m
+[0mGET /blogDelete/65dfe5f610dcfbe80451e94d [32m200 [0m7.121 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.445 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.778 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.415 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.592 ms - 292[0m
+[0mGET /blog/list [36m304 [0m8.858 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.408 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.567 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.430 ms - -[0m
+Finding blog details { blogid: '65dfe5f610dcfbe80451e94d' }
+{
+  _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T02:03:34.340Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfe5f610dcfbe80451e94d [32m200 [0m3.680 ms - 104[0m
+[0mGET /blogEdit/65dfe5f610dcfbe80451e94d [32m200 [0m13.224 ms - 1218[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.725 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.665 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.404 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:03:34.340Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.441 ms - 292[0m
+[0mGET /blog/list [36m304 [0m7.559 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.404 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.346 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.368 ms - -[0m
+Finding blog details { blogid: '65dfe5f610dcfbe80451e94d' }
+{
+  _id: new ObjectId('65dfe5f610dcfbe80451e94d'),
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T02:03:34.340Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfe5f610dcfbe80451e94d [32m200 [0m4.755 ms - 104[0m
+[0mGET /blogDelete/65dfe5f610dcfbe80451e94d [36m304 [0m10.505 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.411 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.409 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.378 ms - -[0m
+Blog id 65dfe5f610dcfbe80451e94d deleted
+[0mDELETE /api/blogs/65dfe5f610dcfbe80451e94d [32m204 [0m2.883 ms - -[0m
+[0mPOST /blogDelete/65dfe5f610dcfbe80451e94d [36m302 [0m5.605 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfe76d670f76e26db0df93'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:09:49.400Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.333 ms - 195[0m
+[0mGET /blog/list [32m200 [0m7.773 ms - 2198[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.407 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.424 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m1.775 ms - -[0m
+Finding blog details { blogid: '65dfe76d670f76e26db0df93' }
+{
+  _id: new ObjectId('65dfe76d670f76e26db0df93'),
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T02:09:49.400Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfe76d670f76e26db0df93 [32m200 [0m2.729 ms - 104[0m
+[0mGET /blogDelete/65dfe76d670f76e26db0df93 [32m200 [0m7.475 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.395 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.472 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.449 ms - -[0m
+Blog id 65dfe76d670f76e26db0df93 deleted
+[0mDELETE /api/blogs/65dfe76d670f76e26db0df93 [32m204 [0m2.006 ms - -[0m
+[0mPOST /blogDelete/65dfe76d670f76e26db0df93 [36m302 [0m4.268 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T02:13:09.220Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.552 ms - 98[0m
+[0mGET /blog/list [32m200 [0m8.728 ms - 1427[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.411 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.442 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.383 ms - -[0m
+Finding blog details { blogid: '65dfe8350cd2eafa2f019992' }
+{
+  _id: new ObjectId('65dfe8350cd2eafa2f019992'),
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T02:13:09.220Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfe8350cd2eafa2f019992 [32m200 [0m2.531 ms - 104[0m
+[0mGET /blogDelete/65dfe8350cd2eafa2f019992 [32m200 [0m7.672 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.964 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.385 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.455 ms - -[0m
+Blog id 65dfe8350cd2eafa2f019992 deleted
+[0mDELETE /api/blogs/65dfe8350cd2eafa2f019992 [32m204 [0m2.234 ms - -[0m
+[0mPOST /blogDelete/65dfe8350cd2eafa2f019992 [36m302 [0m4.774 ms - 64[0m
+[0mGET /api/blogs [33m404 [0m2.111 ms - 28[0m
+[0mGET /blog/list [32m200 [0m6.994 ms - 701[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.653 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.582 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.367 ms - -[0m
+[0mGET / [36m304 [0m3.761 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.393 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.395 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.387 ms - -[0m
+[0mGET /api/blogs [33m404 [0m4.707 ms - 28[0m
+[0mGET /blog/list [36m304 [0m10.027 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.360 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.349 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.434 ms - -[0m
+[0mGET /blog/add [36m304 [0m3.300 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.506 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.383 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.512 ms - -[0m
+[0mGET /api/blogs [33m404 [0m2.541 ms - 28[0m
+[0mGET /blog/list [36m304 [0m9.624 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.757 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.043 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.421 ms - -[0m
+[0mGET / [36m304 [0m1.650 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.389 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m1.573 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.409 ms - -[0m
+[0mGET /api/blogs [33m404 [0m2.244 ms - 28[0m
+[0mGET /blog/list [36m304 [0m8.047 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.375 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.413 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.370 ms - -[0m
+[0mGET /blog/add [36m304 [0m2.169 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.796 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.683 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.449 ms - -[0m
+{ title: 'd', text: 'd' }
+{
+  title: 'd',
+  text: 'd',
+  createdOn: 2024-02-29T02:29:03.599Z,
+  _id: new ObjectId('65dfebef7b6f9e5e71cf3954'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m5.383 ms - 104[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.410 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.365 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfebef7b6f9e5e71cf3954'),
+    title: 'd',
+    text: 'd',
+    createdOn: 2024-02-29T02:29:03.599Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.814 ms - 98[0m
+[0mGET /blog/list [32m200 [0m11.036 ms - 1427[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.483 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.368 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.357 ms - -[0m
+Finding blog details { blogid: '65dfebef7b6f9e5e71cf3954' }
+{
+  _id: new ObjectId('65dfebef7b6f9e5e71cf3954'),
+  title: 'd',
+  text: 'd',
+  createdOn: 2024-02-29T02:29:03.599Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfebef7b6f9e5e71cf3954 [32m200 [0m2.687 ms - 104[0m
+[0mGET /blogDelete/65dfebef7b6f9e5e71cf3954 [32m200 [0m8.476 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.412 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.453 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.374 ms - -[0m
+Blog id 65dfebef7b6f9e5e71cf3954 deleted
+[0mDELETE /api/blogs/65dfebef7b6f9e5e71cf3954 [32m204 [0m2.644 ms - -[0m
+[0mPOST /blogDelete/65dfebef7b6f9e5e71cf3954 [36m302 [0m6.152 ms - 64[0m
+[0mGET /api/blogs [33m404 [0m2.062 ms - 28[0m
+[0mGET /blog/list [32m200 [0m10.523 ms - 701[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.027 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.371 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.461 ms - -[0m
+[0mGET /blog/add [36m304 [0m2.076 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.373 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.368 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.378 ms - -[0m
+{ title: 'blog', text: 'read' }
+{
+  title: 'blog',
+  text: 'read',
+  createdOn: 2024-02-29T02:29:57.383Z,
+  _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m3.467 ms - 110[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.368 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.354 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.192 ms - 104[0m
+[0mGET /blog/list [32m200 [0m17.395 ms - 1433[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.386 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.498 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css.map [36m304 [0m0.406 ms - -[0m
+[0mGET / [32m200 [0m1.869 ms - 723[0m
+[0mGET / [32m200 [0m2.359 ms - 723[0m
+[0mGET /.env [33m404 [0m2.632 ms - 1080[0m
+[0mPOST / [33m404 [0m2.063 ms - 1080[0m
+[0mGET /blog/add [36m304 [0m3.276 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.407 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.919 ms - 104[0m
+[0mGET /blog/list [36m304 [0m10.462 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.490 ms - -[0m
+[0mGET /.env [33m404 [0m1.312 ms - 1080[0m
+[0mPOST / [33m404 [0m1.422 ms - 1080[0m
+[0mGET / [32m200 [0m4.998 ms - 723[0m
+[0mGET /3/3/3/3/3/3/3/3/3/3/3/3/3/3/3/3/ [33m404 [0m2.176 ms - 1080[0m
+[0mGET / [32m200 [0m7.302 ms - 723[0m
+[0mGET / [32m200 [0m2.086 ms - 723[0m
+[0mGET /.env [33m404 [0m1.182 ms - 1080[0m
+[0mPOST / [33m404 [0m1.322 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.177 ms - 1080[0m
+[0mPOST / [33m404 [0m9.267 ms - 1080[0m
+[0mGET / [32m200 [0m9.055 ms - 723[0m
+[0mGET / [32m200 [0m1.514 ms - 723[0m
+[0mGET / [32m200 [0m1.806 ms - 723[0m
+[0mGET /.env [33m404 [0m1.762 ms - 1080[0m
+[0mPOST / [33m404 [0m4.466 ms - 1080[0m
+[0mGET / [32m200 [0m1.679 ms - 723[0m
+[0mGET /.env [33m404 [0m1.613 ms - 1080[0m
+[0mPOST / [33m404 [0m1.782 ms - 1080[0m
+[0mGET / [32m200 [0m2.372 ms - 723[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m30.154 ms - 104[0m
+[0mGET /blog/list [32m200 [0m40.912 ms - 1425[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.750 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.149 ms - 104[0m
+[0mGET /blog/list [36m304 [0m9.502 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.401 ms - -[0m
+[0mGET / [32m200 [0m2.959 ms - 715[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.417 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.430 ms - 104[0m
+[0mGET /blog/list [36m304 [0m7.903 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.376 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.218 ms - 104[0m
+[0mGET /blog/list [32m200 [0m10.892 ms - 582[0m
+[0mGET /blog/add [32m200 [0m3.095 ms - 1098[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.377 ms - -[0m
+{ title: 'r', text: 'w' }
+{
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T17:36:40.065Z,
+  _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m3.743 ms - 104[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.415 ms - 201[0m
+[0mGET /blog/list [32m200 [0m6.783 ms - 1072[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.589 ms - 201[0m
+[0mGET /blog/list [32m200 [0m16.884 ms - 2196[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.826 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.139 ms - 201[0m
+[0mGET /blog/list [32m200 [0m9.565 ms - 2252[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.430 ms - -[0m
+[0mGET /blog/add [36m304 [0m2.915 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.492 ms - -[0m
+{ title: 'd', text: 'w' }
+{
+  title: 'd',
+  text: 'w',
+  createdOn: 2024-02-29T17:38:25.924Z,
+  _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m3.470 ms - 104[0m
+[0mGET /blog/add [36m304 [0m5.692 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.010 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.448 ms - 298[0m
+[0mGET /blog/list [32m200 [0m8.916 ms - 3022[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.366 ms - -[0m
+[0mGET /blogAdd [33m404 [0m1.786 ms - 1080[0m
+[0mGET /blogAdd [33m404 [0m1.206 ms - 1080[0m
+[0mGET /blogAdd [33m404 [0m1.636 ms - 1080[0m
+[0mGET /blogAdd [33m404 [0m3.163 ms - 1080[0m
+[0mGET /blogAdd [33m404 [0m1.228 ms - 1080[0m
+[0mGET /blogAdd [33m404 [0m1.142 ms - 1080[0m
+[0mGET /blogAdd [33m404 [0m1.233 ms - 1080[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.724 ms - 298[0m
+[0mGET /blog/list [32m200 [0m11.769 ms - 3023[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.384 ms - -[0m
+[0mGET /blog/add [36m304 [0m2.940 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.518 ms - -[0m
+{ title: 'g', text: 'd' }
+{
+  title: 'g',
+  text: 'd',
+  createdOn: 2024-02-29T17:41:13.474Z,
+  _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m3.081 ms - 104[0m
+[0mGET / [32m200 [0m2.650 ms - 715[0m
+[0mGET /favicon.ico [33m404 [0m1.230 ms - 1080[0m
+[0mGET / [32m200 [0m2.503 ms - 715[0m
+[0mGET /.env [33m404 [0m1.909 ms - 1080[0m
+[0mPOST / [33m404 [0m1.227 ms - 1080[0m
+[0mGET / [32m200 [0m1.932 ms - 715[0m
+[0mGET / [32m200 [0m2.674 ms - 715[0m
+[0mGET / [32m200 [0m1.815 ms - 715[0m
+[0mGET /.env [33m404 [0m1.277 ms - 1080[0m
+[0mPOST / [33m404 [0m1.460 ms - 1080[0m
+[0mGET / [32m200 [0m3.421 ms - 715[0m
+[0mHEAD / [32m200 [0m2.259 ms - 715[0m
+[0mGET /.env [33m404 [0m1.736 ms - 1080[0m
+[0mPOST / [33m404 [0m2.282 ms - 1080[0m
+[0mGET / [32m200 [0m1.549 ms - 715[0m
+[0mGET /.env [33m404 [0m1.215 ms - 1080[0m
+[0mPOST / [33m404 [0m1.368 ms - 1080[0m
+[0mGET / [32m200 [0m1.857 ms - 715[0m
+[0mGET / [32m200 [0m1.795 ms - 715[0m
+[0mGET /.env [33m404 [0m1.145 ms - 1080[0m
+[0mPOST / [33m404 [0m1.293 ms - 1080[0m
+[0mGET /manager/html [33m404 [0m1.970 ms - 1080[0m
+[0mGET / [32m200 [0m1.943 ms - 715[0m
+[0mGET / [32m200 [0m1.519 ms - 715[0m
+[0mGET / [32m200 [0m1.527 ms - 715[0m
+[0mGET / [32m200 [0m1.722 ms - 715[0m
+[0mGET / [32m200 [0m1.837 ms - 715[0m
+[0mGET / [32m200 [0m1.783 ms - 715[0m
+[0mOPTIONS / [32m200 [0m0.500 ms - 8[0m
+[0mGET / [32m200 [0m1.533 ms - 715[0m
+[0mGET / [32m200 [0m2.432 ms - 715[0m
+[0mGET /favicon.ico [33m404 [0m1.172 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.754 ms - 1080[0m
+[0mPOST / [33m404 [0m1.397 ms - 1080[0m
+[0mGET / [32m200 [0m1.512 ms - 715[0m
+[0mGET /.env [33m404 [0m1.320 ms - 1080[0m
+[0mPOST / [33m404 [0m249.340 ms - 1080[0m
+[0mGET / [32m200 [0m1.515 ms - 715[0m
+[0mGET /_profiler/phpinfo [33m404 [0m1.520 ms - 1080[0m
+[0mGET /phpinfo.php [33m404 [0m1.205 ms - 1080[0m
+[0mGET /phpinfo [33m404 [0m1.508 ms - 1080[0m
+[0mGET /aws.yml [33m404 [0m2.000 ms - 1080[0m
+[0mGET /.env.bak [33m404 [0m1.145 ms - 1080[0m
+[0mGET /info.php [33m404 [0m1.474 ms - 1080[0m
+[0mGET /.aws/credentials [33m404 [0m1.476 ms - 1080[0m
+[0mGET /config/aws.yml [33m404 [0m1.463 ms - 1080[0m
+[0mGET / [32m200 [0m1.960 ms - 715[0m
+[0mGET /config.js [33m404 [0m1.198 ms - 1080[0m
+[0mGET /.env [33m404 [0m2.487 ms - 1080[0m
+[0mPOST / [33m404 [0m1.832 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.247 ms - 1080[0m
+[0mPOST / [33m404 [0m1.312 ms - 1080[0m
+[0mGET / [32m200 [0m3.548 ms - 715[0m
+[0mGET /favicon.ico [33m404 [0m2.687 ms - 1080[0m
+[0mPOST /HNAP1/ [33m404 [0m1.353 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.184 ms - 1080[0m
+[0mPOST / [33m404 [0m2.240 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.487 ms - 1080[0m
+[0mPOST / [33m404 [0m1.649 ms - 1080[0m
+[0mGET /phpinfo.php [33m404 [0m1.780 ms - 1080[0m
+[0mGET /info.php [33m404 [0m1.334 ms - 1080[0m
+[0mGET /phpinfo [33m404 [0m1.260 ms - 1080[0m
+[0mGET /php.php [33m404 [0m1.307 ms - 1080[0m
+[0mGET /php_info.php [33m404 [0m1.260 ms - 1080[0m
+[0mGET /phptest.php [33m404 [0m3.417 ms - 1080[0m
+[0mGET /dashboard/phpinfo.php [33m404 [0m1.909 ms - 1080[0m
+[0mGET /infophp.php [33m404 [0m1.247 ms - 1080[0m
+[0mGET /p.php [33m404 [0m1.202 ms - 1080[0m
+[0mGET /_profiler/phpinfo [33m404 [0m1.331 ms - 1080[0m
+[0mGET /info.php [33m404 [0m1.270 ms - 1080[0m
+[0mGET /pinfo.php [33m404 [0m1.375 ms - 1080[0m
+[0mGET /scripts/phpinfo.php [33m404 [0m3.354 ms - 1080[0m
+[0mGET /phpinfo.php [33m404 [0m1.292 ms - 1080[0m
+[0mGET /admin/phpinfo.php [33m404 [0m1.602 ms - 1080[0m
+[0mGET /phpinfo/phpinfo.php [33m404 [0m1.220 ms - 1080[0m
+[0mGET /information.php [33m404 [0m2.893 ms - 1080[0m
+[0mGET /information [33m404 [0m1.256 ms - 1080[0m
+[0mGET /phpinformation [33m404 [0m1.212 ms - 1080[0m
+[0mGET /php-info.php [33m404 [0m1.313 ms - 1080[0m
+[0mGET /phpversion.php [33m404 [0m1.417 ms - 1080[0m
+[0mGET /webdav/phpinfo.php [33m404 [0m1.308 ms - 1080[0m
+[0mGET /webdav/phpinfo [33m404 [0m1.231 ms - 1080[0m
+[0mGET /webdav/info.php [33m404 [0m1.179 ms - 1080[0m
+[0mGET /testphpinfo.php [33m404 [0m1.294 ms - 1080[0m
+[0mGET /testphpinfo [33m404 [0m1.361 ms - 1080[0m
+[0mGET /admin.php [33m404 [0m1.239 ms - 1080[0m
+[0mGET /_phpinfo.php [33m404 [0m1.486 ms - 1080[0m
+[0mGET /PHPConf.php [33m404 [0m1.194 ms - 1080[0m
+[0mGET /viewinfo.php [33m404 [0m1.732 ms - 1080[0m
+[0mGET /info/phpinfo.php [33m404 [0m1.310 ms - 1080[0m
+[0mGET /info/info.php [33m404 [0m1.121 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.626 ms - 1080[0m
+[0mGET /.env.save [33m404 [0m1.160 ms - 1080[0m
+[0mGET /.env.old [33m404 [0m1.048 ms - 1080[0m
+[0mGET /.env.prod [33m404 [0m1.138 ms - 1080[0m
+[0mGET /.env.production [33m404 [0m1.027 ms - 1080[0m
+[0mGET /.env.development [33m404 [0m1.015 ms - 1080[0m
+[0mGET /laravel/.env [33m404 [0m1.435 ms - 1080[0m
+[0mGET /admin-app/.env [33m404 [0m1.116 ms - 1080[0m
+[0mGET /api/.env [33m404 [0m1.409 ms - 1080[0m
+[0mGET /app/.env [33m404 [0m1.290 ms - 1080[0m
+[0mGET /development/.env [33m404 [0m1.171 ms - 1080[0m
+[0mGET /apps/.env [33m404 [0m1.072 ms - 1080[0m
+[0mGET /.aws/credentials [33m404 [0m1.201 ms - 1080[0m
+[0mGET /private/.env [33m404 [0m1.105 ms - 1080[0m
+[0mGET /system/.env [33m404 [0m0.996 ms - 1080[0m
+[0mGET /docker/.env [33m404 [0m1.093 ms - 1080[0m
+[0mGET /cms/.env [33m404 [0m1.128 ms - 1080[0m
+[0mGET /script/.env [33m404 [0m1.270 ms - 1080[0m
+[0mGET /live_env [33m404 [0m3.055 ms - 1080[0m
+[0mGET /application/.env [33m404 [0m1.143 ms - 1080[0m
+[0mGET /.env.project [33m404 [0m1.129 ms - 1080[0m
+[0mGET /.env.dist [33m404 [0m1.914 ms - 1080[0m
+[0mGET /back/.env [33m404 [0m1.504 ms - 1080[0m
+[0mGET /core/.env [33m404 [0m1.246 ms - 1080[0m
+[0mGET /docker/.env [33m404 [0m0.992 ms - 1080[0m
+[0mGET /fedex/.env [33m404 [0m1.109 ms - 1080[0m
+[0mGET /local/.env [33m404 [0m1.036 ms - 1080[0m
+[0mGET /rest/.env [33m404 [0m1.033 ms - 1080[0m
+[0mGET /shared/.env [33m404 [0m1.147 ms - 1080[0m
+[0mGET /sources/.env [33m404 [0m1.205 ms - 1080[0m
+[0mGET /enviroments/.env.production [33m404 [0m1.065 ms - 1080[0m
+[0mGET /enviroments/.env [33m404 [0m1.080 ms - 1080[0m
+[0mPOST / [33m404 [0m1.168 ms - 1080[0m
+[0mGET / [32m200 [0m2.766 ms - 715[0m
+[0mGET / [32m200 [0m1.599 ms - 715[0m
+[0mGET /server [33m404 [0m1.133 ms - 1080[0m
+[0mGET /.vscode/sftp.json [33m404 [0m1.288 ms - 1080[0m
+[0mGET /about [33m404 [0m2.999 ms - 1080[0m
+[0mGET /debug/default/view?panel=config [33m404 [0m1.176 ms - 1080[0m
+[0mGET /v2/_catalog [33m404 [0m1.177 ms - 1080[0m
+[0mGET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application [33m404 [0m1.723 ms - 1080[0m
+[0mGET /server-status [33m404 [0m1.624 ms - 1080[0m
+[0mGET /login.action [33m404 [0m2.667 ms - 1080[0m
+[0mGET /_all_dbs [33m404 [0m1.433 ms - 1080[0m
+[0mGET /.DS_Store [33m404 [0m1.612 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.217 ms - 1080[0m
+[0mGET /.git/config [33m404 [0m1.371 ms - 1080[0m
+[0mGET /s/2373e2931313e2731313e28313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties [33m404 [0m2.104 ms - 1080[0m
+[0mGET /config.json [33m404 [0m1.433 ms - 1080[0m
+[0mGET /telescope/requests [33m404 [0m1.504 ms - 1080[0m
+[0mGET /?rest_route=/wp/v2/users/ [32m200 [0m1.686 ms - 715[0m
+[0mGET /.env [33m404 [0m1.119 ms - 1080[0m
+[0mPOST / [33m404 [0m1.347 ms - 1080[0m
+[0mGET / [32m200 [0m1.568 ms - 715[0m
+[0mGET / [32m200 [0m1.722 ms - 715[0m
+[0mGET /.env [33m404 [0m1.692 ms - 1080[0m
+[0mPOST / [33m404 [0m1.501 ms - 1080[0m
+[0mGET / [32m200 [0m1.834 ms - 715[0m
+[0mGET / [32m200 [0m2.184 ms - 715[0m
+[0mGET / [32m200 [0m2.550 ms - 715[0m
+[0mGET / [32m200 [0m2.817 ms - 715[0m
+[0mGET /.env [33m404 [0m1.081 ms - 1080[0m
+[0mPOST / [33m404 [0m1.209 ms - 1080[0m
+[0mPOST /boaform/admin/formLogin [33m404 [0m1.658 ms - 1080[0m
+[0mGET / [32m200 [0m2.274 ms - 715[0m
+[0mGET / [32m200 [0m1.962 ms - 715[0m
+[0mGET / [32m200 [0m1.506 ms - 715[0m
+[0mGET / [32m200 [0m2.355 ms - 715[0m
+[0mGET / [32m200 [0m1.553 ms - 715[0m
+[0mGET /.env [33m404 [0m1.133 ms - 1080[0m
+[0mPOST / [33m404 [0m9.049 ms - 1080[0m
+[0mGET / [32m200 [0m1.604 ms - 715[0m
+[0mGET / [32m200 [0m2.320 ms - 715[0m
+[0mGET /favicon.ico [33m404 [0m1.180 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.607 ms - 1080[0m
+[0mPOST / [33m404 [0m1.653 ms - 1080[0m
+[0mGET / [32m200 [0m1.774 ms - 715[0m
+[0mGET / [32m200 [0m1.669 ms - 715[0m
+[0mGET / [32m200 [0m1.929 ms - 715[0m
+[0mGET /favicon.ico [33m404 [0m1.170 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.462 ms - 1080[0m
+[0mPOST / [33m404 [0m1.503 ms - 1080[0m
+[0mGET /.env [33m404 [0m1.100 ms - 1080[0m
+[0mPOST / [33m404 [0m2.170 ms - 1080[0m
+[0mGET / [32m200 [0m2.194 ms - 715[0m
+[0mGET /.env [33m404 [0m1.116 ms - 1080[0m
+[0mPOST / [33m404 [0m1.312 ms - 1080[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.424 ms - 395[0m
+[0mGET /blog/list [32m200 [0m15.802 ms - 3794[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.435 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.350 ms - 395[0m
+[0mGET /blog/list [32m200 [0m12.032 ms - 3802[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.377 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.899 ms - 395[0m
+[0mGET /blog/list [32m200 [0m10.574 ms - 3746[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.397 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.736 ms - 395[0m
+[0mGET /blog/list [36m304 [0m13.193 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.467 ms - -[0m
+[0mGET /blog/add [32m200 [0m3.931 ms - 1106[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.518 ms - -[0m
+[0mPOST /blog/list [33m404 [0m1.280 ms - 1080[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.991 ms - 395[0m
+[0mGET /blog/list [36m304 [0m8.934 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.383 ms - -[0m
+[0mGET /blog/add [32m200 [0m9.432 ms - 1105[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.519 ms - -[0m
+[0mPOST /blogList [33m404 [0m1.289 ms - 1080[0m
+[0mGET / [32m200 [0m2.379 ms - 723[0m
+[0mGET / [32m200 [0m2.388 ms - 723[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.434 ms - -[0m
+[0mGET /blog/add [32m200 [0m4.566 ms - 1106[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.387 ms - -[0m
+[0mPOST /blogList/ [33m404 [0m1.282 ms - 1080[0m
+[0mGET / [36m304 [0m1.908 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.413 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'read',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.388 ms - 395[0m
+[0mGET /blog/list [36m304 [0m8.297 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.519 ms - -[0m
+[0mGET /blog/add [32m200 [0m2.366 ms - 1107[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.382 ms - -[0m
+[0mPOST /blog/list/ [33m404 [0m1.339 ms - 1080[0m
+Finding blog details { blogid: '65dfec257b6f9e5e71cf395a' }
+{
+  _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+  title: 'blog',
+  text: 'read',
+  createdOn: 2024-02-29T02:29:57.383Z,
+  __v: 0
+}
+[0mGET /api/blogs/65dfec257b6f9e5e71cf395a [32m200 [0m5.057 ms - 110[0m
+[0mGET /blogEdit/65dfec257b6f9e5e71cf395a [32m200 [0m10.995 ms - 1230[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.388 ms - -[0m
+[0mPUT /api/blogs/65dfec257b6f9e5e71cf395a [32m201 [0m7.127 ms - 111[0m
+[0mPOST /blogEdit/65dfec257b6f9e5e71cf395a [36m302 [0m11.142 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.173 ms - 396[0m
+[0mGET /blog/list [32m200 [0m7.946 ms - 3747[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.364 ms - -[0m
+[0mGET /blog/add [32m200 [0m2.377 ms - 1106[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.356 ms - -[0m
+[0mPOST /blog/list [33m404 [0m1.265 ms - 1080[0m
+[0mPOST /blog/list [33m404 [0m1.489 ms - 1080[0m
+[0mPOST /blog/list [33m404 [0m1.323 ms - 1080[0m
+[0mGET /blog/add [32m200 [0m4.075 ms - 1106[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.401 ms - -[0m
+{ title: 't', text: 'w' }
+{
+  title: 't',
+  text: 'w',
+  createdOn: 2024-03-01T18:31:02.760Z,
+  _id: new ObjectId('65e21ee67b6f9e5e71cf3977'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m3.514 ms - 104[0m
+[0mGET / [36m304 [0m2.514 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.505 ms - -[0m
+[0mGET /blog/add [32m200 [0m2.906 ms - 1105[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.430 ms - -[0m
+[0mPOST /blogAdd/ [33m404 [0m2.702 ms - 1080[0m
+[0mGET /blog/add [32m200 [0m3.043 ms - 1106[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.451 ms - -[0m
+{ title: 'y', text: 'e' }
+{
+  title: 'y',
+  text: 'e',
+  createdOn: 2024-03-01T18:33:21.547Z,
+  _id: new ObjectId('65e21f717b6f9e5e71cf3979'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m2.862 ms - 104[0m
+Add Blog Response: 201
+Add Blog Body: {
+  title: 'y',
+  text: 'e',
+  createdOn: '2024-03-01T18:33:21.547Z',
+  _id: '65e21f717b6f9e5e71cf3979',
+  __v: 0
+}
+Redirecting to /blog/list
+Exiting add function
+[0mPOST /blog/add/ [36m302 [0m7.462 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21ee67b6f9e5e71cf3977'),
+    title: 't',
+    text: 'w',
+    createdOn: 2024-03-01T18:31:02.760Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21f717b6f9e5e71cf3979'),
+    title: 'y',
+    text: 'e',
+    createdOn: 2024-03-01T18:33:21.547Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.229 ms - 590[0m
+[0mGET /blog/list [32m200 [0m9.452 ms - 5289[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.372 ms - -[0m
+[0mGET /blog/add [36m304 [0m3.090 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.497 ms - -[0m
+{ title: 'h', text: 'e' }
+{
+  title: 'h',
+  text: 'e',
+  createdOn: 2024-03-01T18:33:45.420Z,
+  _id: new ObjectId('65e21f897b6f9e5e71cf397c'),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m3.100 ms - 104[0m
+Add Blog Response: 201
+Add Blog Body: {
+  title: 'h',
+  text: 'e',
+  createdOn: '2024-03-01T18:33:45.420Z',
+  _id: '65e21f897b6f9e5e71cf397c',
+  __v: 0
+}
+Redirecting to /blog/list
+Exiting add function
+[0mPOST /blog/add/ [36m302 [0m5.687 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21ee67b6f9e5e71cf3977'),
+    title: 't',
+    text: 'w',
+    createdOn: 2024-03-01T18:31:02.760Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21f717b6f9e5e71cf3979'),
+    title: 'y',
+    text: 'e',
+    createdOn: 2024-03-01T18:33:21.547Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21f897b6f9e5e71cf397c'),
+    title: 'h',
+    text: 'e',
+    createdOn: 2024-03-01T18:33:45.420Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m7.728 ms - 687[0m
+[0mGET /blog/list [32m200 [0m20.890 ms - 6060[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.358 ms - -[0m
+Finding blog details { blogid: '65e21f897b6f9e5e71cf397c' }
+{
+  _id: new ObjectId('65e21f897b6f9e5e71cf397c'),
+  title: 'h',
+  text: 'e',
+  createdOn: 2024-03-01T18:33:45.420Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e21f897b6f9e5e71cf397c [32m200 [0m2.356 ms - 104[0m
+[0mGET /blogDelete/65e21f897b6f9e5e71cf397c [32m200 [0m8.028 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.561 ms - -[0m
+Blog id 65e21f897b6f9e5e71cf397c deleted
+[0mDELETE /api/blogs/65e21f897b6f9e5e71cf397c [32m204 [0m32.653 ms - -[0m
+[0mPOST /blogDelete/65e21f897b6f9e5e71cf397c [36m302 [0m37.700 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21ee67b6f9e5e71cf3977'),
+    title: 't',
+    text: 'w',
+    createdOn: 2024-03-01T18:31:02.760Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21f717b6f9e5e71cf3979'),
+    title: 'y',
+    text: 'e',
+    createdOn: 2024-03-01T18:33:21.547Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.905 ms - 590[0m
+[0mGET /blog/list [32m200 [0m9.179 ms - 5289[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.406 ms - -[0m
+Finding blog details { blogid: '65e21f717b6f9e5e71cf3979' }
+{
+  _id: new ObjectId('65e21f717b6f9e5e71cf3979'),
+  title: 'y',
+  text: 'e',
+  createdOn: 2024-03-01T18:33:21.547Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e21f717b6f9e5e71cf3979 [32m200 [0m2.385 ms - 104[0m
+[0mGET /blogDelete/65e21f717b6f9e5e71cf3979 [32m200 [0m7.574 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.361 ms - -[0m
+Blog id 65e21f717b6f9e5e71cf3979 deleted
+[0mDELETE /api/blogs/65e21f717b6f9e5e71cf3979 [32m204 [0m2.111 ms - -[0m
+[0mPOST /blogDelete/65e21f717b6f9e5e71cf3979 [36m302 [0m4.519 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e21ee67b6f9e5e71cf3977'),
+    title: 't',
+    text: 'w',
+    createdOn: 2024-03-01T18:31:02.760Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.311 ms - 493[0m
+[0mGET /blog/list [32m200 [0m9.167 ms - 4518[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.355 ms - -[0m
+Finding blog details { blogid: '65e21ee67b6f9e5e71cf3977' }
+{
+  _id: new ObjectId('65e21ee67b6f9e5e71cf3977'),
+  title: 't',
+  text: 'w',
+  createdOn: 2024-03-01T18:31:02.760Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e21ee67b6f9e5e71cf3977 [32m200 [0m3.088 ms - 104[0m
+[0mGET /blogDelete/65e21ee67b6f9e5e71cf3977 [32m200 [0m7.319 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.889 ms - -[0m
+Blog id 65e21ee67b6f9e5e71cf3977 deleted
+[0mDELETE /api/blogs/65e21ee67b6f9e5e71cf3977 [32m204 [0m3.446 ms - -[0m
+[0mPOST /blogDelete/65e21ee67b6f9e5e71cf3977 [36m302 [0m6.254 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+    title: 'g',
+    text: 'd',
+    createdOn: 2024-02-29T17:41:13.474Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m9.088 ms - 396[0m
+[0mGET /blog/list [32m200 [0m26.651 ms - 3747[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.615 ms - -[0m
+Finding blog details { blogid: '65e0c1b97b6f9e5e71cf396b' }
+{
+  _id: new ObjectId('65e0c1b97b6f9e5e71cf396b'),
+  title: 'g',
+  text: 'd',
+  createdOn: 2024-02-29T17:41:13.474Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e0c1b97b6f9e5e71cf396b [32m200 [0m2.425 ms - 104[0m
+[0mGET /blogDelete/65e0c1b97b6f9e5e71cf396b [32m200 [0m7.250 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.367 ms - -[0m
+Blog id 65e0c1b97b6f9e5e71cf396b deleted
+[0mDELETE /api/blogs/65e0c1b97b6f9e5e71cf396b [32m204 [0m2.827 ms - -[0m
+[0mPOST /blogDelete/65e0c1b97b6f9e5e71cf396b [36m302 [0m5.162 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+    title: 'd',
+    text: 'w',
+    createdOn: 2024-02-29T17:38:25.924Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.442 ms - 299[0m
+[0mGET /blog/list [32m200 [0m7.467 ms - 2976[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.529 ms - -[0m
+Finding blog details { blogid: '65e0c1117b6f9e5e71cf3967' }
+{
+  _id: new ObjectId('65e0c1117b6f9e5e71cf3967'),
+  title: 'd',
+  text: 'w',
+  createdOn: 2024-02-29T17:38:25.924Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e0c1117b6f9e5e71cf3967 [32m200 [0m4.414 ms - 104[0m
+[0mGET /blogDelete/65e0c1117b6f9e5e71cf3967 [32m200 [0m10.744 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.481 ms - -[0m
+Blog id 65e0c1117b6f9e5e71cf3967 deleted
+[0mDELETE /api/blogs/65e0c1117b6f9e5e71cf3967 [32m204 [0m2.080 ms - -[0m
+[0mPOST /blogDelete/65e0c1117b6f9e5e71cf3967 [36m302 [0m4.385 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+    title: 'r',
+    text: 'w',
+    createdOn: 2024-02-29T17:36:40.065Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m5.730 ms - 202[0m
+[0mGET /blog/list [32m200 [0m13.268 ms - 2205[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.377 ms - -[0m
+Finding blog details { blogid: '65e0c0a87b6f9e5e71cf3962' }
+{
+  _id: new ObjectId('65e0c0a87b6f9e5e71cf3962'),
+  title: 'r',
+  text: 'w',
+  createdOn: 2024-02-29T17:36:40.065Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e0c0a87b6f9e5e71cf3962 [32m200 [0m2.409 ms - 104[0m
+[0mGET /blogDelete/65e0c0a87b6f9e5e71cf3962 [32m200 [0m7.110 ms - 1385[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.494 ms - -[0m
+Blog id 65e0c0a87b6f9e5e71cf3962 deleted
+[0mDELETE /api/blogs/65e0c0a87b6f9e5e71cf3962 [32m204 [0m1.959 ms - -[0m
+[0mPOST /blogDelete/65e0c0a87b6f9e5e71cf3962 [36m302 [0m4.243 ms - 64[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.303 ms - 105[0m
+[0mGET /blog/list [32m200 [0m7.903 ms - 1434[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.503 ms - -[0m
+[0mGET / [36m304 [0m2.669 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.375 ms - -[0m
+[
+  {
+    _id: new ObjectId('65dfec257b6f9e5e71cf395a'),
+    title: 'blog',
+    text: 'reads',
+    createdOn: 2024-02-29T02:29:57.383Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m1.980 ms - 105[0m
+[0mGET /blog/list [36m304 [0m6.832 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.370 ms - -[0m

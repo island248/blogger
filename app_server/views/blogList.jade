@@ -1,6 +1,7 @@
 extends layout
 
 block content
+
   p
     - if (Array.isArray(blogs) && blogs.length > 0)
       each blog in blogs

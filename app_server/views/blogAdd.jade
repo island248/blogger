@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   .card(style='width: 50%')
-    form(action='/api/blogs', method='post', role='form')
+    form(action='/blog/add/', method='post', role='form')
       .form-group
         label(for='title', class='text-dark') Title
         input.form-control(id='title', name='title')

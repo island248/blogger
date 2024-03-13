@@ -80,7 +80,7 @@ app.config(function($routeProvider) {
         })
         .catch(function (error) {
             console.error("Error fetching blogs:", error);
-            vm.message = "Could not get blogs";
+            vm.message = "No blogs to list, click Add Blog";
         });
   });
   

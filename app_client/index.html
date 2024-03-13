@@ -59,10 +59,8 @@
       <form name="userForm" ng-submit="vm.submit()" ng-controller="AddController" style="padding: 20px">
         <div class="form-group">
           <label for="summary" class="text-primary">Title</label>
-          <!-- Use ng-model to bind the input value to vm.blog.title -->
           <input class="form-control" id="title" name="title" ng-model="vm.blog.title">
           <label for="detail" class="text-primary">Blog Text</label>
-          <!-- Use ng-model to bind the textarea value to vm.blog.text -->
           <textarea class="form-control" id="text" rows="3" name="text" ng-model="vm.blog.text"></textarea>
         </div>
         <input type="submit" class="btn btn-primary" value="Add Blog">

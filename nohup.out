@@ -3553,3 +3553,349 @@ Mongoose connected to mongodb://adminweb:password@localhost:27017/blogs
 ]
 [0mGET /api/blogs [36m304 [0m17.084 ms - -[0m
 [0mGET /favicon.ico [36m304 [0m0.901 ms - -[0m
+[0mGET /blog/list?title=i&text=g [36m304 [0m1.442 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.560 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.407 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.473 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.446 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.244 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m0.735 ms - -[0m
+[
+  {
+    _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+    title: 'Woe',
+    text: 'Is me.',
+    createdOn: 2024-03-01T23:42:09.282Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f1bd6cab5e29b2d5eb8670'),
+    title: 'Wow',
+    text: 'This worked!',
+    createdOn: 2024-03-13T14:51:24.078Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.969 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.774 ms - -[0m
+Finding blog details { blogid: '65e267d17b6f9e5e71cf39b6' }
+{
+  _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+  title: 'Woe',
+  text: 'Is me.',
+  createdOn: 2024-03-01T23:42:09.282Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e267d17b6f9e5e71cf39b6 [32m200 [0m6.235 ms - 111[0m
+[0mGET /favicon.ico [36m304 [0m1.508 ms - -[0m
+Finding blog details { blogid: '65e267d17b6f9e5e71cf39b6' }
+{
+  _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+  title: 'Woe',
+  text: 'Is me.',
+  createdOn: 2024-03-01T23:42:09.282Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e267d17b6f9e5e71cf39b6 [36m304 [0m4.653 ms - -[0m
+[0mPUT /api/blogs/65e267d17b6f9e5e71cf39b6 [32m201 [0m27.004 ms - 112[0m
+[
+  {
+    _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+    title: 'Woe',
+    text: 'Is me..',
+    createdOn: 2024-03-01T23:42:09.282Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f1bd6cab5e29b2d5eb8670'),
+    title: 'Wow',
+    text: 'This worked!',
+    createdOn: 2024-03-13T14:51:24.078Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.776 ms - 216[0m
+[0mGET /favicon.ico [36m304 [0m0.637 ms - -[0m
+Finding blog details { blogid: '65e267d17b6f9e5e71cf39b6' }
+{
+  _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+  title: 'Woe',
+  text: 'Is me..',
+  createdOn: 2024-03-01T23:42:09.282Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e267d17b6f9e5e71cf39b6 [32m200 [0m3.786 ms - 112[0m
+[0mGET /favicon.ico [32m200 [0m1.966 ms - 4681[0m
+Finding blog details { blogid: '65e267d17b6f9e5e71cf39b6' }
+{
+  _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+  title: 'Woe',
+  text: 'Is me..',
+  createdOn: 2024-03-01T23:42:09.282Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e267d17b6f9e5e71cf39b6 [36m304 [0m4.289 ms - -[0m
+Finding blog details { blogid: '65e267d17b6f9e5e71cf39b6' }
+{
+  _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+  title: 'Woe',
+  text: 'Is me..',
+  createdOn: 2024-03-01T23:42:09.282Z,
+  __v: 0
+}
+[0mGET /api/blogs/65e267d17b6f9e5e71cf39b6 [36m304 [0m3.291 ms - -[0m
+Blog id 65e267d17b6f9e5e71cf39b6 deleted
+[0mDELETE /api/blogs/65e267d17b6f9e5e71cf39b6 [32m204 [0m5.810 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.915 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bd6cab5e29b2d5eb8670'),
+    title: 'Wow',
+    text: 'This worked!',
+    createdOn: 2024-03-13T14:51:24.078Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m5.774 ms - 111[0m
+Finding blog details { blogid: '65f1bd6cab5e29b2d5eb8670' }
+{
+  _id: new ObjectId('65f1bd6cab5e29b2d5eb8670'),
+  title: 'Wow',
+  text: 'This worked!',
+  createdOn: 2024-03-13T14:51:24.078Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bd6cab5e29b2d5eb8670 [32m200 [0m4.081 ms - 117[0m
+[0mGET /favicon.ico [36m304 [0m0.652 ms - -[0m
+Finding blog details { blogid: '65f1bd6cab5e29b2d5eb8670' }
+{
+  _id: new ObjectId('65f1bd6cab5e29b2d5eb8670'),
+  title: 'Wow',
+  text: 'This worked!',
+  createdOn: 2024-03-13T14:51:24.078Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bd6cab5e29b2d5eb8670 [36m304 [0m4.156 ms - -[0m
+Finding blog details { blogid: '65f1bd6cab5e29b2d5eb8670' }
+{
+  _id: new ObjectId('65f1bd6cab5e29b2d5eb8670'),
+  title: 'Wow',
+  text: 'This worked!',
+  createdOn: 2024-03-13T14:51:24.078Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bd6cab5e29b2d5eb8670 [36m304 [0m4.007 ms - -[0m
+Blog id 65f1bd6cab5e29b2d5eb8670 deleted
+[0mDELETE /api/blogs/65f1bd6cab5e29b2d5eb8670 [32m204 [0m2.190 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m2.399 ms - -[0m
+[0mGET /api/blogs [33m404 [0m6.379 ms - 28[0m
+[0mGET /blog/list?title=i&text=g [32m200 [0m1.184 ms - 4681[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.534 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.438 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.559 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.628 ms - -[0m
+[0mGET /css/all.min.css [32m200 [0m1.993 ms - 4681[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.442 ms - -[0m
+[0mGET /api/blogs [33m404 [0m2.947 ms - 28[0m
+[0mGET /favicon.ico [36m304 [0m0.639 ms - -[0m
+[0mGET /blog/list?title=i&text=g [36m304 [0m0.627 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.506 ms - -[0m
+[0mGET /js/bloggerApp.js [32m200 [0m3.241 ms - 5061[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.012 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m2.546 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m5.214 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.480 ms - -[0m
+[0mGET /api/blogs [33m404 [0m2.371 ms - 28[0m
+[0mGET /favicon.ico [36m304 [0m0.644 ms - -[0m
+[0mGET /blog/list?title=i&text=g [36m304 [0m1.289 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.606 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.425 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.360 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.552 ms - -[0m
+[0mGET /js/bloggerApp.js [32m200 [0m2.595 ms - 5061[0m
+[0mGET /css/all.min.css [36m304 [0m3.849 ms - -[0m
+[0mGET /api/blogs [33m404 [0m3.021 ms - 28[0m
+[0mGET /favicon.ico [36m304 [0m0.624 ms - -[0m
+[0mGET /blog/list?title=i&text=g [36m304 [0m0.827 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.593 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.517 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.673 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.740 ms - -[0m
+[0mGET /js/bloggerApp.js [32m200 [0m1.582 ms - 5077[0m
+[0mGET /css/all.min.css [36m304 [0m3.005 ms - -[0m
+[0mGET /api/blogs [33m404 [0m2.209 ms - 28[0m
+[0mGET /favicon.ico [36m304 [0m1.269 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.730 ms - -[0m
+{}
+Error: Blog validation failed: title: Path `title` is required., text: Path `text` is required.
+    at ValidationError.inspect (/home/bitnami/lab5/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2279:40)
+    at formatWithOptions (node:internal/util/inspect:2141:10)
+    at console.value (node:internal/console/constructor:343:14)
+    at console.log (node:internal/console/constructor:380:61)
+    at /home/bitnami/lab5/app_api/controllers/blogs.js:86:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1367:13)
+        at SchemaType.doValidate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1351:7)
+        at /home/bitnami/lab5/node_modules/mongoose/lib/document.js:2986:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    text: ValidatorError: Path `text` is required.
+        at validate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1367:13)
+        at SchemaType.doValidate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1351:7)
+        at /home/bitnami/lab5/node_modules/mongoose/lib/document.js:2986:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'text',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'Blog validation failed'
+}
+[0mPOST /api/blogs/ [33m400 [0m5.843 ms - 551[0m
+{}
+Error: Blog validation failed: title: Path `title` is required., text: Path `text` is required.
+    at ValidationError.inspect (/home/bitnami/lab5/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2279:40)
+    at formatWithOptions (node:internal/util/inspect:2141:10)
+    at console.value (node:internal/console/constructor:343:14)
+    at console.log (node:internal/console/constructor:380:61)
+    at /home/bitnami/lab5/app_api/controllers/blogs.js:86:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1367:13)
+        at SchemaType.doValidate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1351:7)
+        at /home/bitnami/lab5/node_modules/mongoose/lib/document.js:2986:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    text: ValidatorError: Path `text` is required.
+        at validate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1367:13)
+        at SchemaType.doValidate (/home/bitnami/lab5/node_modules/mongoose/lib/schemaType.js:1351:7)
+        at /home/bitnami/lab5/node_modules/mongoose/lib/document.js:2986:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'text',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'Blog validation failed'
+}
+[0mPOST /api/blogs/ [33m400 [0m2.667 ms - 551[0m
+{ title: 'u', text: 'f' }
+{
+  title: 'u',
+  text: 'f',
+  createdOn: 2024-03-13T14:58:45.481Z,
+  _id: new ObjectId('65f1bf25793344b6ec9a4756'),
+  __v: 0
+}
+[0mPOST /api/blogs/ [32m201 [0m5.070 ms - 104[0m
+[
+  {
+    _id: new ObjectId('65f1bf25793344b6ec9a4756'),
+    title: 'u',
+    text: 'f',
+    createdOn: 2024-03-13T14:58:45.481Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.720 ms - 98[0m
+[
+  {
+    _id: new ObjectId('65f1bf25793344b6ec9a4756'),
+    title: 'u',
+    text: 'f',
+    createdOn: 2024-03-13T14:58:45.481Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.862 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.888 ms - -[0m
+Finding blog details { blogid: '65f1bf25793344b6ec9a4756' }
+{
+  _id: new ObjectId('65f1bf25793344b6ec9a4756'),
+  title: 'u',
+  text: 'f',
+  createdOn: 2024-03-13T14:58:45.481Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf25793344b6ec9a4756 [32m200 [0m3.451 ms - 104[0m
+[0mGET /favicon.ico [36m304 [0m0.806 ms - -[0m
+Finding blog details { blogid: '65f1bf25793344b6ec9a4756' }
+{
+  _id: new ObjectId('65f1bf25793344b6ec9a4756'),
+  title: 'u',
+  text: 'f',
+  createdOn: 2024-03-13T14:58:45.481Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf25793344b6ec9a4756 [36m304 [0m2.749 ms - -[0m
+Finding blog details { blogid: '65f1bf25793344b6ec9a4756' }
+{
+  _id: new ObjectId('65f1bf25793344b6ec9a4756'),
+  title: 'u',
+  text: 'f',
+  createdOn: 2024-03-13T14:58:45.481Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf25793344b6ec9a4756 [36m304 [0m2.819 ms - -[0m
+Blog id 65f1bf25793344b6ec9a4756 deleted
+[0mDELETE /api/blogs/65f1bf25793344b6ec9a4756 [32m204 [0m3.060 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.234 ms - -[0m
+[0mGET /api/blogs [33m404 [0m3.010 ms - 28[0m
+[0mGET /favicon.ico [36m304 [0m0.808 ms - -[0m
+{ title: 'Woe', text: 'Is me' }
+{
+  title: 'Woe',
+  text: 'Is me',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  __v: 0
+}
+[0mPOST /api/blogs/ [32m201 [0m3.811 ms - 110[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.166 ms - 104[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.676 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.662 ms - -[0m

@@ -100,15 +100,12 @@ app.config(function($routeProvider) {
 
         addBlog($http, data)
             .then(function (addedBlog) {
-                // Clear the form
                 vm.blog = {};
 
-                // Fetch the updated list of blogs
                 getAllBlogs($http)
                     .then(function (response) {
                         vm.blogs = response.data;
                         vm.message = "";
-                        // Redirect to the blog list
                         $location.path('blogList');
                     })
                     .catch(function (error) {

@@ -5,30 +5,30 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require('./app_api/models/db');
 
-var routes = require('./app_server/routes/index');
+//var indexRouter = require('./app_client/index');
 var routesApi = require('./app_api/routes/index');
-//var usersRouter = require('./app_server/routes/users');
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'app_server/views'));
-app.set('view engine', 'jade'); 
+//app.set('views', path.join(__dirname, 'app_server', 'views'));
+//app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
-// Serve Bootstrap CSS
-app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
-app.use('/bootstrap-icons', express.static(path.join(__dirname, 'node_modules/bootstrap-icons')));
-
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'app_client')));               
+app.use(express.static(path.join(__dirname, 'app_client')));
 
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use('/css', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/css/'));
+app.use('/webfonts', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/webfonts/'));
+app.use('/css', express.static(__dirname + '/public/stylesheets'));
 
-app.use('/', routes);
+//app.use('/', indexRouter);
 app.use('/api', routesApi);
 
 app.use(function(req, res) {
@@ -51,7 +51,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// Specify the port to run on (in this case, port 80)
 const port = 80;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

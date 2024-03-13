@@ -1,5 +1,5 @@
 //app_server/routes/index.js
-var express = require('express');
+/*var express = require('express');
 var router = express.Router();
 var ctrlBlog = require('../controllers/blog');
 
@@ -16,4 +16,4 @@ router.post('/blogEdit/:blogid', ctrlBlog.blogUpdate);
 router.get('/blogDelete/:blogid', ctrlBlog.blogDelete);
 router.post('/blogDelete/:blogid', ctrlBlog.blogdeletion);  // Add this line
 
-module.exports = router;
+module.exports = router;*/

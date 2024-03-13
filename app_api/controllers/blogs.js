@@ -71,22 +71,23 @@ module.exports.blogReadOne = function (req, res) {
 
 
 module.exports.addBlog = async function (req, res) {
-    console.log(req.body);
-    Blog
-     .create({
-        title: req.body.title,
-        text: req.body.text,
-        createdOn: Date.now()
-       })
-       .then(blog => {
-         console.log(blog);
-         sendJSONresponse(res, 201, blog);
-       })
-       .catch(err => {
-         console.log(err);
-         sendJSONresponse(res, 400, err);
-       });
-  };
+  console.log(req.body);
+  Blog.create({
+      title: req.body.title,
+      text: req.body.text,
+      createdOn: Date.now()
+  })
+  .then(blog => {
+      console.log(blog);
+      // Send a JSON response with the added blog
+      res.status(201).json(blog);
+  })
+  .catch(err => {
+      console.log(err);
+      // Send a JSON response with the error
+      res.status(400).json(err);
+  });
+};
 
 module.exports.updateBlog = async function (req, res) {
     if (!req.params.blogid) {

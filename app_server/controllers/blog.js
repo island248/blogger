@@ -1,12 +1,12 @@
 // app_server-controllers/blog.js
 
-var request = require('request');
+/*var request = require('request');
 var apiOptions = {
     server : "http://18.117.119.72"
   };
-
+*/
 /* GET 'home' page */
-module.exports.homepage = function(req, res){
+/*module.exports.homepage = function(req, res){
   res.render('home', { title: "Ilynd Rapant's Blog Site"});
 };
 
@@ -171,4 +171,4 @@ var _handleError = function (req, res, status) {
     content = "Something has gone wrong.";
   }
     res.status(status);
-};
+};*/

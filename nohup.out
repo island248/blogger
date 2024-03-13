@@ -3522,3 +3522,34 @@ Blog id 65e0c0a87b6f9e5e71cf3962 deleted
 [0mGET /api/blogs [32m200 [0m1.980 ms - 105[0m
 [0mGET /blog/list [36m304 [0m6.832 ms - -[0m
 [0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.370 ms - -[0m
+
+> blog@0.0.0 start
+> node ./bin/www
+
+Server is running on port 80
+Mongoose connected to mongodb://adminweb:password@localhost:27017/blogs
+[0mGET /blog/list?title=i&text=g [36m304 [0m4.533 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.630 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.599 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.870 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.125 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.344 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m1.381 ms - -[0m
+[
+  {
+    _id: new ObjectId('65e267d17b6f9e5e71cf39b6'),
+    title: 'Woe',
+    text: 'Is me.',
+    createdOn: 2024-03-01T23:42:09.282Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f1bd6cab5e29b2d5eb8670'),
+    title: 'Wow',
+    text: 'This worked!',
+    createdOn: 2024-03-13T14:51:24.078Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m17.084 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.901 ms - -[0m

@@ -1,6 +1,8 @@
 //app_api-controllers-blogs.js
 var mongoose = require('mongoose');
 var Blog = mongoose.model('Blog');
+const authMiddleware = require('./authMiddleware');
+
 
 var sendJSONresponse = function(res, status, content) {
     res.status(status);
@@ -90,6 +92,10 @@ module.exports.addBlog = async function (req, res) {
 };
 
 module.exports.updateBlog = async function (req, res) {
+  console.log('Received token:', req.headers.authorization); // Log the token received in the request headers
+
+  authMiddleware(req, res, function() {
+
     if (!req.params.blogid) {
         sendJSONresponse(res, 404, {"message": "Not found, blogid is required"});
         return;
@@ -114,6 +120,7 @@ module.exports.updateBlog = async function (req, res) {
         })
         .catch(err => {
           sendJSONresponse(res, 400, err);
+        });
         });
     };
 

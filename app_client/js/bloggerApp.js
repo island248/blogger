@@ -61,12 +61,11 @@ app.config(function($routeProvider) {
   return $http.post('/api/blogs/', data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
   }
   
-function updateBlogById($http, authentication, id, data) {
-  return $http.put('/api/blogs/' + id, data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
+  function updateBlogById($http, authentication, id, data) {
+    return $http.put('/api/blogs/' + id, data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
   }
   
   function deleteBlogById($http, authentication, id) {
-    console.log("Token before delete request:", authentication.getToken());
     console.log("Token before delete request:", authentication.getToken());
 
     return $http.delete('/api/blogs/' + id, { headers: { Authorization: 'Bearer ' + authentication.getToken() } })
@@ -105,7 +104,7 @@ function updateBlogById($http, authentication, id, data) {
         });
     });
   
-    app.controller('AddController', [ '$http', '$location', 'authentication', function AddController($http, $location, authentication) {      var vm = this;
+    app.controller('AddController', [ '$http', '$location', 'authentication', function AddController($http, $location, authentication) {
       var vm = this;
       vm.blog = {};
       vm.pageHeader = {
@@ -115,8 +114,8 @@ function updateBlogById($http, authentication, id, data) {
     
       vm.submit = function() {
         var data = vm.blog;
-        data.blogTitle = userForm.title.value;
-        data.blogText = userForm.entry.value;
+        data.title = userForm.title.value;
+        data.text = userForm.text.value;
     
         addBlog($http, authentication, data)
           .then(function(data) {
@@ -127,41 +126,41 @@ function updateBlogById($http, authentication, id, data) {
           });
       }
     }]);
+  
+    app.controller('EditController', [ '$http', '$routeParams', '$location', 'authentication', function EditController($http, $routeParams, $location, authentication) {
+      var vm = this;
+      vm.blog = {};
+      vm.id = $routeParams.id;
+      vm.pageHeader = {
+        title: 'Blog Edit'
+      };
+      vm.message = "Getting Blog";
     
-  
-    app.controller('EditController', [ '$http', '$routeParams', '$location', 'authentication', function EditController($http, $routeParams, $location, authentication) {    var vm = this;
-    var vm = this;
-    vm.blog = {};
-    vm.id = $routeParams.id;
-    vm.pageHeader = {
-      title: 'Blog Edit'
-    };
-    vm.message = "Getting Blog";
-  
-    getBlogById($http, vm.id)
-      .then(function(data) {
-        vm.blog = data.data;
-        vm.message = "";
-      })
-      , (function (e) {
-        vm.message = "Could not retrieve blog at ID " + vm.id;
-      });
-  
-    vm.submit = function() {
-      var data = vm.blog;
-      data.title = userForm.title.value;
-      data.text = userForm.text.value;
-  
-      updateBlogById($http, authentication, vm.id, data)
+      getBlogById($http, vm.id)
         .then(function(data) {
+          vm.blog = data.data;
           vm.message = "";
-          $location.path('blogList');
         })
         , (function (e) {
-          vm.message = "Could not update blog at ID " + vm.id;
+          vm.message = "Could not retrieve blog at ID " + vm.id;
         });
-    }
-  }]);
+    
+      vm.submit = function() {
+        var data = vm.blog;
+        data.title = userForm.title.value;
+        data.text = userForm.text.value;
+    
+        updateBlogById($http, authentication, vm.id, data)
+          .then(function(data) {
+            vm.message = "";
+            $location.path('blogList');
+          })
+          , (function (e) {
+            vm.message = "Could not update blog at ID " + vm.id;
+          });
+      }
+    }]);
+    
     
   app.controller('DeleteController', [ '$http', '$routeParams', '$location', 'authentication', function DeleteController($http, $routeParams, $location, authentication) {
     var vm = this;

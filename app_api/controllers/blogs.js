@@ -92,38 +92,33 @@ module.exports.addBlog = async function (req, res) {
 };
 
 module.exports.updateBlog = async function (req, res) {
-  console.log('Received token:', req.headers.authorization); // Log the token received in the request headers
+ 
+  if (!req.params.blogid) {
+    sendJSONresponse(res, 404, {"message": "Not found, blogid is required"});
+    return;
+  }
 
-  authMiddleware(req, res, function() {
-
-    if (!req.params.blogid) {
-        sendJSONresponse(res, 404, {"message": "Not found, blogid is required"});
+  Blog
+    .findById(req.params.blogid)
+    .exec()
+    .then(blog => {
+      if (!blog) {
+        sendJSONresponse(res, 404, {"message": "blogid not found"});
         return;
       }
-    
-      Blog
-        .findById(req.params.blogid)
-        .exec()
-        .then(blog => {
-          if (!blog) {
-            sendJSONresponse(res, 404, {"message": "blogid not found"});
-            return;
-          }
-    
-          blog.title = req.body.title || blog.title;
-          blog.text = req.body.text || blog.text;
-    
-          return blog.save();
-        })
-        .then(updatedBlog => {
-          sendJSONresponse(res, 201, updatedBlog);
-        })
-        .catch(err => {
-          sendJSONresponse(res, 400, err);
-        });
-        });
-    };
 
+      blog.title = req.body.title || blog.title;
+      blog.text = req.body.text || blog.text;
+
+      return blog.save();
+    })
+    .then(updatedBlog => {
+      sendJSONresponse(res, 201, updatedBlog);
+    })
+    .catch(err => {
+      sendJSONresponse(res, 400, err);
+    });
+};
 
 module.exports.deleteBlog = function (req, res) {
     var blogid = req.params.blogid;

@@ -1,6 +1,5 @@
 var app = angular.module('bloggerApp');
 
-//*** Directives ***
 app.directive('navigation', function() {
     return {
       restrict: 'EA',
@@ -10,7 +9,6 @@ app.directive('navigation', function() {
     };
 });
 
-//*** Controller ***
 app.controller('NavigationController', ['$location', 'authentication', function NavigationController($location, authentication) {
     var navvm = this;
     navvm.currentPath = $location.path();

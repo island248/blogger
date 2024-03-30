@@ -1,5 +1,5 @@
-//app_client/js/bloggerApp.js
 var app = angular.module('bloggerApp', ['ngRoute']);
+
 //Router Provider
 app.config(function($routeProvider) {
     $routeProvider
@@ -32,7 +32,7 @@ app.config(function($routeProvider) {
         controller: 'DeleteController',
         controllerAs: 'vm'
       })
-      
+
       .when('/register', {
         templateUrl: '/auth/register.view.html',
         controller: 'RegisterController',
@@ -44,7 +44,7 @@ app.config(function($routeProvider) {
         controller: 'LoginController',
         controllerAs: 'vm'
       })
-
+  
       .otherwise({redirectTo: '/'});
   });
   
@@ -58,16 +58,15 @@ app.config(function($routeProvider) {
   }
   
   function addBlog($http, authentication, data) {
-  return $http.post('/api/blogs/', data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
-  }
+    return $http.post('/api/blogs/', data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
+        
+}
   
   function updateBlogById($http, authentication, id, data) {
     return $http.put('/api/blogs/' + id, data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
   }
   
   function deleteBlogById($http, authentication, id) {
-    console.log("Token before delete request:", authentication.getToken());
-
     return $http.delete('/api/blogs/' + id, { headers: { Authorization: 'Bearer ' + authentication.getToken() } })
         .then(function(response) {
             console.log("Delete request successful:", response);
@@ -75,10 +74,10 @@ app.config(function($routeProvider) {
         })
         .catch(function(error) {
             console.error("Error deleting blog:", error);
-            throw error; // Re-throw the error to handle it in the controller
+            throw error;
         });
-}
-
+  }
+  
   //Controllers
   app.controller('HomeController', function HomeController() {
     var vm = this;
@@ -95,73 +94,74 @@ app.config(function($routeProvider) {
     };
     vm.message = "Retrieving blogs";
     getAllBlogs($http)
-        .then(function (data) {
-          vm.blogs = data.data;
-          vm.message = "";
-        })
-        , (function (e) {
-          vm.message = "Could not get blogs";
-        });
-    });
-  
-    app.controller('AddController', [ '$http', '$location', 'authentication', function AddController($http, $location, authentication) {
-      var vm = this;
-      vm.blog = {};
-      vm.pageHeader = {
-        title: 'Blog Add'
-      };
-      vm.message = "";
-    
-      vm.submit = function() {
-        var data = vm.blog;
-        data.title = userForm.title.value;
-        data.text = userForm.text.value;
-    
-        addBlog($http, authentication, data)
-          .then(function(data) {
-            $location.path('blogList');
-          })
-          , (function (e) {
-            vm.message = "Could not add blog"
-          });
-      }
-    }]);
-  
-    app.controller('EditController', [ '$http', '$routeParams', '$location', 'authentication', function EditController($http, $routeParams, $location, authentication) {
-      var vm = this;
-      vm.blog = {};
-      vm.id = $routeParams.id;
-      vm.pageHeader = {
-        title: 'Blog Edit'
-      };
-      vm.message = "Getting Blog";
-    
-      getBlogById($http, vm.id)
-        .then(function(data) {
-          vm.blog = data.data;
-          vm.message = "";
-        })
-        , (function (e) {
-          vm.message = "Could not retrieve blog at ID " + vm.id;
-        });
-    
-      vm.submit = function() {
-        var data = vm.blog;
-        data.title = userForm.title.value;
-        data.text = userForm.text.value;
-    
-        updateBlogById($http, authentication, vm.id, data)
-          .then(function(data) {
+        .then(function (response) {
+            vm.blogs = response.data;
             vm.message = "";
-            $location.path('blogList');
-          })
-          , (function (e) {
-            vm.message = "Could not update blog at ID " + vm.id;
-          });
-      }
-    }]);
-    
-    
+        })
+        .catch(function (error) {
+            console.error("Error fetching blogs:", error);
+            vm.message = "No blogs found. Click 'Add Blog' above to create one.";
+        });
+  });
+  
+  app.controller('AddController', [ '$http', '$location', 'authentication', function AddController($http, $location, authentication) {      
+    var vm = this;
+    vm.blog = {};
+    vm.pageHeader = {
+      title: 'Blog Add'
+    };
+    vm.message = "";
+  
+    vm.submit = function() {
+      var data = vm.blog;
+      data.title = userForm.title.value;
+      data.text = userForm.text.value;
+  
+      addBlog($http, authentication, data)
+        .then(function(data) {
+          $location.path('blogList');
+        })
+        , (function (e) {
+          vm.message = "Could not add blog"
+        });
+    }
+  }]);
+  
+
+  app.controller('EditController', [ '$http', '$routeParams', '$location', 'authentication', function EditController($http, $routeParams, $location, authentication) {
+    var vm = this;
+    vm.blog = {};
+    vm.id = $routeParams.id;
+    vm.pageHeader = {
+      title: 'Blog Edit'
+    };
+    vm.message = "Getting Blog";
+  
+    getBlogById($http, vm.id)
+      .then(function(data) {
+        vm.blog = data.data;
+        vm.message = "";
+      })
+      , (function (e) {
+        vm.message = "Could not retrieve blog at ID " + vm.id;
+      });
+  
+    vm.submit = function() {
+      var data = vm.blog;
+      data.title = userForm.title.value;
+      data.text = userForm.text.value;
+  
+      updateBlogById($http, authentication, vm.id, data)
+        .then(function(data) {
+          vm.message = "";
+          $location.path('blogList');
+        })
+        , (function (e) {
+          vm.message = "Could not update blog at ID " + vm.id;
+        });
+    }
+  }]);
+  
   app.controller('DeleteController', [ '$http', '$routeParams', '$location', 'authentication', function DeleteController($http, $routeParams, $location, authentication) {
     var vm = this;
     vm.blog = {};

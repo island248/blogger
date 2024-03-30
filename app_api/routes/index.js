@@ -1,5 +1,9 @@
 const express = require('express');
 const router = express.Router();
+require('dotenv').config();
+const blogsController = require('../controllers/blogs');
+const authController = require('../controllers/authenticate');
+
 var jwt = require('express-jwt');
 var auth = jwt({
     secret: process.env.JWT_SECRET,
@@ -7,8 +11,6 @@ var auth = jwt({
 });
 console.log("JWT_SECRET:", process.env.JWT_SECRET); // Logging JWT_SECRET
 
-const blogsController = require('../controllers/blogs');
-const authController = require('../controllers/authenticate');
 
 router.get('/blogs', blogsController.getAllBlogs);
 router.get('/blogs/:blogid', blogsController.blogReadOne);

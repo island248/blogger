@@ -1,7 +1,6 @@
 //app_api-controllers-blogs.js
 var mongoose = require('mongoose');
 var Blog = mongoose.model('Blog');
-const authMiddleware = require('./authMiddleware');
 
 
 var sendJSONresponse = function(res, status, content) {

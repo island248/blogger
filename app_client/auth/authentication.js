@@ -1,6 +1,5 @@
 var app = angular.module('bloggerApp');
 
-//*** Authentication Service and Methods **
 app.service('authentication', authentication);
     authentication.$inject = ['$window', '$http'];
     function authentication ($window, $http) {
@@ -20,8 +19,6 @@ app.service('authentication', authentication);
             console.log('Registering user ' + user.email + ' ' + user.password);
             return $http.post('/api/register', user).then(function(data){
               saveToken(data.data.token);
-              console.log('Token sent in registration request:', data.data.token);
-
           });
         };
 
@@ -30,8 +27,6 @@ app.service('authentication', authentication);
             return $http.post('/api/login', user).then(function(data) {
 
               saveToken(data.data.token);
-              console.log('Token sent in login request:', data.data.token);
-
            });
         };
 

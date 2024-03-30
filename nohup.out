@@ -35,3 +35,837 @@ Mongoose connected to mongodb://adminweb:password@localhost:27017/blogs
 [0mGET /api/blogs [36m304 [0m15.298 ms - -[0m
 [0mGET /favicon.ico [36m304 [0m0.968 ms - -[0m
 [0mGET /favicon.ico [36m304 [0m0.627 ms - -[0m
+[0mGET / [36m304 [0m0.690 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.913 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.077 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.490 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.120 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.089 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.343 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m4.005 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m0.533 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.534 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.617 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.641 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.423 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.800 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test!!',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [32m200 [0m6.897 ms - 117[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test!!',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m6.217 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m5.722 ms - -[0m
+[0mPUT /api/blogs/65f70de5793344b6ec9a4775 [33m401 [0m11.550 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab6/app.js:55:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:67:12)
+[0mGET /favicon.ico [36m304 [0m0.731 ms - -[0m
+[0mPOST /api/blogs/ [33m401 [0m1.553 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab6/app.js:55:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:67:12)
+[0mPOST /api/blogs/ [33m401 [0m1.406 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab6/app.js:55:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:67:12)
+[0mGET /favicon.ico [36m304 [0m0.985 ms - -[0m
+[0mHEAD / [32m200 [0m0.621 ms - 4749[0m
+[0mGET / [36m304 [0m0.610 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.612 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.407 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.804 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m2.915 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m4.778 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m8.221 ms - -[0m
+[0mGET /js/bloggerApp.js [32m200 [0m4.810 ms - 5392[0m
+[0mGET /auth/authentication.js [36m304 [0m0.600 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.369 ms - -[0m
+[0mGET /nav/navigation.html [32m200 [0m0.830 ms - 925[0m
+[0mGET /favicon.ico [36m304 [0m0.711 ms - -[0m
+[0mGET / [32m200 [0m1.044 ms - 4749[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.335 ms - 111[0m
+[0mGET /css/all.min.css [32m200 [0m2.003 ms - 4749[0m
+[0mGET /bootstrap/css/bootstrap.min.css [32m200 [0m2.580 ms - 4749[0m
+[0mGET /lib/angular-route.min.js [32m200 [0m1.621 ms - 5720[0m
+[0mGET /lib/angular.min.js [32m200 [0m1.630 ms - 177368[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m2.947 ms - 232948[0m
+[0mGET /js/bloggerApp.js [32m200 [0m1.199 ms - 5392[0m
+[0mGET /nav/navigation.js [32m200 [0m1.468 ms - 712[0m
+[0mGET /auth/authentication.js [32m200 [0m1.673 ms - 4037[0m
+[0mGET /nav/navigation.html [32m200 [0m1.758 ms - 925[0m
+[0mGET /favicon.ico [32m200 [0m0.948 ms - 4749[0m
+[0mGET / [36m304 [0m0.472 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.995 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.982 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.360 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.155 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.116 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.928 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m3.922 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m1.933 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.518 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.564 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.704 ms - -[0m
+[0mGET / [32m200 [0m0.858 ms - 4749[0m
+[0mGET / [36m304 [0m0.577 ms - -[0m
+[0mGET / [36m304 [0m0.554 ms - -[0m
+[0mGET /lib/angular-route.min.js [32m200 [0m1.319 ms - 5720[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.782 ms - 111[0m
+[0mGET /bootstrap/css/bootstrap.min.css [32m200 [0m2.651 ms - 4749[0m
+[0mGET /js/bloggerApp.js [32m200 [0m2.195 ms - 5392[0m
+[0mGET /css/all.min.css [32m200 [0m5.584 ms - 4749[0m
+[0mGET /lib/angular.min.js [32m200 [0m1.436 ms - 177368[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m0.959 ms - 232948[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.450 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.401 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.670 ms - -[0m
+[0mGET /auth/authentication.js [32m200 [0m2.545 ms - 4037[0m
+[0mGET /css/all.min.css [36m304 [0m3.498 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.431 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.553 ms - -[0m
+[0mGET /nav/navigation.js [32m200 [0m2.082 ms - 712[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.323 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m3.872 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.267 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.104 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.973 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m2.418 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.547 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m2.390 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m2.427 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m2.311 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.606 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.455 ms - -[0m
+[0mGET /nav/navigation.html [32m200 [0m0.795 ms - 925[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.644 ms - 223[0m
+[0mGET /nav/navigation.html [36m304 [0m0.585 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.630 ms - -[0m
+[0mGET / [36m304 [0m0.602 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.492 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.254 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.179 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m2.692 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m2.357 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.750 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.790 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m4.520 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.544 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.602 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.756 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m1.011 ms - 4749[0m
+[0mGET /favicon.ico [36m304 [0m0.773 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.600 ms - -[0m
+[0mGET / [36m304 [0m0.702 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.679 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.461 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.399 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.886 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m5.418 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m3.713 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m3.564 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m2.786 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.497 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.683 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.879 ms - -[0m
+[0mGET /auth/login.view.html [36m304 [0m0.529 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.677 ms - -[0m
+Login request received: inrapant@millersville.edu
+Passport authentication result: null {
+  _id: new ObjectId('65fb0e8709f3f542cfd2c539'),
+  name: 'Ilynd Rapant',
+  email: 'inrapant@millersville.edu',
+  salt: '8a585db66d3a9fc1ca4ef5fe9f96c99e',
+  hash: 'h1pvILT3xit+n4fEBP0v4SVKdEkkbZCreKdjQ5aWK3ibzuXgTQi6hjCF1TbgJKFxtGa+daG3YPELSAc97ZVWFA==',
+  __v: 0
+} undefined
+[0mPOST /api/login [32m200 [0m17.543 ms - 261[0m
+[0mGET /favicon.ico [36m304 [0m2.126 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.388 ms - 223[0m
+[0mGET /favicon.ico [36m304 [0m0.644 ms - -[0m
+{ title: 'rt', text: 'e' }
+{
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:32.697Z,
+  _id: new ObjectId('660822f8a81badbb4c769b6e'),
+  __v: 0
+}
+[0mPOST /api/blogs/ [32m201 [0m14.755 ms - 105[0m
+{ title: 'rt', text: 'e' }
+{
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:34.137Z,
+  _id: new ObjectId('660822faa81badbb4c769b70'),
+  __v: 0
+}
+[0mPOST /api/blogs/ [32m201 [0m7.201 ms - 105[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('660822f8a81badbb4c769b6e'),
+    title: 'rt',
+    text: 'e',
+    createdOn: 2024-03-30T14:34:32.697Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('660822faa81badbb4c769b70'),
+    title: 'rt',
+    text: 'e',
+    createdOn: 2024-03-30T14:34:34.137Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.336 ms - 419[0m
+Finding blog details { blogid: '660822f8a81badbb4c769b6e' }
+{
+  _id: new ObjectId('660822f8a81badbb4c769b6e'),
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:32.697Z,
+  __v: 0
+}
+[0mGET /api/blogs/660822f8a81badbb4c769b6e [32m200 [0m3.168 ms - 105[0m
+Finding blog details { blogid: '660822f8a81badbb4c769b6e' }
+{
+  _id: new ObjectId('660822f8a81badbb4c769b6e'),
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:32.697Z,
+  __v: 0
+}
+[0mGET /api/blogs/660822f8a81badbb4c769b6e [36m304 [0m4.404 ms - -[0m
+Finding blog details { blogid: '660822f8a81badbb4c769b6e' }
+{
+  _id: new ObjectId('660822f8a81badbb4c769b6e'),
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:32.697Z,
+  __v: 0
+}
+[0mGET /api/blogs/660822f8a81badbb4c769b6e [36m304 [0m3.842 ms - -[0m
+Blog id 660822f8a81badbb4c769b6e deleted
+[0mDELETE /api/blogs/660822f8a81badbb4c769b6e [32m204 [0m3.636 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('660822faa81badbb4c769b70'),
+    title: 'rt',
+    text: 'e',
+    createdOn: 2024-03-30T14:34:34.137Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.260 ms - 321[0m
+Finding blog details { blogid: '660822faa81badbb4c769b70' }
+{
+  _id: new ObjectId('660822faa81badbb4c769b70'),
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:34.137Z,
+  __v: 0
+}
+[0mGET /api/blogs/660822faa81badbb4c769b70 [32m200 [0m2.996 ms - 105[0m
+Finding blog details { blogid: '660822faa81badbb4c769b70' }
+{
+  _id: new ObjectId('660822faa81badbb4c769b70'),
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:34.137Z,
+  __v: 0
+}
+[0mGET /api/blogs/660822faa81badbb4c769b70 [36m304 [0m2.883 ms - -[0m
+Finding blog details { blogid: '660822faa81badbb4c769b70' }
+{
+  _id: new ObjectId('660822faa81badbb4c769b70'),
+  title: 'rt',
+  text: 'e',
+  createdOn: 2024-03-30T14:34:34.137Z,
+  __v: 0
+}
+[0mGET /api/blogs/660822faa81badbb4c769b70 [36m304 [0m4.188 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.967 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.716 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.840 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.470 ms - -[0m
+Blog id 660822faa81badbb4c769b70 deleted
+[0mDELETE /api/blogs/660822faa81badbb4c769b70 [32m204 [0m2.859 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.270 ms - 223[0m
+[0mGET /favicon.ico [36m304 [0m3.153 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.665 ms - -[0m
+[0mGET / [36m304 [0m0.486 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.635 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.077 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.872 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m4.880 ms - -[0m
+[0mGET /lib/angular.min.js [32m200 [0m0.893 ms - 177368[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m2.675 ms - 232948[0m
+[0mGET /js/bloggerApp.js [32m200 [0m1.646 ms - 5392[0m
+[0mGET /auth/authentication.js [32m200 [0m1.700 ms - 4037[0m
+[0mGET /nav/navigation.js [32m200 [0m1.787 ms - 712[0m
+[0mGET /nav/navigation.html [32m200 [0m0.704 ms - 925[0m
+[0mGET /favicon.ico [36m304 [0m0.704 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.197 ms - -[0m
+[0mGET /auth/login.view.html [32m200 [0m2.947 ms - 984[0m
+Login request received: trogers@millersville.edu
+Passport authentication result: null {
+  _id: new ObjectId('6606e0c9ecbe4284a4dcdeb6'),
+  name: 'Thomas J Rogers',
+  email: 'trogers@millersville.edu',
+  salt: 'b734b0c908d040139dcdb829c03bda8a',
+  hash: 'og1gFKf7xaxR4nGwkhsiVQ8XTDDHiezHOOn/GPSts/cx0IGgqt7K2oraFhElFP3eygiCYgMCpzjcaVeq/84T5Q==',
+  __v: 0
+} undefined
+[0mPOST /api/login [32m200 [0m13.170 ms - 264[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test',
+    text: 'Test!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.619 ms - 223[0m
+[0mGET /favicon.ico [36m304 [0m0.766 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+[0mGET /favicon.ico [36m304 [0m2.125 ms - -[0m
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test!!',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [32m200 [0m3.075 ms - 117[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test',
+  text: 'Test!!',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m3.408 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.705 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.796 ms - -[0m
+[0mPUT /api/blogs/65f70de5793344b6ec9a4775 [32m201 [0m7.819 ms - 121[0m
+[
+  {
+    _id: new ObjectId('65f70de5793344b6ec9a4775'),
+    title: 'Prof test!!!',
+    text: 'Test!!!',
+    createdOn: 2024-03-17T15:36:05.180Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.017 ms - 227[0m
+[0mGET /favicon.ico [36m304 [0m1.101 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+[0mGET /favicon.ico [36m304 [0m3.619 ms - -[0m
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test!!!',
+  text: 'Test!!!',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [32m200 [0m4.646 ms - 121[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test!!!',
+  text: 'Test!!!',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m3.389 ms - -[0m
+Finding blog details { blogid: '65f70de5793344b6ec9a4775' }
+{
+  _id: new ObjectId('65f70de5793344b6ec9a4775'),
+  title: 'Prof test!!!',
+  text: 'Test!!!',
+  createdOn: 2024-03-17T15:36:05.180Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f70de5793344b6ec9a4775 [36m304 [0m3.252 ms - -[0m
+Blog id 65f70de5793344b6ec9a4775 deleted
+[0mDELETE /api/blogs/65f70de5793344b6ec9a4775 [32m204 [0m2.735 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.871 ms - 113[0m
+[0mGET /favicon.ico [36m304 [0m0.560 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.469 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.459 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.598 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.767 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.435 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.584 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.715 ms - -[0m
+[0mPOST /api/blogs/ [33m401 [0m0.948 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab6/app.js:55:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:67:12)
+[0mPOST /api/blogs/ [33m401 [0m1.697 ms - 1154[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/lab6/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/lab6/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/bitnami/lab6/node_modules/express/lib/response.js:1039:7)
+    at /home/bitnami/lab6/app.js:55:7
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/lab6/node_modules/express/lib/router/index.js:326:13)
+    at /home/bitnami/lab6/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/bitnami/lab6/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/bitnami/lab6/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/home/bitnami/lab6/node_modules/express/lib/router/layer.js:67:12)
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.441 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.919 ms - -[0m
+[0mGET / [36m304 [0m0.490 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.610 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.544 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.926 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m3.816 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.236 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.596 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m1.706 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m4.250 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.488 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.471 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.725 ms - -[0m
+[0mGET /auth/login.view.html [36m304 [0m0.452 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.685 ms - -[0m
+[0mGET / [36m304 [0m0.470 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.771 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.755 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.562 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m1.920 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.699 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.599 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.608 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m2.752 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m3.248 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.488 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m2.979 ms - -[0m
+[0mGET / [36m304 [0m0.640 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m2.018 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.565 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.109 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.595 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.715 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m14.421 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m7.234 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m48.675 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.691 ms - -[0m
+[0mGET /nav/navigation.html [32m200 [0m1.060 ms - 954[0m
+[0mGET /favicon.ico [36m304 [0m4.628 ms - -[0m
+[0mGET /auth/login.view.html [36m304 [0m0.831 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.071 ms - -[0m
+Login request received: inrapant@millersville.edu
+Passport authentication result: null {
+  _id: new ObjectId('65fb0e8709f3f542cfd2c539'),
+  name: 'Ilynd Rapant',
+  email: 'inrapant@millersville.edu',
+  salt: '8a585db66d3a9fc1ca4ef5fe9f96c99e',
+  hash: 'h1pvILT3xit+n4fEBP0v4SVKdEkkbZCreKdjQ5aWK3ibzuXgTQi6hjCF1TbgJKFxtGa+daG3YPELSAc97ZVWFA==',
+  __v: 0
+} undefined
+[0mPOST /api/login [32m200 [0m18.665 ms - 261[0m
+[0mGET /favicon.ico [36m304 [0m1.930 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.948 ms - 113[0m
+[0mGET /favicon.ico [36m304 [0m0.840 ms - -[0m
+{ title: 'This', text: 'should work' }
+{
+  title: 'This',
+  text: 'should work',
+  createdOn: 2024-03-30T14:40:21.051Z,
+  _id: new ObjectId('66082455a81badbb4c769b8e'),
+  __v: 0
+}
+[0mPOST /api/blogs/ [32m201 [0m4.045 ms - 117[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082455a81badbb4c769b8e'),
+    title: 'This',
+    text: 'should work',
+    createdOn: 2024-03-30T14:40:21.051Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.483 ms - 223[0m
+[0mGET /favicon.ico [36m304 [0m0.786 ms - -[0m
+Finding blog details { blogid: '66082455a81badbb4c769b8e' }
+{
+  _id: new ObjectId('66082455a81badbb4c769b8e'),
+  title: 'This',
+  text: 'should work',
+  createdOn: 2024-03-30T14:40:21.051Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082455a81badbb4c769b8e [32m200 [0m2.976 ms - 117[0m
+[0mGET /favicon.ico [36m304 [0m0.555 ms - -[0m
+Finding blog details { blogid: '66082455a81badbb4c769b8e' }
+{
+  _id: new ObjectId('66082455a81badbb4c769b8e'),
+  title: 'This',
+  text: 'should work',
+  createdOn: 2024-03-30T14:40:21.051Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082455a81badbb4c769b8e [36m304 [0m4.333 ms - -[0m
+[0mPUT /api/blogs/66082455a81badbb4c769b8e [32m201 [0m4.575 ms - 118[0m
+[0mGET /favicon.ico [36m304 [0m1.478 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082455a81badbb4c769b8e'),
+    title: 'This',
+    text: 'should work.',
+    createdOn: 2024-03-30T14:40:21.051Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.118 ms - 224[0m
+Finding blog details { blogid: '66082455a81badbb4c769b8e' }
+{
+  _id: new ObjectId('66082455a81badbb4c769b8e'),
+  title: 'This',
+  text: 'should work.',
+  createdOn: 2024-03-30T14:40:21.051Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082455a81badbb4c769b8e [32m200 [0m2.710 ms - 118[0m
+[0mGET /favicon.ico [36m304 [0m1.670 ms - -[0m
+Finding blog details { blogid: '66082455a81badbb4c769b8e' }
+{
+  _id: new ObjectId('66082455a81badbb4c769b8e'),
+  title: 'This',
+  text: 'should work.',
+  createdOn: 2024-03-30T14:40:21.051Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082455a81badbb4c769b8e [36m304 [0m3.560 ms - -[0m
+Finding blog details { blogid: '66082455a81badbb4c769b8e' }
+{
+  _id: new ObjectId('66082455a81badbb4c769b8e'),
+  title: 'This',
+  text: 'should work.',
+  createdOn: 2024-03-30T14:40:21.051Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082455a81badbb4c769b8e [36m304 [0m2.232 ms - -[0m
+Blog id 66082455a81badbb4c769b8e deleted
+[0mDELETE /api/blogs/66082455a81badbb4c769b8e [32m204 [0m2.535 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.453 ms - 113[0m
+[0mGET /favicon.ico [36m304 [0m0.759 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.674 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.625 ms - -[0m
+[0mGET /auth/register.view.html [36m304 [0m0.528 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.865 ms - -[0m
+Login request received: 8@8
+Passport authentication result: null {
+  _id: new ObjectId('6608246ba81badbb4c769b9b'),
+  name: 'island248',
+  email: '8@8',
+  salt: 'b06d32d0a9915ea7cf8510df39537e91',
+  hash: 'l1PtkTr/ZbF+CeH/1y/fJnMBoHPJ+ysooDGHdtSU9TTDqSt552EfcDL36l04kgd+EAq/VOysusmbBljSbDJqgw==',
+  __v: 0
+} undefined
+[0mPOST /api/register [32m200 [0m24.746 ms - 228[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.479 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.625 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.684 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.677 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.815 ms - -[0m
+{ title: 'i', text: 'f' }
+{
+  title: 'i',
+  text: 'f',
+  createdOn: 2024-03-30T14:40:52.472Z,
+  _id: new ObjectId('66082474a81badbb4c769b9f'),
+  __v: 0
+}
+[0mPOST /api/blogs/ [32m201 [0m4.652 ms - 104[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082474a81badbb4c769b9f'),
+    title: 'i',
+    text: 'f',
+    createdOn: 2024-03-30T14:40:52.472Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.634 ms - 210[0m
+[0mGET /favicon.ico [36m304 [0m0.605 ms - -[0m
+Finding blog details { blogid: '66082474a81badbb4c769b9f' }
+[0mGET /favicon.ico [36m304 [0m1.974 ms - -[0m
+{
+  _id: new ObjectId('66082474a81badbb4c769b9f'),
+  title: 'i',
+  text: 'f',
+  createdOn: 2024-03-30T14:40:52.472Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082474a81badbb4c769b9f [32m200 [0m2.763 ms - 104[0m
+Finding blog details { blogid: '66082474a81badbb4c769b9f' }
+{
+  _id: new ObjectId('66082474a81badbb4c769b9f'),
+  title: 'i',
+  text: 'f',
+  createdOn: 2024-03-30T14:40:52.472Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082474a81badbb4c769b9f [36m304 [0m3.246 ms - -[0m
+Finding blog details { blogid: '66082474a81badbb4c769b9f' }
+{
+  _id: new ObjectId('66082474a81badbb4c769b9f'),
+  title: 'i',
+  text: 'f',
+  createdOn: 2024-03-30T14:40:52.472Z,
+  __v: 0
+}
+[0mGET /api/blogs/66082474a81badbb4c769b9f [36m304 [0m2.811 ms - -[0m
+Blog id 66082474a81badbb4c769b9f deleted
+[0mDELETE /api/blogs/66082474a81badbb4c769b9f [32m204 [0m2.681 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.739 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m5.030 ms - 113[0m
+[0mGET /favicon.ico [36m304 [0m0.689 ms - -[0m

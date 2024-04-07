@@ -16,6 +16,12 @@ const blogSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  userEmail: {
+    type: String
+  },
+  userName: {
+    type: String
+  }
 });
 
 mongoose.model('Blog', blogSchema);

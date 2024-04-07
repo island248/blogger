@@ -31,16 +31,17 @@
             <div class="card-body">
                 <h6 class="card-subtitle mb-2 text-muted" style="font-size: 20px; font-weight: bold;">Title: {{blog.title}}</h6>
                 <p class="card-text">Entry: {{blog.text}}</p>
+                <p class="card-text">Published by: {{blog.userName}}</p>
             </div>
             <div class="card-footer">
                 <div class="col-sm">
                   <ul class="nav justify-content-end nav-pills card-header-pills">
-                    <li class="nav-item">
+                    <li class="nav-item" ng-show="vm.isAuthorized(blog.userEmail)">
                       <a class="nav-link" ng-href="#!/blogEdit/{{ blog._id }}">
                         <i class="fas fa-pen"></i> 
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" ng-show="vm.isAuthorized(blog.userEmail)">
                       <a class="nav-link" ng-href="#!/blogDelete/{{ blog._id }}">
                         <i class="fas fa-trash"></i> <!-- Use "fas" for solid icons -->
                       </a>
@@ -52,6 +53,8 @@
         <p></p>
     </div>
 </script>
+
+
 
   <script type="text/ng-template" id="pages/blogAdd.html">
     <p></p>

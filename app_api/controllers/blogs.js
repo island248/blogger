@@ -14,7 +14,9 @@ var sendJSONresponse = function(res, status, content) {
         title: obj.title,
         text: obj.text,
         createdOn: obj.createdOn,
-        _id: obj._id
+        _id: obj._id,
+        userEmail: obj.userEmail,
+        userName: obj.userName
       });
     });
     return blogs;
@@ -76,7 +78,9 @@ module.exports.addBlog = async function (req, res) {
   Blog.create({
       title: req.body.title,
       text: req.body.text,
-      createdOn: Date.now()
+      createdOn: Date.now(),
+      userEmail: req.body.userEmail,
+      userName: req.body.userName
   })
   .then(blog => {
       console.log(blog);

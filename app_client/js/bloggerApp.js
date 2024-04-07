@@ -82,12 +82,12 @@ app.config(function($routeProvider) {
   app.controller('HomeController', function HomeController() {
     var vm = this;
     vm.pageHeader = {
-        title: "Ilynd Rapant's Blog Site"
+      title: "Ilynd Rapant's Blog Site"
     };
     vm.message = "Welcome to my blog!";
   });
   
-  app.controller('ListController', function ListController($http) {
+  app.controller('ListController', function ListController($http, authentication) {
     var vm = this;
     vm.pageHeader = {
         title: "Blog List"
@@ -96,12 +96,25 @@ app.config(function($routeProvider) {
     getAllBlogs($http)
         .then(function (response) {
             vm.blogs = response.data;
+            console.log(response);
             vm.message = "";
         })
         .catch(function (error) {
             console.error("Error fetching blogs:", error);
             vm.message = "No blogs found. Click 'Add Blog' above to create one.";
         });
+
+      vm.isAuthorized = function(userEmail) {
+        // Check if user is authenticated
+        if (authentication.isLoggedIn()) {
+          var auth = authentication.currentUser().email;
+          // Check if the current user's email matches the email on the blog
+          if (auth === userEmail) {
+            return true;
+          }
+        }
+        return false; // Return false if user is not authenticated or if emails don't match
+      }
   });
   
   app.controller('AddController', [ '$http', '$location', 'authentication', function AddController($http, $location, authentication) {      
@@ -116,7 +129,9 @@ app.config(function($routeProvider) {
       var data = vm.blog;
       data.title = userForm.title.value;
       data.text = userForm.text.value;
-  
+      data.userEmail = authentication.currentUser().email;
+      data.userName = authentication.currentUser().name;
+
       addBlog($http, authentication, data)
         .then(function(data) {
           $location.path('blogList');
@@ -193,4 +208,5 @@ app.config(function($routeProvider) {
     vm.cancel = function() {
       $location.path('blogList');
     }
+    
   }]);

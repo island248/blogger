@@ -103,8 +103,8 @@ app.config(function($routeProvider) {
     vm.isLoggedIn = function() {
       return authentication.isLoggedIn();
     }
-    var currentTime = new Date().getHours();
-var isNightTime = currentTime >= 20 || currentTime < 5;
+    var currentTime =  new Date().getHours();
+  var isNightTime = currentTime >= 20 || currentTime < 5;
 
 // Set default message and image
 vm.message = "";
@@ -117,8 +117,8 @@ if (isNightTime) {
         vm.message = "Time to catch up on shows!";
         vm.imageUrl = "/tvtime.png";
     } else {
-        vm.message = "Bed Time";
-        vm.imageUrl = "/bedtime.jpg";
+        vm.message = "I am most likely sleeping";
+        vm.imageUrl = "/betime.png";
     }
 }
 
@@ -137,7 +137,7 @@ function checkHikingDay() {
             vm.weather.condition.toLowerCase().includes('overcast')) {
             if (vm.weather.temperatureFahrenheit > 45) {
                 vm.hikingDay = true;
-                vm.message = "Outdoor day!";
+                vm.message = "I hope I have time to go outside today!";
                 vm.imageUrl = "/images.png"; // Set image URL for hiking day
             } else {
                 vm.hikingDay = false;

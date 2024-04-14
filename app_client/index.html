@@ -29,12 +29,12 @@
               Click <span style="text-decoration: underline; color: rgb(153, 0, 248);">here</span> to find out what got me into Computer Science!
           </a>
       </div>
-      <div style="margin: 10px auto 0 auto; display: flex; justify-content: center; align-items: center; width: 340px; height: 295px; background-color: rgba(29, 40, 28, 0.8); border: 2px solid rgba(153, 0, 248, 0.8); padding: 10px;">
+      <div style="margin: 10px auto 0 auto; display: flex; justify-content: center; align-items: center; width: 340px; height: 305px; background-color: rgba(29, 40, 28, 0.8); border: 2px solid rgba(153, 0, 248, 0.8); padding: 10px;">
         <div style="color: white;">
             <p style="color: rgb(153, 0, 248);">Weather Today in Lancaster, PA</p>
             <p>Temperature: {{ vm.weather.temperatureFahrenheit }}°F</p>
             <p>{{ vm.weather.condition }} <img ng-src="{{ vm.weather.icon }}" alt="Weather Icon"></p>
-            <p ng-if="vm.showActivityMessage" style="color: rgb(153, 0, 248);">{{ vm.message }}</p>
+            <p style="color: rgb(153, 0, 248);">{{ vm.message }}</p>
             <img ng-src="{{ vm.imageUrl }}" alt="Activity Image" style="max-width: 40%; height: auto;">
         </div>
     </div>

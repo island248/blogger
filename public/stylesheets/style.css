@@ -1,8 +1,356 @@
+
 body {
+  background-color: #000 !important;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #fffffff7 !important;
 }
+
+.bg-purple {
+  background-color: rgba(153, 0, 248,0.8) !important;
+}
+
+.card {
+  background-color: rgba(39, 37, 37, 0.6) !important;
+  color: white !important; /* Set text color to white */
+}
+
+.card-text {
+  color: white !important;
+}
+.card-footer .nav-link i.fas.fa-pen,
+.card-footer .nav-link i.fas.fa-trash {
+    color: rgb(153, 0, 248) !important;
+}
+
+.card.border-primary {
+  border-color: rgb(153, 0, 248) !important;
+}
+
+.card {
+  margin: 0 auto; /* This will horizontally center the element */
+}
+
+.btn-purple {
+  background-color: rgb(153, 0, 248) !important;
+  border-color: rgb(153, 0, 248) !important
+}
+
+.btn-purple:hover,
+.btn-purple:focus {
+  background-color: rgb(153, 0, 248) !important;
+  border-color: rgb(153, 0, 248) !important;
+}
+
+.input-black {
+  background-color: black !important;
+  color: white !important;
+}
+
+.input-black::placeholder {
+  color: rgb(220, 213, 213) !important; /* Light grey color for placeholder text */
+}
+
+.input-purple {
+  border-color: rgb(153, 0, 248) !important;
+}
+.input-purple {
+  background-color: black !important;
+  color: white !important;
+}
+
+.input-purple::placeholder {
+  color: rgb(220, 213, 213) !important; /* Light grey color for placeholder text */
+}
+
+.input-purple {
+  border-color: rgb(153, 0, 248) !important; /* Set border color to purple */
+}
+
+#title.input-purple,
+#text.input-purple {
+  background-color: black !important;
+  color: white !important;
+  border-color: rgb(153, 0, 248) !important;
+}
+
+#title.input-purple::placeholder,
+#text.input-purple::placeholder {
+  color: rgb(220, 213, 213) !important;
+}
+
+.btn.btn-primary.btn-purple {
+  background-color: rgb(153, 0, 248) !important;
+  border-color: rgb(153, 0, 248) !important;
+}
+
+.btn.btn-primary.btn-purple:hover,
+.btn.btn-primary.btn-purple:focus {
+  background-color: rgb(153, 0, 248) !important;
+  border-color: rgb(153, 0, 248) !important;
+}
+
+.text-primary, /* Apply to all elements with the class .text-primary */
+label.text-primary { /* Apply to <label> elements with the class .text-primary */
+  color: rgb(153, 0, 248) !important; /* Set text color to white */
+}
+
+#title.input-purple,
+#text.input-purple {
+  background-color: black !important;
+  color: white !important;
+  border-color: rgb(153, 0, 248) !important;
+}
+
+#title.input-purple::placeholder,
+#text.input-purple::placeholder {
+  color: rgb(220, 213, 213) !important;
+}
+
+.btn.btn-primary.btn-purple {
+  background-color: rgb(153, 0, 248) !important;
+  border-color: rgb(153, 0, 248) !important;
+}
+
+.btn.btn-primary.btn-purple:hover,
+.btn.btn-primary.btn-purple:focus {
+  background-color: rgb(153, 0, 248) !important;
+  border-color: rgb(153, 0, 248) !important;
+}
+
+.text-primary,
+label.text-primary {
+  color: white !important;
+}
+
+.card.border-primary {
+  border-color: rgb(153, 0, 248) !important
+}
+
+.card.border-primary .form-control {
+  background-color: black !important;
+  color: white !important;
+}
+
+.card.border-primary .form-control::placeholder {
+  color: rgb(220, 213, 213) !important;
+}
+
+.card.border-primary .form-control {
+  background-color: black !important;
+  color: white !important;
+}
+
+.card.border-primary .form-control::placeholder {
+  color: rgb(220, 213, 213) !important;
+}
+
+.input-purple {
+  border-color: rgb(153, 0, 248) !important /* Set border color to purple */
+}
+
+#title.input-purple,
+#text.input-purple {
+  border-color: rgb(153, 0, 248) !important; /* Set border color to purple */
+}
+.card.border-primary .form-control {
+  background-color: black !important;
+  color: white !important;
+  border-color: rgb(153, 0, 248) !important; /* Set border color to purple */
+}
+
+.card.border-primary .form-control::placeholder {
+  color: rgb(220, 213, 213) !important;
+}
+
+.btn-purple-border {
+  border-color: rgb(153, 0, 248) !important;
+}
+
+.navbar-nav .nav-link {
+  color: black !important;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: black !important;
+  font-weight: bold;
+}
+
+.card-header {
+  border-bottom: 2px solid rgb(153, 0, 248) !important;
+  background-color: rgb(153, 0, 248) !important;
+}
+.card-footer {
+  border-top: 2px solid rgb(153, 0, 248) !important;
+  background-color: rgb(153, 0, 248) !important;
+}
+
+.border-purple {
+  border-color: rgb(153, 0, 248) !important; /* Purple border color */
+}
+
+.text-purple {
+  color: rgb(153, 0, 248) !important; /* Purple text color */
+}
+
+.bg-purple {
+  background-color: rgb(153, 0, 248) !important; /* Purple background color */
+}
+
+
+.form-label {
+  color: rgb(153, 0, 248) !important; /* Set color to purple */
+}
+
+
+.sign-in-text {
+  color: rgb(153, 0, 248) !important; /* Set color to purple */
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: white !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: white !important;
+  opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: white !important;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+.content-box {
+  background-color: rgba(29, 28, 28, 0.8); /* Background color */
+  padding: 20px; /* Padding */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Margin from the top */
+  border: 2px solid rgb(153, 0, 248) !important; /* Border color and thickness */
+}
+
+.register-link {
+  color: rgb(153, 0, 248) !important; /* Purple color */
+}
+
+/* Custom class for the trash button */
+.btn-trash {
+  background-color: rgb(153, 0, 248) !important; /* Purple color */
+  border-color: rgb(153, 0, 248) !important; /* Purple color */
+}
+
+/* Hover effect for the trash button */
+.btn-trash:hover {
+  background-color: rgb(153, 0, 248) !important; /* Darker purple color on hover */
+  border-color: rgb(153, 0, 248) !important; /* Darker purple color on hover */
+}
+
+.chat-message {
+  display: flex;
+  align-items: center;
+}
+
+.message-content {
+  flex: 1;
+}
+
+.btn-trash {
+  margin-left: 10px; /* Adjust as needed */
+}
+/* CSS for the background container */
+#background-container {
+  background-image: url('/home/bitnami/lab8/app_client/waves2.png'); /* Path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100vh; /* Set the height to full viewport height */
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+/* Additional styles for navigation and view */
+.navigation {
+  /* Add your navigation styles here */
+}
+
+.view {
+  /* Add your view styles here */
+}
+.input-black {
+  background-color: black !important;
+  color: white !important;
+}
+
+.input-black::placeholder {
+  color: rgb(220, 213, 213) !important; /* Light grey color for placeholder text */
+}
+
+.card-body {
+  background-color: rgba(29, 28, 28, 0.8) !important; /* Semi-transparent grey background */
+}
+
+.click-here {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+.click-here:hover {
+  transform: scale(1.1); /* Increase scale to 110% on hover */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+.btn:hover {
+  transform: scale(1.1); /* Increase scale to 110% on hover */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+/* Override autofill styles for input fields */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px black inset !important; /* Change background color */
+  -webkit-text-fill-color: white !important; /* Change text color */
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chat-container {
+  width: 75%;
+  background-color: rgba(29, 28, 28, 0.8) !important;
+}
+.instructions {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(29, 28, 28, 0.8);
+  padding: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.btn-instruction {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: red;
+}
+

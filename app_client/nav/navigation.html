@@ -1,16 +1,35 @@
-<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary" style="height: 60px;">
-  <a class="navbar-brand" style="margin-left: 10px;" href="/">My Blog</a>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav flex-grow-1">
-          <a class="nav-item nav-link active" href="#!/blogList">List Blogs</a>
-          <a ng-show="navvm.isLoggedIn()" class="nav-item nav-link active" href="#!/blogAdd">Add Blog</a>
+<style>
+    /* Define hover effect for navbar links */
+    .navbar-nav .nav-link:not(.navbar-brand):hover {
+      transform: scale(1.1); /* Scale the element on hover */
+      transition: transform 0.3s ease; /* Add smooth transition */
+    }
+  </style>
+
+  <style>
+    /* Define hover effect for navbar links */
+    .navbar-brand:hover {
+      transform: scale(1.1); /* Scale the element on hover */
+      transition: transform 0.3s ease; /* Add smooth transition */
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+  </style>
+  <nav class="navbar fixed-top navbar-expand-sm bg-purple" style="height: 60px;">
+      <a class="navbar-brand nav-link" style="margin-left: 10px;" href="/">MyBlog</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav flex-grow-1">
+              <a class="nav-item nav-link active text-primary" href="#!/blogList">List Blogs</a>
+              <a ng-show="navvm.isLoggedIn()" class="nav-item nav-link active text-primary" href="#!/blogAdd">Add Blog</a>
+          </div>
+          <div class="navbar-nav">
+              <a ng-show="!navvm.isLoggedIn()" style="margin-right: 10px;" class="nav-item nav-link active ml-auto text-primary" href="#!/signOn">Sign In</a>
+              <span ng-show="navvm.isLoggedIn()">
+                  <a style="margin-right: 10px;" class="nav-item nav-link active text-primary" href="" ng-click="navvm.logout()">Logout</a>
+                  <span class="nav-item nav-link active text-primary">{{ navvm.currentUser().email }}</span>
+              </span>
+          </div>
       </div>
-      <div class="navbar-nav">
-          <a ng-show="!navvm.isLoggedIn()" style="margin-right: 10px;" class="nav-item nav-link active ml-auto" href="#!/signOn">Sign In</a>
-          <span ng-show="navvm.isLoggedIn()">
-              <a style="margin-right: 10px;" class="nav-item nav-link active" href="" ng-click="navvm.logout()">Logout</a>
-              <span class="nav-item nav-link active">{{ navvm.currentUser().email }}</span>
-          </span>
-      </div>
-  </div>
-</nav>
+  </nav>
+  

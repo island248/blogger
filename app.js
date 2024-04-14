@@ -8,15 +8,12 @@ var passport = require('passport');
 require('./app_api/models/db');
 require('./app_api/config/passport');
 
-//var indexRouter = require('./app_client/index');
-var routesApi = require('./app_api/routes/index');
+// Import axios for making HTTP requests
+var axios = require('axios');
 
 var app = express();
 
-// view engine setup
-//app.set('views', path.join(__dirname, 'app_server', 'views'));
-//app.set('view engine', 'ejs');
-
+// Middleware setup
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -31,31 +28,41 @@ app.use('/css', express.static(__dirname + '/node_modules/@fortawesome/fontaweso
 app.use('/webfonts', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/webfonts/'));
 app.use('/css', express.static(__dirname + '/public/stylesheets'));
 
-//app.use('/', indexRouter);
+// Initialize Passport
 app.use(passport.initialize());
+
+// API routes
+var routesApi = require('./app_api/routes/index');
 app.use('/api', routesApi);
 
+// Proxy route for fetching YouTube content
+app.get('/youtube-proxy', async (req, res, next) => {
+  try {
+    // Make a request to the YouTube URL
+    const youtubeUrl = req.query.url;
+    const response = await axios.get(youtubeUrl);
+    // Return the response from YouTube to the client
+    res.send(response.data);
+  } catch (error) {
+    // Handle errors
+    next(error);
+  }
+});
+
+// Serve Angular client-side application
 app.use(function(req, res) {
   res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
 });
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
-
-// error handler
+// Error handling middleware
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
+  // Handle errors
   res.status(err.status || 500);
-  res.render('error');
+  res.json({ error: err.message });
 });
 
-const port = 80;
+// Start the server
+const port = process.env.PORT || 80;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

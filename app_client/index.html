@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html ng-app="bloggerApp" class="ng-scope">
 <head>
   <script src="/lib/angular.min.js"></script>
@@ -12,69 +12,119 @@
   <script src="/auth/authentication.js"></script>
   <script src="/nav/navigation.js"></script>
 </head>
-<body>
-  
-<!-- Angular Templates -->
+<body style="background-image: url('/waves2.png'); background-size: cover; background-position: center; height: 100vh; position: relative;"> <!-- Set background image and styles for the body -->
+  <!-- Angular Templates -->
   <script type="text/ng-template" id="pages/home.html">
-    <p></p>
-    <h2>{{vm.pageHeader.title}}</h2>
-    <h4>{{vm.message}}</h4>
-  </script>
-
-  <script type="text/ng-template" id="pages/blogList.html">
-    <p>{{vm.message}}</p>
-    <div ng-repeat="blog in vm.blogs">
-        <div class="card border-primary" style="width: 50%"> 
-            <div class="card-header">
-                <h5 class="card-title">Created On: {{blog.createdOn | date:'medium'}}</h5>
-            </div>
-            <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 20px; font-weight: bold;">Title: {{blog.title}}</h6>
-                <p class="card-text">Entry: {{blog.text}}</p>
-                <p class="card-text">Published by: {{blog.userName}}</p>
-            </div>
-            <div class="card-footer">
-                <div class="col-sm">
-                  <ul class="nav justify-content-end nav-pills card-header-pills">
-                    <li class="nav-item" ng-show="vm.isAuthorized(blog.userEmail)">
-                      <a class="nav-link" ng-href="#!/blogEdit/{{ blog._id }}">
-                        <i class="fas fa-pen"></i> 
-                      </a>
-                    </li>
-                    <li class="nav-item" ng-show="vm.isAuthorized(blog.userEmail)">
-                      <a class="nav-link" ng-href="#!/blogDelete/{{ blog._id }}">
-                        <i class="fas fa-trash"></i> <!-- Use "fas" for solid icons -->
-                      </a>
-                    </li>
-                  </ul>                  
-                </div>
-            </div>
+    <div style="text-align: center; margin-top: 30px;">
+      <!-- Display the GIF at the bottom of the page -->
+      <div style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);">
+          <img src="./b.png" alt="GIF" style="max-width: 35%; height: auto;">
+      </div>
+      <!-- Title and message -->
+      <h2 style="color: white;">{{ vm.pageHeader.title }}</h2>
+      <h4 style="color: white;">{{ vm.message2 }}</h4>
+      <!-- Wrap "here" in a span element and apply styling -->
+      <div>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="color: white; text-decoration: none;">
+              Click <span style="text-decoration: underline; color: rgb(153, 0, 248);">here</span> to find out what got me into Computer Science!
+          </a>
+      </div>
+      <div style="margin: 10px auto 0 auto; display: flex; justify-content: center; align-items: center; width: 340px; height: 295px; background-color: rgba(29, 40, 28, 0.8); border: 2px solid rgba(153, 0, 248, 0.8); padding: 10px;">
+        <div style="color: white;">
+            <p style="color: rgb(153, 0, 248);">Weather Today in Lancaster, PA</p>
+            <p>Temperature: {{ vm.weather.temperatureFahrenheit }}°F</p>
+            <p>{{ vm.weather.condition }} <img ng-src="{{ vm.weather.icon }}" alt="Weather Icon"></p>
+            <p ng-if="vm.showActivityMessage" style="color: rgb(153, 0, 248);">{{ vm.message }}</p>
+            <img ng-src="{{ vm.imageUrl }}" alt="Activity Image" style="max-width: 40%; height: auto;">
         </div>
-        <p></p>
     </div>
+    
+    
+    
+      
+       
+      <!-- Chat icon -->
+      <div class="click-here" ng-show="vm.isLoggedIn()">
+        <a href="#!/blogChat" title="Click here if you want to talk to fellow bloggers!" style="color: white; text-decoration: none;">
+            <i class="fas fa-comment-alt"></i> OpenChat
+        </a>
+    </div>
+  </div>  
 </script>
 
 
 
+<script type="text/ng-template" id="pages/blogList.html">
+  <p>{{vm.message}}</p>
+  <div ng-repeat="blog in vm.blogs">
+      <div class="card border-primary" style="width: 50%"> 
+          <div class="card-header" style="color: black !important;">
+              <h5 class="card-title">Created On: {{blog.createdOn | date:'medium'}}</h5>
+          </div>
+          <div class="card-body" style="background-color: rgba(29, 28, 28, 0.8) !important;"> <!-- Added background color -->
+              <h6 class="card-subtitle mb-2 text-muted" style="font-size: 20px; font-weight: bold;"><span style="color: rgb(153, 0, 248);">Title: </span><span style="color: white;">{{blog.title}}</span></h6>
+              <p class="card-text"><span style="color: rgb(153, 0, 248);">Entry: </span><span style="color: white;">{{blog.text}}</span></p>
+              <p class="card-text"><span style="color: rgb(153, 0, 248);">Published by: </span><span style="color: white;">{{blog.userName}}</span></p>
+          </div>
+          <div class="card-footer">
+              <div class="col-sm">
+                  <ul class="nav justify-content-end nav-pills card-header-pills">
+                      <li class="nav-item" ng-show="vm.isAuthorized(blog.userEmail)">
+                          <a class="nav-link" ng-href="#!/blogEdit/{{ blog._id }}">
+                              <i class="fas fa-pen" style="color: black !important;"></i> 
+                          </a>
+                      </li>
+                      <li class="nav-item" ng-show="vm.isAuthorized(blog.userEmail)">
+                          <a class="nav-link" ng-href="#!/blogDelete/{{ blog._id }}">
+                              <i class="fas fa-trash" style="color: black !important;"></i>
+                          </a>
+                      </li>
+                  </ul>                  
+              </div>
+          </div>
+      </div>
+      <p></p>
+  </div>
+
+    <!-- Chat icon (conditional) -->
+    <div class="click-here" ng-show="vm.isLoggedIn()">
+      <a href="#!/blogChat" title="Click here if you want to talk to fellow bloggers!" style="color: white; text-decoration: none;">
+          <i class="fas fa-comment-alt"></i> OpenChat
+      </a>
+  </div>
+</script>
+
+
+  
+
+
   <script type="text/ng-template" id="pages/blogAdd.html">
     <p></p>
-    <div class="card border-primary" style="width: 50%"> 
-      <form name="userForm" ng-submit="vm.submit()" ng-controller="AddController" style="padding: 20px">
-        <div class="form-group">
-          <label for="summary" class="text-primary">Title</label>
-          <input class="form-control" id="title" name="title" ng-model="vm.blog.title">
-          <label for="detail" class="text-primary">Blog Text</label>
-          <textarea class="form-control" id="text" rows="3" name="text" ng-model="vm.blog.text"></textarea>
-        </div>
-        <input type="submit" class="btn btn-primary" value="Add Blog">
-      </form>
+    <div class="d-flex justify-content-center align-items-center" style="height: 85vh;">
+      <div class="card border-primary" style="width: 50%; background-color: rgba(29, 28, 28, 0.8) !important;">
+        <form name="userForm" ng-submit="vm.submit()" ng-controller="AddController" style="padding: 20px">
+          <div class="form-group">
+            <label for="title" class="text-primary" style="color: white;">Title</label>
+            <input class="form-control input-purple" id="title" name="title" ng-model="vm.blog.title">
+            <label for="text" class="text-primary" style="color: white;">Blog Text</label>
+            <textarea class="form-control input-purple" id="text" rows="3" name="text" ng-model="vm.blog.text"></textarea>
+          </div>
+          <input type="submit" class="btn btn-primary btn-purple" value="Add Blog">
+        </form>
+      </div>
     </div>
+    
+    <!-- Chat icon -->
+    <div class="click-here" >
+      <a href="#!/blogChat" title="Click here if you want to talk to fellow bloggers!" style="color: white; text-decoration: none;">
+          <i class="fas fa-comment-alt"></i> OpenChat
+      </a>
   </script>
   
 
   <script type="text/ng-template" id="pages/blogEdit.html">
-    <p>{{vm.message}}</p>
-      <div class="card border-primary" style="width: 50%">  
+    <div class="d-flex justify-content-center align-items-center" style="height: 85vh;">
+      <div class="card border-primary" style="width: 50%; background-color: rgba(29, 28, 28, 0.8) !important;">
         <form name="userForm" ng-submit="vm.submit()" ng-controller="EditController" style="padding: 20px">
           <div class="form-group">
             <label for="summary" class="text-primary">Title</label>
@@ -82,34 +132,103 @@
             <label for="detail" class="text-primary">Blog Text</label>
             <textarea class="form-control" id="text" name="text" rows="3">{{vm.blog.text}}</textarea>
           </div>
-          <input type="submit" class="btn btn-primary" value="Save Blog">
+          <input type="submit" class="btn btn-primary btn-purple" value="Save Blog">
         </form>
       </div>
+    </div>
+    
+  
+    <!-- Chat icon -->
+    <div class="click-here" >
+      <a href="#!/blogChat" title="Click here if you want to talk to fellow bloggers!" style="color: white; text-decoration: none;">
+          <i class="fas fa-comment-alt"></i> OpenChat
+      </a>
+    </div>
   </script>
+  
     
   <script type="text/ng-template" id="pages/blogDelete.html">
-    <p></p>
-      <div class="card border-primary" style="width: 50%">
+    <div class="d-flex justify-content-center align-items-center" style="height: 85vh;">
+      <div class="card border-primary" style="width: 50%; background-color: rgba(29, 28, 28, 0.8) !important;">
         <form name="userForm" ng-submit="vm.submit()" ng-controller="DeleteController" style="padding: 20px">
           <div class="form-group">
-              <label for="summary" class="text-primary">Title</label>
-              <input readonly class="form-control" id="title" name="title" value="{{vm.blog.title}}">
-              <label for="detail" class="text-primary">Blog Text</label>
-              <textarea readonly class="form-control" id="text" name="text" rows="3">{{vm.blog.text}}</textarea>
+            <label for="summary" class="text-primary">Title</label>
+            <input readonly class="form-control" id="title" name="title" value="{{vm.blog.title}}">
+            <label for="detail" class="text-primary">Blog Text</label>
+            <textarea readonly class="form-control" id="text" name="text" rows="3">{{vm.blog.text}}</textarea>
           </div>
-             <input type="submit" class="btn btn-danger float-right" value="Delete Blog">
-             <button ng-click="vm.cancel()" ng-controller="DeleteController" class="btn btn-primary float-right" style="margin-right: 25px">Cancel</button>
+          <input type="submit" class="btn btn-primary float-right btn-purple-border" style="background-color: black; border-color: purple;" value="Delete Blog">
+          <button ng-click="vm.cancel()" ng-controller="DeleteController" class="btn btn-primary float-right btn-purple" style="margin-right: 25px">Cancel</button> <!-- Set to purple -->
         </form>
       </div>
-  </script>
+    </div>
+    
+    <!-- Chat icon -->
+    <div class="click-here" >
+      <a href="#!/blogChat" title="Click here if you want to talk to fellow bloggers!" style="color: white; text-decoration: none;">
+          <i class="fas fa-comment-alt"></i> OpenChat
+      </a>
+</script>
+
+
+
+<script type="text/ng-template" id="pages/blogChat.html">
+  <p>{{vm.message}}</p>
+  <div class="container">
+    <div class="card border-primary chat-container">
+      <form name="userForm" ng-submit="vm.submit()" ng-controller="ChatController" style="padding: 20px;">
+        <div class="form-group">
+          <label for="detail" class="text-primary">Chat</label>
+          
+          <!-- Chat message box -->
+          <div class="content-box" style="padding: 10px; overflow-y: auto; max-height: 200px;"> <!-- Added content-box class for styling -->
+            <!-- Display chat messages -->
+            <div ng-repeat="message in vm.chat" class="chat-message">
+              <div class="message-content">
+                <p>{{ message.name }}: {{ message.chat }}</p>
+              </div>
+              <button class="btn btn-danger btn-trash" ng-click="vm.deleteMessage(message._id)" ng-show="vm.isAuthorized(message.email)">
+                <i class="fas fa-trash-alt"></i> <!-- Trash icon -->
+              </button>
+            </div>
+          </div>
+          
+          <!-- Input field for new message -->
+          <input class="form-control" id="postField" name="postField">
+        </div>
+        <!-- Submit button -->
+        <input type="submit" class="btn btn-primary btn-purple" value="Post"> <!-- Added btn-purple class -->
+      </form>
+    </div>
+  </div>
+  <!-- Instruction button -->
+  <button class="btn btn-purple btn-instruction" ng-click="showInstructions = !showInstructions"> <!-- Updated button class -->
+    <i class="fas fa-info-circle"></i> Instructions
+</button>
+<!-- Instructions -->
+<div class="instructions" ng-show="showInstructions" style="color: white;"> <!-- Added style to make text white -->
+    <button class="close-button" ng-click="showInstructions = false">&times;</button> <!-- Close button -->
+    <p>Welcome to the chat page where fellow bloggers can communicate their thoughts or opinions on blogs. You can also use this to just talk to bloggers! If you want to delete your post just click the trash button. Happy chatting!</p>
+</div>
+</script>
+
+
+
+
+  
 
   <div ng-controller="NavigationController">
     <navigation></navigation>
   </div>
 
+  
+  
 <!-- Angular View -->
-  <div ng-view>
+  
+<div ng-view>
 
+  <div class="click-here">Click here for more information</div>
 
+    
 </body>
 </html>

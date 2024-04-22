@@ -137,7 +137,7 @@ function checkHikingDay() {
             vm.weather.condition.toLowerCase().includes('overcast')) {
             if (vm.weather.temperatureFahrenheit > 45) {
                 vm.hikingDay = true;
-                vm.message = "I hope I have time to go outside today!";
+                vm.message = "Hope to  be outside today!";
                 vm.imageUrl = "/images.png"; // Set image URL for hiking day
             } else {
                 vm.hikingDay = false;
@@ -150,7 +150,7 @@ function checkHikingDay() {
         } else if (vm.weather.condition.toLowerCase().includes('rain') ||
             (vm.weather.precip_mm > 0 && vm.weather.temperatureFahrenheit < 45)) {
             vm.hikingDay = false;
-            vm.message = "Indoor Day";
+            vm.message = "Should probably stay inside";
             vm.imageUrl = "/rainday.png"; // Set image URL for rainy day
         } else {
             vm.hikingDay = false;
@@ -369,6 +369,14 @@ vm.submit = function() {
       console.error("Error posting chat message:", error);
       vm.message = "Could not post message";
     });
+};
+vm.submitOnEnter = function(event) {
+  if (event.keyCode === 13 && !event.shiftKey) { // Check if Enter key is pressed and Shift is not pressed
+      event.preventDefault(); // Prevent default form submission behavior
+      if (userForm.postField.value.trim() !== "" || userForm.postField.value.trim() === "") { // Check if input field is not empty
+              vm.submit(); // If no existing messages or there is input in the chat box, submit the new message
+      }
+  }
 };
 
 vm.deleteMessage = function(messageId) {

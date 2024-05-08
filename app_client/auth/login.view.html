@@ -1,0 +1,35 @@
+<style>
+  /* Button hover effect */
+  .btn:hover {
+    transform: scale(1.1); /* Increase scale to 110% on hover */
+    transition: transform 0.3s ease; /* Add smooth transition */
+  }
+</style>
+
+<div class="container">
+  <page-header content="vm.pageHeader"></page-header>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-8 mx-auto">
+      <div class="content-box">
+        <p class="lead" style="color: white;">Not a member? Please <a href="#!/register" class="register-link">register</a> first.</p>
+        <form ng-submit="vm.onSubmit()">
+          <div role="alert" ng-show="vm.formError" class="alert alert-danger">{{ vm.formError }}</div>
+          <div class="form-group">
+            <label for="email" style="color: white;">Email address</label>
+            <input type="email" class="form-control input-black" id="email" placeholder="Enter email" ng-model="vm.credentials.email">
+          </div>
+          <div class="form-group">
+            <label for="password" style="color: white;">Password</label>
+            <input type="password" class="form-control input-black" id="password" placeholder="Password" ng-model="vm.credentials.password">
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-purple">Sign in!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer-generic></footer-generic>
+</div>

@@ -1,49 +1,68 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var passport = require('passport');
+require('./app_api/models/db');
+require('./app_api/config/passport');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// Import axios for making HTTP requests
+var axios = require('axios');
 
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade'); 
-
+// Middleware setup
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
-// Serve Bootstrap CSS
-app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
-
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app_client')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use('/css', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/css/'));
+app.use('/webfonts', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/webfonts/'));
+app.use('/css', express.static(__dirname + '/public/stylesheets'));
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+// Initialize Passport
+app.use(passport.initialize());
+
+// API routes
+var routesApi = require('./app_api/routes/index');
+app.use('/api', routesApi);
+
+// Proxy route for fetching YouTube content
+app.get('/youtube-proxy', async (req, res, next) => {
+  try {
+    // Make a request to the YouTube URL
+    const youtubeUrl = req.query.url;
+    const response = await axios.get(youtubeUrl);
+    // Return the response from YouTube to the client
+    res.send(response.data);
+  } catch (error) {
+    // Handle errors
+    next(error);
+  }
 });
 
-// error handler
+// Serve Angular client-side application
+app.use(function(req, res) {
+  res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
+});
+
+// Error handling middleware
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
+  // Handle errors
   res.status(err.status || 500);
-  res.render('error');
+  res.json({ error: err.message });
 });
 
-// Specify the port to run on (in this case, port 80)
-const port = 80;
+// Start the server
+const port = process.env.PORT || 80;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

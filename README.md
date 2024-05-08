@@ -13,8 +13,8 @@ Welcome to the MyBlog Website! This website allows users to read, create, edit, 
 - Responsive design: The website is designed to be usable on various devices and screen sizes.
 ## Technologies Used
 - Frontend:
- - AngularJS: Frontend framework for building the user interface.
- - Bootstrap: CSS framework for styling the website.
+ -- AngularJS: Frontend framework for building the user interface.
+ -- Bootstrap: CSS framework for styling the website.
 Backend:
 - Node.js: JavaScript runtime for server-side logic.
 - Express.js: Web application framework for Node.js.

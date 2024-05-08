@@ -4,7 +4,7 @@ Welcome to the MyBlog Website! This website allows users to read, create, edit, 
 ## Table of Contents
 
 1. [Features](#features)
-2. [Technologies Used](#technologies used)
+2. [Technologies Used](#technologiesused)
 3. [Usage](#usage)
 
 ## Features

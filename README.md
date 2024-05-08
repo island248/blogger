@@ -4,7 +4,7 @@ Welcome to the MyBlog Website! This website allows users to read, create, edit, 
 ## Table of Contents
 
 1. [Features](#features)
-2. [Technologies Used](#technologiesused)
+2. [Technologies Used](#technologies-used)
 3. [Usage](#usage)
 
 ## Features
@@ -12,9 +12,9 @@ Welcome to the MyBlog Website! This website allows users to read, create, edit, 
 - CRUD operations on blog posts: Users can create, read, update, and delete blog posts.
 - Responsive design: The website is designed to be usable on various devices and screen sizes.
 ## Technologies Used
-Frontend:
-- AngularJS: Frontend framework for building the user interface.
-- Bootstrap: CSS framework for styling the website.
+- Frontend:
+ - AngularJS: Frontend framework for building the user interface.
+ - Bootstrap: CSS framework for styling the website.
 Backend:
 - Node.js: JavaScript runtime for server-side logic.
 - Express.js: Web application framework for Node.js.

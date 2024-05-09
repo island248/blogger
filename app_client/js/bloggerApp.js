@@ -171,7 +171,7 @@ function checkHikingDay() {
                 // Inside your AngularJS controller
                 vm.weather = {
                     temperatureCelsius: currentWeather.temp_c,
-                    temperatureFahrenheit: (currentWeather.temp_c * 9/5) + 32,
+                    temperatureFahrenheit: currentWeather.temp_f,
                     chanceOfRain: currentWeather.precip_mm > 0 ? 'Chance of Rain' : 'No Rain Expected',
                     condition: currentWeather.condition.text,
                     icon: 'https:' + currentWeather.condition.icon  // Include the full URL of the weather icon
@@ -322,87 +322,94 @@ function checkHikingDay() {
   }]);
 
   // ChatController
-app.controller('ChatController', ['$http', '$scope', '$interval', 'authentication', function ChatController($http, $scope, $interval, authentication) {
-  var vm = this;
-  vm.isAuthorized = function(messageEmail) {
-    var currentUser = authentication.currentUser();
-    return currentUser && currentUser.email === messageEmail;
+  app.controller('ChatController', ['$http', '$scope', '$interval', 'authentication', function ChatController($http, $scope, $interval, authentication) {
+    var vm = this;
+    vm.isAuthorized = function(messageEmail) {
+      var currentUser = authentication.currentUser();
+      return currentUser && currentUser.email === messageEmail;
+      };
+    vm.pageHeader = {
+      title: 'Chat'
     };
-  vm.pageHeader = {
-    title: 'Chat'
-  };
-  
-  vm.chat = []; // Initialize chat array
-  vm.isDeleting = false; // Flag to track delete operation
-  
-  // Function to retrieve chat messages from the server
-  function getChat() {
-    $http.get('/api/chat')
-      .then(function(response) {
-        vm.chat = response.data; // Assign chat messages to vm.chat
-      })
-      .catch(function(error) {
-        console.error("Error retrieving chat messages:", error);
-      });
-  }
-  
-  // Initial call to getChat function
-  getChat();
-  
-  // Function to submit a new chat message
- // Function to submit a new chat message
-vm.submit = function() {
-  var data = {
-    chat: userForm.postField.value,
-    name: authentication.currentUser().name,
-    email: authentication.currentUser().email
-  };
-  
-  $http.post('/api/chat', data)
-    .then(function(response) {
-      // Refresh chat messages after posting a new message
-      getChat();
-      vm.message = ""; // Clear message input field
-      userForm.postField.value = ""; // Clear message input field value
-    })
-    .catch(function(error) {
-      console.error("Error posting chat message:", error);
-      vm.message = "Could not post message";
-    });
-};
-vm.submitOnEnter = function(event) {
-  if (event.keyCode === 13 && !event.shiftKey) { // Check if Enter key is pressed and Shift is not pressed
-      event.preventDefault(); // Prevent default form submission behavior
-      if (userForm.postField.value.trim() !== "" || userForm.postField.value.trim() === "") { // Check if input field is not empty
-              vm.submit(); // If no existing messages or there is input in the chat box, submit the new message
-      }
-  }
-};
-
-vm.deleteMessage = function(messageId) {
-  // Remove the message from the array immediately
-  vm.chat = vm.chat.filter(function(message) {
-      return message._id !== messageId;
-  });
-
-  // Then send the delete request to the server
-  $http.delete('/api/chat/' + messageId)
-      .then(function(response) {
-          // No need to refresh chat messages after deleting a message
-      })
-      .catch(function(error) {
-          console.error("Error deleting chat message:", error);
-          // If there's an error, add the message back to the array
-          getChat(); // You may need to define getChat() globally or use another approach to retrieve chat messages again
-      });
-};
-
-  
-  // Function to periodically update chat messages
-  $interval(function() {
+    
+    vm.chat = []; // Initialize chat array
+    vm.isDeleting = false; // Flag to track delete operation
+    
+    // Function to retrieve chat messages from the server
+    function getChat() {
+      $http.get('/api/chat')
+        .then(function(response) {
+          vm.chat = response.data; // Assign chat messages to vm.chat
+        })
+        .catch(function(error) {
+          console.error("Error retrieving chat messages:", error);
+        });
+    }
+    
+    // Initial call to getChat function
     getChat();
-  }, 3000);
-}]);
+    vm.handleKeyDown = function(event) {
+      if (event.keyCode === 13) { // Check if the Enter key is pressed
+        event.preventDefault(); // Prevent default form submission
+        vm.submit(); // Call the submit method to send the message
+      }
+    };
+    
+  vm.submitInProgress = false;
+
+    // Function to submit a new chat message
+   // Function to submit a new chat message
+  vm.submit = function() {
+    if (vm.submitInProgress) {
+      return;
+    }
+    if (vm.newMessage.trim() !== '') {
+      vm.submitInProgress = true; 
+    var data = {
+      chat: userForm.postField.value,
+      name: authentication.currentUser().name,
+      email: authentication.currentUser().email
+    };
+    
+    $http.post('/api/chat', data)
+      .then(function(response) {
+        // Refresh chat messages after posting a new message
+        getChat();
+        vm.message = ""; // Clear message input field
+        userForm.postField.value = "";
+        vm.submitInProgress = false;
+      })
+      .catch(function(error) {
+        console.error("Error posting chat message:", error);
+        vm.message = "Could not post message";
+      });
+    }
+  };
+  
+  vm.deleteMessage = function(messageId) {
+    // Remove the message from the array immediately
+    vm.chat = vm.chat.filter(function(message) {
+        return message._id !== messageId;
+    });
+  
+    // Then send the delete request to the server
+    $http.delete('/api/chat/' + messageId)
+        .then(function(response) {
+            // No need to refresh chat messages after deleting a message
+        })
+        .catch(function(error) {
+            console.error("Error deleting chat message:", error);
+            // If there's an error, add the message back to the array
+            getChat(); // You may need to define getChat() globally or use another approach to retrieve chat messages again
+        });
+  };
+  
+    
+    // Function to periodically update chat messages
+    $interval(function() {
+      getChat();
+    }, 500);
+  }]);
 
 
 

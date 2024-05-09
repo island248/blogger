@@ -24,11 +24,10 @@
         <h2 style="color: white;">{{ vm.pageHeader.title }}</h2>
         <h4 style="color: white;">{{ vm.message2 }}</h4>
         <!-- Wrap "here" in a span element and apply styling -->
-        <div>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="color: white; text-decoration: none;">
-                Click <span style="text-decoration: underline; color: rgb(153, 0, 248);">here</span> to find out what got me into Computer Science!
-            </a>
-        </div>
+      
+          
+      
+      
         <!-- Weather box -->
         <div style="position: absolute; top: calc(50% + 50px); left: 50%; transform: translate(-50%, -50%); width: 390px; height: 305px; background-color: rgba(29, 40, 28, 0.8); border: 2px solid rgba(153, 0, 248, 0.8); padding: 10px; color: white;">
           <p style="color: rgb(153, 0, 248);">Weather Today in Lancaster, PA</p>
@@ -189,24 +188,26 @@
             </div>
             
             <!-- Input field for new message -->
-            <input class="form-control" id="postField" name="postField" ng-model="newMessage" ng-keypress="submitOnEnter($event)">
+            <input class="form-control" id="postField" name="postField" ng-model="vm.newMessage" ng-keydown="vm.handleKeyDown($event)" placeholder="Type message here" autocomplete="off">
         </div>
         <!-- Submit button -->
         <input type="submit" class="btn btn-primary btn-purple" value="Post"> <!-- Added btn-purple class -->
         <!-- Exit button -->
-        <a class="nav-link" ng-href="#!/MyBlog">
-        <button class="btn btn-danger btn-exit" ng-click="exitChat()" style="position: absolute; bottom: 10px; right: 10px;">Exit</button> <!-- Positioned at bottom right corner -->
+        <!-- Exit button -->
+<a class="btn btn-danger btn-exit" ng-href="#!/MyBlog" style="position: absolute; bottom: 10px; right: 10px;">Exit</a> <!-- Positioned at bottom right corner -->
+
     </form>    
     </div>
   </div>
   <!-- Instruction button -->
-  <button class="btn btn-purple btn-instruction" ng-click="showInstructions = !showInstructions"> <!-- Updated button class -->
-    <i class="fas fa-info-circle"></i> Instructions
-  </button>
+  <!-- Instruction button -->
+<button type="button" class="btn btn-purple btn-instruction" ng-click="showInstructions = !showInstructions">
+  <i class="fas fa-info-circle"></i> Instructions
+</button>
   <!-- Instructions -->
   <div class="instructions" ng-show="showInstructions" style="color: white;"> <!-- Added style to make text white -->
     <button class="close-button" ng-click="showInstructions = false">&times;</button> <!-- Close button -->
-    <p>Welcome to the chat page where fellow bloggers can communicate their thoughts or opinions on blogs. You can also use this to just talk to bloggers! If you want to delete your post just click the trash button. Happy chatting!</p>
+    <p>Welcome to the chat page where fellow bloggers can communicate their thoughts or opinions on blogs. You can also use this to just talk to bloggers! If you want to delete your post just click the trash button. Click the Exit button to go back to the homepage.  Happy chatting!</p>
   </div>
 </script>
 
